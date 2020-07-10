@@ -20,3 +20,16 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::resource('journey', 'JourneyController');
+
+Route::resource('step', 'StepController');
+
+
+Route::resource('journey', 'JourneyController');
+
+Route::resource('step', 'StepController');
+
+
+Route::resource('page', 'PageController');

@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StepUpdateRequest extends FormRequest
+class PageUpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,13 +24,12 @@ class StepUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required|string|max:250',
-            'user_id' => 'required|integer|exists:users,id',
-            'journey_id' => 'required|integer|exists:journeys,id',
-            'published_at' => '',
-            'description' => 'string',
-            'date' => 'required',
-            'picture' => 'string',
+            'title' => 'required|string',
+            'seo_meta_description' => 'required|string',
+            'seo_meta_title' => 'required|string',
+            'content' => 'required|string',
+            'slug' => 'required|string',
+            'image' => 'string',
         ];
     }
 }

@@ -2,10 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/laravel-plugin.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/PageController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/PageStoreRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Requests/PageUpdateRequest.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Page.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/factories/PageFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_10_202451_create_journeys_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_10_202452_create_steps_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/migrations/2020_07_10_204206_create_pages_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/journey/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/journey/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/journey/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/journey/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/page/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/page/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/page/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/step/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/step/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/step/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/step/show.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/Feature/Http/Controllers/PageControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/devjourney.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/devjourney.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/StepController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/StepController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StepStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StepStoreRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StepUpdateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StepUpdateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Journey.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/JourneyCollection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Step.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/StepCollection.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Step.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Step.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/StepFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/StepFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_10_024841_create_journeys_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_07_10_024842_create_steps_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Http/Controllers/JourneyControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Http/Controllers/JourneyControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/Http/Controllers/StepControllerTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/Http/Controllers/StepControllerTest.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
     </list>
@@ -14,11 +54,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="devjourney" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -130,6 +173,15 @@
       <path value="$PROJECT_DIR$/vendor/laravel-shift/blueprint" />
       <path value="$PROJECT_DIR$/vendor/symfony/yaml" />
       <path value="$PROJECT_DIR$/vendor/jasonmccreary/laravel-test-assertions" />
+      <path value="$PROJECT_DIR$/vendor/sabberworm/php-css-parser" />
+      <path value="$PROJECT_DIR$/vendor/dompdf/dompdf" />
+      <path value="$PROJECT_DIR$/vendor/laravel/cashier" />
+      <path value="$PROJECT_DIR$/vendor/symfony/intl" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/stripe/stripe-php" />
+      <path value="$PROJECT_DIR$/vendor/moneyphp/money" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
+      <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
     </include_path>
   </component>
   <component name="ProjectId" id="1eREj4VKBYCxaRDDDgBcasCaP99" />
@@ -142,6 +194,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -168,7 +221,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1594276136156</updated>
-      <workItem from="1594276137801" duration="10330000" />
+      <workItem from="1594276137801" duration="11264000" />
+      <workItem from="1594394596638" duration="4528000" />
     </task>
     <servers />
   </component>
@@ -180,22 +234,30 @@
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="2610" y="218" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594277432708" />
-    <state width="1865" height="268" key="GridCell.Tab.0.bottom" timestamp="1594276217688">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1865" height="268" key="GridCell.Tab.0.bottom" timestamp="1594350536993">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1865" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594276217688" />
-    <state width="1865" height="268" key="GridCell.Tab.0.center" timestamp="1594276217687">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1865" height="268" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1594350536993" />
+    <state width="1865" height="268" key="GridCell.Tab.0.center" timestamp="1594350536993">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1865" height="268" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594276217687" />
-    <state width="1865" height="268" key="GridCell.Tab.0.left" timestamp="1594276217687">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1865" height="268" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1594350536993" />
+    <state width="1865" height="268" key="GridCell.Tab.0.left" timestamp="1594350536993">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1865" height="268" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594276217686" />
-    <state width="1865" height="268" key="GridCell.Tab.0.right" timestamp="1594276217688">
-      <screen x="1920" y="0" width="1920" height="1040" />
+    <state width="1865" height="268" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1594350536993" />
+    <state width="1865" height="268" key="GridCell.Tab.0.right" timestamp="1594350536993">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1865" height="268" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594276217688" />
+    <state width="1865" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594350536993" />
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1594394624722">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1594394624722" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -13,6 +13,7 @@ class Step extends Model
      */
     protected $fillable = [
         'title',
+        'user_id',
         'journey_id',
         'published_at',
         'description',
@@ -27,6 +28,7 @@ class Step extends Model
      */
     protected $casts = [
         'id' => 'integer',
+        'user_id' => 'integer',
         'journey_id' => 'integer',
     ];
 
@@ -40,6 +42,11 @@ class Step extends Model
         'date',
     ];
 
+
+    public function user()
+    {
+        return $this->belongsTo(\App\User::class);
+    }
 
     public function journey()
     {

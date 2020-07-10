@@ -19,14 +19,27 @@ class JourneyControllerTest extends TestCase
     /**
      * @test
      */
-    public function index_behaves_as_expected()
+    public function index_displays_view()
     {
         $journeys = factory(Journey::class, 3)->create();
 
         $response = $this->get(route('journey.index'));
 
         $response->assertOk();
-        $response->assertJsonStructure([]);
+        $response->assertViewIs('journey.index');
+        $response->assertViewHas('journeys');
+    }
+
+
+    /**
+     * @test
+     */
+    public function create_displays_view()
+    {
+        $response = $this->get(route('journey.create'));
+
+        $response->assertOk();
+        $response->assertViewIs('journey.create');
     }
 
 
@@ -45,7 +58,7 @@ class JourneyControllerTest extends TestCase
     /**
      * @test
      */
-    public function store_saves()
+    public function store_saves_and_redirects()
     {
         $user = factory(User::class)->create();
         $title = $this->faker->sentence(4);
@@ -65,22 +78,38 @@ class JourneyControllerTest extends TestCase
         $this->assertCount(1, $journeys);
         $journey = $journeys->first();
 
-        $response->assertOk();
-        $response->assertJsonStructure([]);
+        $response->assertRedirect(route('journey.index'));
+        $response->assertSessionHas('journey.id', $journey->id);
     }
 
 
     /**
      * @test
      */
-    public function show_behaves_as_expected()
+    public function show_displays_view()
     {
         $journey = factory(Journey::class)->create();
 
         $response = $this->get(route('journey.show', $journey));
 
         $response->assertOk();
-        $response->assertJsonStructure([]);
+        $response->assertViewIs('journey.show');
+        $response->assertViewHas('journey');
+    }
+
+
+    /**
+     * @test
+     */
+    public function edit_displays_view()
+    {
+        $journey = factory(Journey::class)->create();
+
+        $response = $this->get(route('journey.edit', $journey));
+
+        $response->assertOk();
+        $response->assertViewIs('journey.edit');
+        $response->assertViewHas('journey');
     }
 
 
@@ -99,7 +128,7 @@ class JourneyControllerTest extends TestCase
     /**
      * @test
      */
-    public function update_behaves_as_expected()
+    public function update_redirects()
     {
         $journey = factory(Journey::class)->create();
         $user = factory(User::class)->create();
@@ -114,8 +143,8 @@ class JourneyControllerTest extends TestCase
 
         $journey->refresh();
 
-        $response->assertOk();
-        $response->assertJsonStructure([]);
+        $response->assertRedirect(route('journey.index'));
+        $response->assertSessionHas('journey.id', $journey->id);
 
         $this->assertEquals($user->id, $journey->user_id);
         $this->assertEquals($title, $journey->title);
@@ -126,13 +155,13 @@ class JourneyControllerTest extends TestCase
     /**
      * @test
      */
-    public function destroy_deletes_and_responds_with()
+    public function destroy_deletes_and_redirects()
     {
         $journey = factory(Journey::class)->create();
 
         $response = $this->delete(route('journey.destroy', $journey));
 
-        $response->assertOk();
+        $response->assertRedirect(route('journey.index'));
 
         $this->assertDeleted($journey);
     }

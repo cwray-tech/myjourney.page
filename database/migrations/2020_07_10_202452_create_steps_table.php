@@ -16,6 +16,7 @@ class CreateStepsTable extends Migration
         Schema::create('steps', function (Blueprint $table) {
             $table->id();
             $table->string('title', 250);
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->foreignId('journey_id')->constrained()->cascadeOnDelete();
             $table->timestamp('published_at')->nullable();
             $table->longText('description')->nullable();

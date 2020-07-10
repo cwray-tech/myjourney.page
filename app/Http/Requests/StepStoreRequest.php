@@ -25,6 +25,7 @@ class StepStoreRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:250',
+            'user_id' => 'required|integer|exists:users,id',
             'journey_id' => 'required|integer|exists:journeys,id',
             'published_at' => '',
             'description' => 'string',
