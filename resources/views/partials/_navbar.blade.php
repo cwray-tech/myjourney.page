@@ -28,7 +28,7 @@
                         <div class="flex">
                             <a href="/"
                                class="px-3 py-2 rounded-md font-medium text-grey-900 leading-5 focus:outline-none transition duration-150 ease-in-out">Home</a>
-                            <a href="#"
+                            <a href="/journeys"
                                class="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Journeys</a>
                             <a href="/about"
                                class="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">About</a>
@@ -90,9 +90,9 @@
             <div class=" flex flex-col items-stretch px-2 pt-2 pb-3">
                 <a href="/"
                    class="px-3 py-2 rounded-md font-medium text-grey-900 leading-5 focus:outline-none transition duration-150 ease-in-out">Home</a>
-                <a href="#"
+                <a href="/journeys"
                    class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Journeys</a>
-                <a href="#"
+                <a href="/about"
                    class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">About</a>
                 <a href="#"
                    class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Pricing</a>

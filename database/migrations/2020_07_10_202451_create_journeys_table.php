@@ -21,6 +21,7 @@ class CreateJourneysTable extends Migration
             $table->string('picture')->nullable();
             $table->longText('introduction')->nullable();
             $table->timestamp('published_at')->nullable();
+            $table->boolean('is_public')->default(0);
             $table->timestamps();
         });
     }

@@ -16,13 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index')->name('home');
 
 Route::get('/', 'PageController@index');
 Route::get('/about', 'PageController@about');
 
-Route::resource('journey', 'JourneyController');
+Route::resource('journeys', 'JourneyController');
 
-Route::resource('step', 'StepController');
+Route::resource('steps', 'StepController');
 
 

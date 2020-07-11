@@ -18,6 +18,7 @@ class Journey extends Model
         'picture',
         'introduction',
         'published_at',
+        'is_public'
     ];
 
     /**
@@ -48,5 +49,10 @@ class Journey extends Model
     public function user()
     {
         return $this->belongsTo(\App\User::class);
+    }
+
+    public function isPublic()
+    {
+        return $this->is_public ? true : false;
     }
 }

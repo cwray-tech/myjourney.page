@@ -22,6 +22,11 @@
     <main class="min-h-screen">
         @yield('content')
     </main>
+    @if (session('status'))
+        <div class="alert alert-success" role="alert">
+            {{ session('status') }}
+        </div>
+    @endif
     @include('.partials._footer')
 </div>
 </body>
