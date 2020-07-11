@@ -1,8 +1,8 @@
 <navbar-component inline-template>
-    <nav class="border-b  border-gray-300 py-6">
+    <nav class="py-6 fixed w-full bg-white top-0">
         <div class="container px-4 mx-auto">
             <div class="relative flex items-center justify-between h-16">
-                <div class="flex items-center sm:hidden mr-3">
+                <div class="flex items-center md:hidden mr-3">
                     <!-- Mobile menu button-->
                     <button @click="toggleNav"
                             class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
@@ -24,18 +24,14 @@
                     <div class="flex-shrink-0">
                         <img class="h-8 w-auto" src="/images/devjourney.svg" alt="{{ config('app.name', 'DevJourney') }}"/>
                     </div>
-                    <div class="hidden sm:block sm:ml-6">
+                    <div class="hidden md:block sm:ml-6">
                         <div class="flex">
                             <a href="/"
                                class="px-3 py-2 rounded-md font-medium text-grey-900 leading-5 focus:outline-none transition duration-150 ease-in-out">Home</a>
                             <a href="#"
                                class="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Journeys</a>
-                            <a href="#"
+                            <a href="/about"
                                class="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">About</a>
-                            <a href="#"
-                               class="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Pricing</a>
-                            <a href="#"
-                               class="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Contact</a>
                         </div>
                     </div>
                 </div>
@@ -90,7 +86,7 @@
 
           Menu open: "block", Menu closed: "hidden"
         -->
-        <div :class="navOpen ? 'block': 'hidden'" class="sm:hidden">
+        <div :class="navOpen ? 'block': 'hidden'" class="fixed bg-white w-full">
             <div class=" flex flex-col items-stretch px-2 pt-2 pb-3">
                 <a href="/"
                    class="px-3 py-2 rounded-md font-medium text-grey-900 leading-5 focus:outline-none transition duration-150 ease-in-out">Home</a>

@@ -41,4 +41,9 @@ class User extends Authenticatable
     {
         return in_array($this->email, ['chris@solmediaco.com']);
     }
+
+    public function journeys()
+    {
+        return $this->hasMany(Journey::class);
+    }
 }

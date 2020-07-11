@@ -16,14 +16,13 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app">
-        @include('.partials._navbar')
+<div id="app">
+    @include('.partials._navbar')
 
-        <main class="py-4">
-            <div class="container px-4 mx-auto">
-                @yield('content')
-            </div>
-        </main>
-    </div>
+    <main class="min-h-screen">
+        @yield('content')
+    </main>
+    @include('.partials._footer')
+</div>
 </body>
 </html>

@@ -1,0 +1,19 @@
+.btn {
+    @apply py-2 px-6 rounded;
+}
+.btn-cta{
+    @apply border border-black;
+}
+.btn-primary{
+    @apply bg-black text-white px-6;
+}
+.input {
+    @apply border py-2 px-2 mb-4 w-full rounded;
+}
+
+label {
+    @apply block text-gray-700 text-sm font-bold mb-2;
+}
+.checkbox {
+    @apply mb-0 mr-4;
+}
