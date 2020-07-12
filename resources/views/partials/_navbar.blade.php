@@ -1,11 +1,13 @@
 <navbar-component inline-template>
     <nav class="py-6 fixed w-full bg-white top-0">
+        <!-- Nav closer -->
+        <div @click="toggleNav" :class="navOpen ? 'block' : 'hidden'" class="fixed top-0 bottom-0 right-0 left-0"></div>
         <div class="container px-4 mx-auto">
             <div class="relative flex items-center justify-between h-16">
                 <div class="flex items-center md:hidden mr-3">
                     <!-- Mobile menu button-->
                     <button @click="toggleNav"
-                            class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:bg-gray-700 focus:text-white transition duration-150 ease-in-out"
+                            class="inline-flex items-center justify-center p-2 rounded-md text-black focus:outline-none transition duration-150 ease-in-out"
                             aria-label="Main menu" aria-expanded="false">
                         <!-- Icon when menu is closed. -->
                         <svg v-if="!navOpen" class="block h-6 w-6" fill="none" viewBox="0 0 24 24"
@@ -24,7 +26,7 @@
                     <div class="flex-shrink-0">
                         <img class="h-8 w-auto" src="/images/devjourney.svg" alt="{{ config('app.name', 'DevJourney') }}"/>
                     </div>
-                    <div class="hidden md:block sm:ml-6">
+                    <div class="hidden md:block md:ml-6">
                         <div class="flex">
                             <a href="/"
                                class="px-3 py-2 rounded-md font-medium text-grey-900 leading-5 focus:outline-none transition duration-150 ease-in-out">Home</a>
@@ -35,11 +37,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-0 sm:pr-0">
+                <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-0 md:pr-0">
 
                     <div class="relative">
                         <input type="text"
-                               class="pl-8 border focus:outline-none focus:shadow-outline md:w-64 rounded-full px-3 py-1"
+                               class="pl-8 border focus:outline-none focus:border-black md:w-64 rounded-full px-3 py-1"
                                placeholder="Search...">
                         <div class="absolute top-0 flex items-center h-full ml-2">
                             <svg id="Layer_1" class="fill-current text-gray-400 w-4" enable-background="new 0 0 128 128"
@@ -90,8 +92,9 @@
 
           Menu open: "block", Menu closed: "hidden"
         -->
-        <div :class="navOpen ? 'block': 'hidden'" class="fixed bg-white w-full">
-            <div class=" flex flex-col items-stretch px-2 pt-2 pb-3">
+        <div :class="navOpen ? 'block': 'hidden'" class="origin-bottom-left absolute ml-4 mt-2 bg-white w-1/2 lg:hidden rounded-md shadow-lg">
+
+            <div class=" flex flex-col items-stretch pl-4 pt-2 pb-3 shadow-xs rounded-md">
                 <a href="/"
                    class="px-3 py-2 rounded-md font-medium text-grey-900 leading-5 focus:outline-none transition duration-150 ease-in-out">Home</a>
                 <a href="/journeys"
