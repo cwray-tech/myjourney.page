@@ -65,9 +65,13 @@
                             <a href="#"
                                class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
                                role="menuitem">Settings</a>
-                            <a href="#"
-                               class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                               role="menuitem">Sign out</a>
+                            <form method="POST"  class="w-full" action="{{ route('logout') }}">
+                                @csrf
+                                <button type="submit"
+                                   class="block px-4 py-2 text-sm w-full leading-5 text-left hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                                        role="menuitem">Sign out</button>
+                            </form>
+
                         @else
                             <a href="/login"
                                class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
