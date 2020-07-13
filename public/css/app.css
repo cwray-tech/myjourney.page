@@ -645,6 +645,13 @@ video {
   padding-right: 1.5rem;
 }
 
+.btn-danger {
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: #f56565;
+  border-color: rgba(245, 101, 101, var(--border-opacity));
+}
+
 .input {
   border-width: 1px;
   padding-top: 0.5rem;

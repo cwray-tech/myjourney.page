@@ -7,6 +7,9 @@
 .btn-primary{
     @apply bg-black text-white px-6;
 }
+.btn-danger {
+    @apply border border-red-500;
+}
 .input {
     @apply border py-2 px-2 mb-4 w-full rounded;
 }

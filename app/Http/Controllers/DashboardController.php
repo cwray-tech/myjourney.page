@@ -23,6 +23,13 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        return view('dashboard.index');
+        $user= auth()->user();
+        return view('dashboard.index', compact('user'));
+    }
+
+    public function edit()
+    {
+        $user= auth()->user();
+        return view('.dashboard.edit', compact('user'));
     }
 }

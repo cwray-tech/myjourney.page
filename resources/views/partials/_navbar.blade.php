@@ -49,12 +49,12 @@
                             </button>
                         </template>
                         @auth()
-                            <a href="#"
+                            <a href="/dashboard"
                                class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                               role="menuitem">Your Profile</a>
-                            <a href="#"
+                               role="menuitem">Dashboard</a>
+                            <a href="/dashboard/info"
                                class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                               role="menuitem">Settings</a>
+                               role="menuitem">Your Info</a>
                             <form method="POST"  class="w-full" action="{{ route('logout') }}">
                                 @csrf
                                 <button type="submit"
