@@ -18,6 +18,7 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('home');
 Route::get('/dashboard/info', 'DashboardController@edit');
+Route::patch('/dashboard/info/update', 'DashboardController@update');
 
 Route::get('/', 'StaticPageController@index');
 Route::get('/about', 'StaticPageController@about');

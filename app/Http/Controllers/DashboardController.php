@@ -32,4 +32,18 @@ class DashboardController extends Controller
         $user= auth()->user();
         return view('.dashboard.edit', compact('user'));
     }
+
+    public function update(Request $request)
+    {
+        $request->validate([
+            'email' => 'required|email',
+            'name' => 'required']);
+
+        $user = auth()->user();
+
+        $user->update([
+            'email' => $request->email,
+            'name' => $request->name]);
+        return back()->with('status', 'Great work! We\'ve updated your info!');
+    }
 }
