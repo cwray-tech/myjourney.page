@@ -116,6 +116,8 @@
       <path value="$PROJECT_DIR$/vendor/moneyphp/money" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-svg-lib" />
       <path value="$PROJECT_DIR$/vendor/phenx/php-font-lib" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-newsletter" />
+      <path value="$PROJECT_DIR$/vendor/drewm/mailchimp-api" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.2" />
