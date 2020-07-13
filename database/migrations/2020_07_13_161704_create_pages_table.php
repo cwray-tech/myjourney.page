@@ -15,10 +15,12 @@ class CreatePagesTable extends Migration
     {
         Schema::create('pages', function (Blueprint $table) {
             $table->id();
+            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->string('domain', 50)->unique();
             $table->text('introduction')->nullable();
             $table->string('picture')->nullable();
-            $table->foreignId('user_id')->constrained()->cascadeOnDelete();
+            $table->boolean('is_public')->default(0);
+            $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
     }

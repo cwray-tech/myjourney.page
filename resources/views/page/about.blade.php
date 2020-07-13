@@ -31,8 +31,7 @@
                     <br/>
                     That is when I knew I needed to give others the opportunity to share their journeys too. That is when I
                     began working on this app. That is why this exists.
-                    <br/>
-                    You can read my journey to software development here.
+
                 </p>
             </div>
         </div>
