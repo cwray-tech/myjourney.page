@@ -18,8 +18,8 @@ Auth::routes();
 
 Route::get('/dashboard', 'DashboardController@index')->name('home');
 
-Route::get('/', 'PageController@index');
-Route::get('/about', 'PageController@about');
+Route::get('/', 'StaticPageController@index');
+Route::get('/about', 'StaticPageController@about');
 
 Route::resource('journeys', 'JourneyController');
 
