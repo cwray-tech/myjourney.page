@@ -1,4 +1,7 @@
 @extends('layouts.app')
+@section('page_title')
+    Learn
+@endsection
 
 @section('content')
     <section class="py-40 min-h-screen justify-center flex flex-col items-center">

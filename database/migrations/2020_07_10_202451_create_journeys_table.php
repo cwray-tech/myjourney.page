@@ -17,7 +17,7 @@ class CreateJourneysTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->cascadeOnDelete();
             $table->string('title', 250);
-            $table->string('domain', 50);
+            $table->string('slug');
             $table->string('picture')->nullable();
             $table->longText('introduction')->nullable();
             $table->timestamp('published_at')->nullable();

@@ -3,14 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon"
-          type="image/svg"
-          href="https://myjourney.page/images/devjourney.svg">
-    <link rel="apple-touch-icon" type="image/jpg" href="https://myjourney.page/images/map.jpg" />
+
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('page_title') | MyJourney.page</title>
+    <title>@yield('page_title') | myjourney.page</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

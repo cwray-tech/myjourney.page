@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('page_title')
+    Start Sharing Journeys
+@endsection
 @section('content')
     <section class="py-40 min-h-screen justify-center flex flex-col">
         <div class="container px-8 md:flex md:flex-row-reverse md:align-items-center mx-auto">

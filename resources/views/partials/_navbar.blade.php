@@ -23,9 +23,9 @@
                     </button>
                 </div>
                 <div class="flex-1 flex items-center justify-start">
-                    <div class="flex-shrink-0">
+                    <a href="/" class="flex-shrink-0">
                         <img class="h-8 w-auto" src="/images/devjourney.svg" alt="{{ config('app.name', 'DevJourney') }}"/>
-                    </div>
+                    </a>
                     <div class="hidden md:block md:ml-6">
                         <div class="flex">
                             <a href="/"
