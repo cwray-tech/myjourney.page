@@ -43,7 +43,7 @@
                     <dropdown-component>
                         <template v-slot:toggle>
                             <button
-                                class="flex ml-3 text-sm border-2 border-transparent rounded-full focus:outline-none transition duration-150 ease-in-out"
+                                class="flex ml-3 text-sm border-transparent rounded-full focus:outline-none"
                                 id="user-menu" aria-label="User menu" aria-haspopup="true">
                                 <img class="h-8 w-8 rounded-full" src="/images/user.svg" alt=""/>
                             </button>
@@ -80,7 +80,7 @@
 
           Menu open: "block", Menu closed: "hidden"
         -->
-        <div :class="navOpen ? 'block': 'hidden'" class="origin-bottom-left absolute ml-4 mt-2 bg-white w-1/2 lg:hidden rounded-md shadow-lg">
+        <div :class="navOpen ? 'block': 'hidden'" v-cloak class="origin-bottom-left absolute ml-4 mt-2 bg-white w-1/2 lg:hidden rounded-md shadow-lg">
 
             <div class=" flex flex-col items-stretch pl-4 pt-2 pb-3 shadow-xs rounded-md">
                 <a href="/"

@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/forms/form_errors.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/js/components/AlertComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/DashboardController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
     </list>
@@ -163,12 +164,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/dashboard" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/js/components" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\devjourney\resources\js\components" />
       <recent name="C:\laragon\www\devjourney\resources\views\dashboard" />
       <recent name="C:\laragon\www\devjourney\resources\views\layouts" />
       <recent name="C:\laragon\www\devjourney\public\images" />
@@ -198,7 +200,7 @@
       <workItem from="1594394596638" duration="21152000" />
       <workItem from="1594485015801" duration="1583000" />
       <workItem from="1594524333574" duration="4931000" />
-      <workItem from="1594655948782" duration="14665000" />
+      <workItem from="1594655948782" duration="21639000" />
     </task>
     <servers />
   </component>
@@ -210,9 +212,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="385" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594657060401" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1594489372533">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2036" y="117" width="1688" height="806" key="DiffContextDialog" timestamp="1594684511987">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
+    <state x="2036" y="117" width="1688" height="806" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594684511987" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1594489372533" />
     <state x="2610" y="218" key="FileChooserDialogImpl" timestamp="1594277432708">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -238,6 +241,10 @@
     </state>
     <state width="1865" height="268" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594276217688" />
     <state width="1865" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594350536993" />
+    <state x="2703" y="164" key="RollbackChangesDialog" timestamp="1594684509867">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2703" y="164" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594684509867" />
     <state x="161" y="0" key="SettingsEditor" timestamp="1594420351582">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

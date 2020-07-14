@@ -20,3 +20,12 @@ label {
 .checkbox {
     @apply mb-0 mr-4;
 }
+.alert{
+    @apply border mx-auto bg-white px-4 py-3 max-w-lg rounded;
+}
+.success{
+    @apply  border-blue-800;
+}
+.danger{
+    @apply border-red-700 bg-red-200;
+}

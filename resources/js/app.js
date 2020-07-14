@@ -21,6 +21,7 @@ window.Vue = require('vue');
 
 Vue.component('navbar-component', require('./components/NavbarComponent.vue').default);
 Vue.component('dropdown-component', require('./components/DropdownComponent').default);
+Vue.component('alert-component', require('./components/AlertComponent').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
