@@ -1,5 +1,5 @@
 <navbar-component inline-template>
-    <nav class="py-6 fixed w-full bg-white top-0">
+    <nav class="py-1 fixed w-full bg-white top-0">
         <!-- Nav closer -->
         <div @click="toggleNav" :class="navOpen ? 'block' : 'hidden'" class="fixed top-0 bottom-0 right-0 left-0"></div>
         <div class="container px-4 mx-auto">

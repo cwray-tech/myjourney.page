@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 
 Auth::routes();
-
 Route::get('/dashboard', 'DashboardController@index')->name('home');
 Route::get('/dashboard/info', 'DashboardController@edit');
 Route::patch('/dashboard/info/update', 'DashboardController@update');
