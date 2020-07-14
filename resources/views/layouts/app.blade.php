@@ -11,6 +11,10 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('page_title') | MyJourney.page</title>
+    <meta property=”og:title” content=”@yield('page_title') | MyJourney.page” />
+    <meta property=”og:description” content=”@yield('page_description') Share your Journeys with the world.” />
+    <meta property=”og:image” content=”http://myjourney.page/my-journey-open-graph-image.jpg” />
+    <meta property=”og:site_name” content=”MyJourney.page” />
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
