@@ -29,3 +29,6 @@ label {
 .danger{
     @apply border-red-700 bg-red-200;
 }
+[v-cloak] {
+    display: none;
+}

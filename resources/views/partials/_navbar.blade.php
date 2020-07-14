@@ -40,7 +40,7 @@
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-0 md:pr-0">
 
                     <!-- Profile dropdown -->
-                    <dropdown-component>
+                    <dropdown-component v-cloak>
                         <template v-slot:toggle>
                             <button
                                 class="flex ml-3 text-sm border-transparent rounded-full focus:outline-none"
