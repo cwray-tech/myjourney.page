@@ -24,7 +24,7 @@
                 @if($user->is_subscribed == 0)
                     <div class="rounded-md bg-white shadow-sm border border-blue-800 mb-4 p-5">
                         <h2 class="text-4xl mb-3">Subscribe to Updates</h2>
-                        <p class="mb-4">Subscribe to updates from myjourney.page to stay current with important news from us.</p>
+                        <p class="mb-4">Subscribe to updates from myjourney.page to find out when you are able to start posting journeys.</p>
                         <form method="post" action="/newsletter">
                             @csrf
                             <button type="submit" class="btn btn-cta">Subscribe</button>
@@ -33,7 +33,7 @@
                     @else
                     <div class="rounded-md bg-white shadow-sm border mb-4 p-5">
                         <h2 class="text-4xl mb-3">Updates</h2>
-                        <p class="mb-4">Great job. You are subscribed to updates, so you will stay current with what happens at myjourney.page!</p>
+                        <p class="mb-4">Sweet. You are subscribed to updates, so you will stay current with what happens at myjourney.page!</p>
                         <form method="post" action="/newsletter">
                             @csrf
                             @method('delete')
