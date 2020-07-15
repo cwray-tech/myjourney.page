@@ -11,11 +11,11 @@ class JourneyController extends Controller
 {
     /**
      * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index(Request $request)
     {
-        $journeys = Journey::all();
+        $journeys = Journey::where('is_public', true)->get();
 
         return view('journey.index', compact('journeys'));
     }
@@ -35,11 +35,15 @@ class JourneyController extends Controller
      */
     public function store(JourneyStoreRequest $request)
     {
-        $journey = Journey::create($request->all());
+        $journey = Journey::create([
+            'user_id' => auth()->id(),
+            'title' => $request->title,
+            'introduction' => $request->introduction,
+        ]);
 
         $request->session()->flash('journey.id', $journey->id);
 
-        return redirect()->route('journey.index');
+        return redirect()->route('journeys.edit', ['journey'=> $journey->slug])->with('status', 'Great Work! You just created a journey! Now, add the steps that were a part of your journey.');
     }
 
     /**
@@ -69,11 +73,14 @@ class JourneyController extends Controller
      */
     public function update(JourneyUpdateRequest $request, Journey $journey)
     {
-        $journey->update([]);
+        $journey->update([
+            'title' => $request->title,
+            'introduction' => $request->introduction
+        ]);
 
         $request->session()->flash('journey.id', $journey->id);
 
-        return redirect()->route('journey.index');
+        return redirect()->route('journeys.edit', $journey->slug);
     }
 
     /**

@@ -4,7 +4,7 @@
 @endsection
 @section('content')
     <section class="py-40">
-        <div class="container px-4 mx-auto">
+        <div class="container px-6 mx-auto">
             <h1 class="text-5xl mb-3">Your Info</h1>
             <div class="md:grid lg:grid-cols-3  grid-cols-2 gap-4 mt-6">
                 <div class="rounded-md bg-white shadow-sm border mb-4 p-5">
@@ -22,7 +22,7 @@
                 </div>
 
                 @if($user->is_subscribed == 0)
-                    <div class="rounded-md bg-white shadow-sm border border-blue-800 mb-4 p-5">
+                    <div class="rounded-md bg-white shadow-sm border border-black mb-4 p-5">
                         <h2 class="text-4xl mb-3">Subscribe to Updates</h2>
                         <p class="mb-4">Subscribe to updates from myjourney.page to find out when you are able to start posting journeys.</p>
                         <form method="post" action="/newsletter">

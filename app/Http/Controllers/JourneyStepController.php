@@ -7,11 +7,11 @@ use App\Http\Requests\StepUpdateRequest;
 use App\Step;
 use Illuminate\Http\Request;
 
-class StepController extends Controller
+class JourneyStepController extends Controller
 {
     /**
      * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function index(Request $request)
     {
@@ -22,7 +22,7 @@ class StepController extends Controller
 
     /**
      * @param \Illuminate\Http\Request $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function create(Request $request)
     {

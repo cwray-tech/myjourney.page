@@ -18,13 +18,14 @@ Auth::routes();
 Route::get('/dashboard', 'DashboardController@index')->name('home');
 Route::get('/dashboard/info', 'DashboardController@edit');
 Route::patch('/dashboard/info/update', 'DashboardController@update');
+Route::resource('users.journeys', 'UserJourneyController');
 
 Route::get('/', 'StaticPageController@index');
 Route::get('/about', 'StaticPageController@about');
 
 Route::resource('journeys', 'JourneyController');
 
-Route::resource('steps', 'StepController');
+Route::resource('journeys.steps', 'JourneyStepController')->shallow();
 
 Route::post('newsletter', 'NewsletterController@store');
 Route::delete('newsletter', 'NewsletterController@destroy');

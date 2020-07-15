@@ -24,11 +24,9 @@ class JourneyUpdateRequest extends FormRequest
     public function rules()
     {
         return [
-            'user_id' => 'required|integer|exists:users,id',
             'title' => 'required|string|max:250',
-            'domain' => 'required|string|max:50',
             'picture' => 'string',
-            'introduction' => 'string',
+            'introduction' => 'required|string',
             'published_at' => '',
         ];
     }

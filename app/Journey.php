@@ -2,10 +2,13 @@
 
 namespace App;
 
+use Spatie\Sluggable\HasSlug;
+use Spatie\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
 
 class Journey extends Model
 {
+    use HasSlug;
     /**
      * The attributes that are mass assignable.
      *
@@ -14,7 +17,7 @@ class Journey extends Model
     protected $fillable = [
         'user_id',
         'title',
-        'domain',
+        'slug',
         'picture',
         'introduction',
         'published_at',
@@ -40,6 +43,20 @@ class Journey extends Model
         'published_at',
     ];
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
+    /**
+     * Get the options for generating the slug.
+     */
+    public function getSlugOptions() : SlugOptions
+    {
+        return SlugOptions::create()
+            ->generateSlugsFrom('title')
+            ->saveSlugsTo('slug');
+    }
 
     public function steps()
     {

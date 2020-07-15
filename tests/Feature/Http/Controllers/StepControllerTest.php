@@ -11,7 +11,7 @@ use JMac\Testing\Traits\AdditionalAssertions;
 use Tests\TestCase;
 
 /**
- * @see \App\Http\Controllers\StepController
+ * @see \App\Http\Controllers\JourneyStepController
  */
 class StepControllerTest extends TestCase
 {
@@ -50,7 +50,7 @@ class StepControllerTest extends TestCase
     public function store_uses_form_request_validation()
     {
         $this->assertActionUsesFormRequest(
-            \App\Http\Controllers\StepController::class,
+            \App\Http\Controllers\JourneyStepController::class,
             'store',
             \App\Http\Requests\StepStoreRequest::class
         );
@@ -123,7 +123,7 @@ class StepControllerTest extends TestCase
     public function update_uses_form_request_validation()
     {
         $this->assertActionUsesFormRequest(
-            \App\Http\Controllers\StepController::class,
+            \App\Http\Controllers\JourneyStepController::class,
             'update',
             \App\Http\Requests\StepUpdateRequest::class
         );

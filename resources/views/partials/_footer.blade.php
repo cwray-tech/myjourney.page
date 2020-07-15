@@ -1,5 +1,5 @@
-<footer>
-    <div class="container w-full text-center justify-between mx-auto p-4">
+<footer class="border border-t">
+    <div class="container w-full md:flex md:text-left text-center justify-between mx-auto p-4">
         <div class="flex items-center justify-center">
             <a href="/" class="underline p-2">Home</a>
             <a href="/journeys" class="underline p-2 ml-2">Journeys</a>
