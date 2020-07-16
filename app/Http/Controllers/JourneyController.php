@@ -26,6 +26,8 @@ class JourneyController extends Controller
      */
     public function create(Request $request)
     {
+        $this->authorize('create', Journey::class);
+
         return view('journey.create');
     }
 
@@ -35,6 +37,8 @@ class JourneyController extends Controller
      */
     public function store(JourneyStoreRequest $request)
     {
+        $this->authorize('create', Journey::class);
+
         $journey = Journey::create([
             'user_id' => auth()->id(),
             'title' => $request->title,
@@ -53,6 +57,8 @@ class JourneyController extends Controller
      */
     public function show(Request $request, Journey $journey)
     {
+        $this->authorize('view', $journey);
+
         return view('journey.show', compact('journey'));
     }
 
@@ -63,6 +69,8 @@ class JourneyController extends Controller
      */
     public function edit(Request $request, Journey $journey)
     {
+        $this->authorize('update', $journey);
+
         return view('journey.edit', compact('journey'));
     }
 
@@ -73,6 +81,7 @@ class JourneyController extends Controller
      */
     public function update(JourneyUpdateRequest $request, Journey $journey)
     {
+        $this->authorize('update', $journey);
         $journey->update([
             'title' => $request->title,
             'introduction' => $request->introduction
@@ -90,6 +99,8 @@ class JourneyController extends Controller
      */
     public function destroy(Request $request, Journey $journey)
     {
+        $this->authorize('delete', $journey);
+
         $journey->delete();
 
         return redirect()->route('journeys.index');
