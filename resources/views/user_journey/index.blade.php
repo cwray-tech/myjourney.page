@@ -20,10 +20,10 @@
 
                     </div>
                 @empty
-                    <a class="rounded-md bg-white shadow-sm border border-black p-5">
+                    <div class="rounded-md bg-white shadow-sm border border-black p-5">
                         <h2 class="text-4xl mb-3">Bummer, you haven't created any journeys yet. Want to add one?</h2>
-                        <p class="mb-4">Create a journey by clicking on this link.</p>
-                    </a>
+                        <a class="btn btn-cta" href="{{ route('journeys.create') }}">Write a Journey</a>
+                    </div>
                 @endforelse
             </div>
         </div>
