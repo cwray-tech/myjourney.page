@@ -2,7 +2,7 @@
     <nav class="py-2 fixed w-full bg-white top-0">
         <!-- Nav closer -->
         <div @click="toggleNav" :class="navOpen ? 'block' : 'hidden'" class="fixed top-0 bottom-0 right-0 left-0"></div>
-        <div class="container px-4 mx-auto">
+        <div class="container px-4 w-full mx-auto">
             <div class="relative flex items-center justify-between h-16">
                 <div class="flex items-center md:hidden mr-3">
                     <!-- Mobile menu button-->

@@ -5,7 +5,7 @@
 
 @section('content')
     <section class="py-40">
-        <div class="max-w-screen-lg px-6 mx-auto">
+        <div class="container max-w-screen-lg px-6 mx-auto">
                 <h1 class="text-5xl mb-3">Edit Journey Introduction</h1>
                 <form class="mt-6" method="post"
                       action="{{route('journeys.update', $journey->slug)}}">

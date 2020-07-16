@@ -4,7 +4,7 @@
 @endsection
 @section('content')
     <section class="py-40">
-        <div class="max-w-screen-lg px-6 mx-auto">
+        <div class="container max-w-screen-lg px-6 mx-auto">
             <div class="p-2">
                 <h1 class="text-5xl mb-3">Your Dashboard</h1>
                 <p>Great job! You have registered for your account!

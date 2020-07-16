@@ -4,7 +4,7 @@
 @endsection
 @section('content')
     <section class="py-40">
-        <div class="max-w-screen-lg px-6 mx-auto">
+        <div class="container max-w-screen-lg px-6 mx-auto">
             <h1 class="text-5xl mb-3">Your Journeys</h1>
             <p>View the Journeys you've created.</p>
             <div class="mt-6">
