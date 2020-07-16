@@ -16,7 +16,7 @@
                        <div class="pl-6">
                            <h2 class="text-4xl mb-3">{{ $journey->title }}</h2>
                            <a href="{{route('journeys.show', $journey->slug)}}" class="underline">View Public Journey</a>
-                           <form method="post" action="{{ route('journeys.destroy') }}">
+                           <form method="post" action="{{ route('journeys.destroy', $journey->slug) }}">
                                @method('delete')
                                @csrf
                                <button type="submit" class="btn btn-danger">Delete Journey</button>

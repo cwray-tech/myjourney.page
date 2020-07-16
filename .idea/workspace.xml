@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/journey/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/journey/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/user_buttons.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/user_buttons.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user_journey/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user_journey/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
@@ -199,7 +195,7 @@
       <workItem from="1594485015801" duration="1583000" />
       <workItem from="1594524333574" duration="4931000" />
       <workItem from="1594655948782" duration="54668000" />
-      <workItem from="1594829736850" duration="5617000" />
+      <workItem from="1594829736850" duration="6007000" />
     </task>
     <servers />
   </component>

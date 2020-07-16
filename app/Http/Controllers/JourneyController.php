@@ -92,6 +92,6 @@ class JourneyController extends Controller
     {
         $journey->delete();
 
-        return redirect()->route('journey.index');
+        return redirect()->route('journeys.index');
     }
 }
