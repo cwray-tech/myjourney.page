@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::domain('test.ajourney.page')->group(function () {
-    return 'success';
+    Route::get('/', 'PageController@index');
 });
 
 
