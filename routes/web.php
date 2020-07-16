@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::domain('test.devjourney.test')->group(function () {
+Route::domain('test.ajourney.page')->group(function () {
     return 'success';
 });
 
