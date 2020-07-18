@@ -6,7 +6,7 @@
     <section class="py-40">
         <div class="container px-4 mx-auto">
             <h1 class="text-5xl mb-3">Your Dashboard</h1>
-            <p>Great job! You have registered for your account!
+            <p class="px-2">Great job! You have registered for your account!
                 You can't quite create a journey yet, but soon you will be able to.</p>
             <div class="md:grid lg:grid-cols-3  grid-cols-2 gap-4 mt-6">
                 @if($user->is_subscribed == 0)
