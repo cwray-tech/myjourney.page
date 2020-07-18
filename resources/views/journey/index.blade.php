@@ -4,7 +4,7 @@
 @endsection
 @section('content')
     <section class="py-40">
-        <div class="container px-4 mx-auto">
+        <div class="container px-6 mx-auto">
             <h1 class="text-5xl mb-3">Journeys</h1>
             @forelse($journeys as $journey)
                 <a href="/journeys/{{$journey->slug}}">
