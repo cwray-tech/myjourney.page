@@ -19,11 +19,18 @@
 
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet" data-turbolinks-track="true">
     <!-- Scripts -->
-    <script src="/js/manifest.js" defer></script>
-    <script src="/js/vendor.js" defer></script>
-    <script src="/js/app.js" defer></script>
+    <script src="/js/manifest.js" data-turbolinks-track="true"></script>
+    <script src="/js/vendor.js" data-turbolinks-track="true"></script>
+    <script src="/js/app.js" data-turbolinks-track="true"></script>
+    <script>
+        document.addEventListener('turbolinks:load', function (event) {
+            document.querySelectorAll('a[href^="#"]').forEach(function (el) {
+                el.setAttribute('data-turbolinks', false);
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="app">

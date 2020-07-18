@@ -1,4 +1,4 @@
-<navbar-component v-cloak inline-template>
+<navbar-component inline-template>
     <nav class="py-2 fixed w-full bg-white top-0">
         <!-- Nav closer -->
         <div @click="toggleNav" :class="navOpen ? 'block' : 'hidden'" class="fixed top-0 bottom-0 right-0 left-0"></div>
@@ -24,7 +24,8 @@
                 </div>
                 <div class="flex-1 flex items-center justify-start">
                     <a href="/" class="flex-shrink-0">
-                        <img class="h-10 w-auto" src="/images/devjourney.svg" alt="{{ config('app.name', 'DevJourney') }}"/>
+                        <img class="h-10 w-auto" src="/images/devjourney.svg"
+                             alt="{{ config('app.name', 'DevJourney') }}"/>
                     </a>
                     <div class="hidden md:block md:ml-6">
                         <div class="flex">
@@ -40,7 +41,7 @@
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-0 md:pr-0">
 
                     <!-- Profile dropdown -->
-                    <dropdown-component v-cloak>
+                    <dropdown-component>
                         <template v-slot:toggle>
                             <button
                                 class="flex text-sm border-transparent rounded-full focus:outline-none"
@@ -48,28 +49,32 @@
                                 <img class="h-10 w-10 rounded-full" src="/images/user.svg" alt=""/>
                             </button>
                         </template>
-                        @auth()
-                            <a href="/dashboard"
-                               class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                               role="menuitem">Dashboard</a>
-                            <a href="/dashboard/info"
-                               class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                               role="menuitem">Your Info</a>
-                            <form method="POST"  class="w-full" action="{{ route('logout') }}">
-                                @csrf
-                                <button type="submit"
-                                   class="block px-4 py-2 text-sm w-full leading-5 text-left hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                                        role="menuitem">Sign out</button>
-                            </form>
+                        <template>
+                            @auth()
 
-                        @else
-                            <a href="/login"
-                               class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                               role="menuitem">Login</a>
-                            <a href="/register"
-                               class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                               role="menuitem">Register</a>
-                        @endauth
+                                <a href="/dashboard"
+                                   class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                                   role="menuitem">Dashboard</a>
+                                <a href="/dashboard/info"
+                                   class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                                   role="menuitem">Your Info</a>
+                                <form method="POST" class="w-full" action="{{ route('logout') }}">
+                                    @csrf
+                                    <button type="submit"
+                                            class="block px-4 py-2 text-sm w-full leading-5 text-left hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                                            role="menuitem">Sign out
+                                    </button>
+                                </form>
+
+                            @else
+                                <a href="/login"
+                                   class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                                   role="menuitem">Login</a>
+                                <a href="/register"
+                                   class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
+                                   role="menuitem">Register</a>
+                            @endauth
+                        </template>
                     </dropdown-component>
                 </div>
             </div>
@@ -80,7 +85,8 @@
 
           Menu open: "block", Menu closed: "hidden"
         -->
-        <div :class="navOpen ? 'block': 'hidden'" v-cloak class="origin-bottom-left absolute ml-4 mt-2 bg-white w-1/2 lg:hidden rounded-md shadow-lg">
+        <div :class="navOpen ? 'block': 'hidden'" v-cloak
+             class="origin-bottom-left absolute ml-4 mt-2 bg-white w-1/2 lg:hidden rounded-md shadow-lg">
 
             <div class=" flex flex-col items-stretch pl-4 pt-2 pb-3 shadow-xs rounded-md">
                 <a href="/"
@@ -90,10 +96,10 @@
                 <a href="/about"
                    class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">About</a>
                 @guest
-                <a href="/login"
-                   class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Login</a>
-                <a href="/register"
-                   class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Register</a>
+                    <a href="/login"
+                       class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Login</a>
+                    <a href="/register"
+                       class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Register</a>
                 @endguest
             </div>
         </div>
