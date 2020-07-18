@@ -103,6 +103,6 @@ class JourneyController extends Controller
 
         $journey->delete();
 
-        return redirect()->route('journeys.index');
+        return redirect()->route('users.journeys.index', $journey->user_id)->with('status', 'Journey was successfully deleted.');
     }
 }
