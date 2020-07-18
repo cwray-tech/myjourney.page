@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-0 md:pr-0">
-                    @include('.partials.user_buttons')
+
                     <!-- Profile dropdown -->
                     <dropdown-component v-cloak>
                         <template v-slot:toggle>
