@@ -20,6 +20,10 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Scripts -->
+    <script src="/js/manifest.js" defer></script>
+    <script src="/js/vendor.js" defer></script>
+    <script src="/js/app.js" defer></script>
 </head>
 <body>
 <div id="app">
@@ -35,9 +39,6 @@
     @include('.partials._footer')
 </div>
 
-<!-- Scripts -->
-<script src="/js/manifest.js"></script>
-<script src="/js/vendor.js"></script>
-<script src="/js/app.js"></script>
+
 </body>
 </html>
