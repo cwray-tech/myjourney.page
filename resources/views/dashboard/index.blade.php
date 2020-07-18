@@ -15,16 +15,11 @@
                 @if($user->is_subscribed == 0)
                     <div class="rounded-md bg-white shadow-sm border-2 border-black p-6 pb-8">
                         <h2 class="text-4xl mb-3">Subscribe to Updates</h2>
-                        <p class="mb-4">Subscribe to updates from myjourney.page to find out when you are able to start posting journeys.</p>
+                        <p class="mb-4">Subscribe to updates from myjourney.page to be up to date with important events.</p>
                         <form method="post" action="/newsletter">
                             @csrf
                             <button type="submit" class="btn btn-cta">Subscribe</button>
                         </form>
-                    </div>
-                @else
-                    <div class="rounded-md bg-white shadow-sm border border-black p-6 pb-8">
-                        <h2 class="text-4xl mb-3">You are Awesome.</h2>
-                        <p class="mb-4">As soon as we make journeys available to share, we will send you an email.</p>
                     </div>
                 @endif
                 <div class="rounded-md bg-white shadow-sm border border-black p-6 pb-8">
@@ -35,7 +30,8 @@
                 <div
                     class="rounded-md bg-white shadow-sm border-2 border-black p-6 pb-8">
                     <h2 class="text-4xl mb-3">Share a Journey</h2>
-                    <p class="mb-4">Share a life journey you have had or wish you could have.</p>
+                    <p class="mb-6">Share a life journey you have had or wish you could have.</p>
+                    <a href="{{ route('journeys.create') }}" class="btn btn-cta">Start Writing!</a>
                 </div>
             </div>
         </div>

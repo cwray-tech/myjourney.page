@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('page_title')
+    Write your Journey
+@endsection
 @section('content')
     <section class="py-40">
         <div class="container px-6 mx-auto">

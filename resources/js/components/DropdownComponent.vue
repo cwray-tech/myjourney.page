@@ -5,7 +5,7 @@
         </div>
         <div @click="toggleDropdown" v-show="dropdownOpen" class="fixed top-0 bottom-0 right-0 left-0"></div>
         <transition name="fade">
-            <div v-cloak v-show="dropdownOpen" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
+            <div @mouseleave="toggleDropdown" v-cloak v-show="dropdownOpen" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
                 <div class="py-1 rounded-md bg-white shadow-xs" role="menu" aria-orientation="vertical"
                      aria-labelledby="user-menu">
                     <slot></slot>

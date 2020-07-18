@@ -47,7 +47,7 @@ class JourneyController extends Controller
 
         $request->session()->flash('journey.id', $journey->id);
 
-        return redirect()->route('journeys.edit', ['journey'=> $journey->slug])->with('status', 'Great Work! You just created a journey! Now, add the steps that were a part of your journey.');
+        return redirect()->route('journeys.steps.create', ['journey'=> $journey->slug])->with('status', 'Great Work! You just created a journey! Now, add the steps that were a part of your journey.');
     }
 
     /**

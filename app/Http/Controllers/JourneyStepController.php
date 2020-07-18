@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StepStoreRequest;
 use App\Http\Requests\StepUpdateRequest;
+use App\Journey;
 use App\Step;
 use Illuminate\Http\Request;
 
@@ -24,22 +25,28 @@ class JourneyStepController extends Controller
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function create(Request $request)
+    public function create(Request $request, Journey $journey)
     {
-        return view('step.create');
+        return view('step.create', compact('journey'));
     }
 
     /**
      * @param \App\Http\Requests\StepStoreRequest $request
      * @return \Illuminate\Http\Response
      */
-    public function store(StepStoreRequest $request)
+    public function store(StepStoreRequest $request, Journey $journey)
     {
-        $step = Step::create($request->all());
+        $step = Step::create([
+            'title' => $request->title,
+            'description' => $request->description,
+            'date' => $request->date,
+            'user_id' => auth()->id(),
+            'journey_id' => $journey->id
+        ]);
 
         $request->session()->flash('step.id', $step->id);
 
-        return redirect()->route('step.index');
+        return redirect()->route('journeys.steps.index', $journey->id);
     }
 
     /**

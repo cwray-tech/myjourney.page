@@ -2,11 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/js/components/ModalComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/JourneyStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/JourneyStoreRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/JourneyPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/JourneyPolicy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JourneyStepController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JourneyStepController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/StepStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/StepStoreRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/AlertComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AlertComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/DropdownComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/DropdownComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/journey/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/journey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/step/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/step/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user_journey/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user_journey/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
     </list>
@@ -200,7 +212,7 @@
       <workItem from="1594655948782" duration="54668000" />
       <workItem from="1594829736850" duration="7405000" />
       <workItem from="1594923952401" duration="150000" />
-      <workItem from="1594924578536" duration="1323000" />
+      <workItem from="1594924578536" duration="15815000" />
     </task>
     <servers />
   </component>
