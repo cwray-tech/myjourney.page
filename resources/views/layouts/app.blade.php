@@ -19,18 +19,7 @@
 
 
     <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet" data-turbolinks-track="true">
-    <!-- Scripts -->
-    <script src="/js/manifest.js" data-turbolinks-track="true"></script>
-    <script src="/js/vendor.js" data-turbolinks-track="true"></script>
-    <script src="/js/app.js" data-turbolinks-track="true"></script>
-    <script>
-        document.addEventListener('turbolinks:load', function (event) {
-            document.querySelectorAll('a[href^="#"]').forEach(function (el) {
-                el.setAttribute('data-turbolinks', false);
-            });
-        });
-    </script>
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
 <div id="app">
@@ -46,6 +35,9 @@
     @include('.partials._footer')
 </div>
 
-
+<!-- Scripts -->
+<script src="/js/manifest.js"></script>
+<script src="/js/vendor.js"></script>
+<script src="/js/app.js"></script>
 </body>
 </html>

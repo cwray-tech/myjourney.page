@@ -5,8 +5,6 @@
  */
 
 require('./bootstrap');
-var Turbolinks = require("turbolinks");
-Turbolinks.start();
 
 window.Vue = require('vue');
 
@@ -30,18 +28,7 @@ Vue.component('modal-component', require('./components/ModalComponent').default)
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-document.addEventListener('turbolinks:load', () => {
-    new Vue({
-        el: '#app',
-        beforeMount() {
-            if (this.$el.parentNode) {
-                document.addEventListener('turbolinks:visit', () => this.$destroy(), { once: true });
 
-                this.$originalEl = this.$el.outerHTML;
-            }
-        },
-        destroyed() {
-            this.$el.outerHTML = this.$originalEl;
-        }
-    });
+const app = new Vue({
+    el: '#app',
 });
