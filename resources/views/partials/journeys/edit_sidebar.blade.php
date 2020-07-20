@@ -21,7 +21,7 @@
                             <h4>{{ date('F, Y', strtotime($step->date)) }}</h4>
                         @endif
                     </div>
-                    <div class="flex">
+                    <div class="flex items-center">
                         <img class="w-4 h-4 mx-2" src="/images/edit.svg">
                         <div>Edit</div>
                     </div>
