@@ -31,9 +31,15 @@
         methods: {
             flash() {
                 this.visible = true;
+                this.hide();
             },
             hideAlert() {
                 this.visible = false
+            },
+            hide() {
+                setTimeout(() => {
+                    this.visible = false;
+                }, 10000);
             }
         }
     }

@@ -1,5 +1,5 @@
 <navbar-component inline-template>
-    <nav class="py-2 fixed w-full bg-white top-0">
+    <nav class="py-2 fixed z-50 w-full bg-white top-0">
         <!-- Nav closer -->
         <div @click="toggleNav" :class="navOpen ? 'block' : 'hidden'" class="fixed top-0 bottom-0 right-0 left-0"></div>
         <div class="container px-4 w-full mx-auto">
@@ -39,7 +39,7 @@
                     </div>
                 </div>
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-0 md:pr-0">
-
+                @include('.partials.user_buttons')
                     <!-- Profile dropdown -->
                     <dropdown-component>
                         <template v-slot:toggle>
