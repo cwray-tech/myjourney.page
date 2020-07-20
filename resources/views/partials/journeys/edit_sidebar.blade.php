@@ -12,7 +12,7 @@
         <ul class="mb-6">
             @forelse($journey->steps as $step)
                 <li>
-                    <a href="{{ route('steps.edit', $step->id) }}" class="p-2 block flex items-center justify-between border hover:border-black transition ease-in-out duration-150 rounded mb-2">
+                    <a href="{{ route('steps.edit', $step->id) }}" class="p-2 flex items-center justify-between border hover:border-black transition ease-in-out duration-150 rounded mb-2">
                         <div>
                             <h3 class="text-lg">{{$step->title}}</h3>
                             @if($step->date)

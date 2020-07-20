@@ -47,7 +47,7 @@ class JourneyStepController extends Controller
 
         $request->session()->flash('step.id', $step->id);
 
-        return redirect()->route('journeys.steps.create', $journey->slug);
+        return redirect()->route('journeys.steps.create', $journey->slug)->with('status', 'Sweet! You successfully added a step! Want to add another?');
     }
 
     /**
