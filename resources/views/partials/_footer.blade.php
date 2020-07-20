@@ -5,6 +5,6 @@
             <a href="/journeys" class="underline p-2 ml-2">Journeys</a>
             <a href="/about" class="underline p-2 ml-2">About</a>
         </div>
-        <div class="p-2">Created by Chris, at <a href="https://solmediaco.com" class="underline">Soltech</a>. All rights reserved.</div>
+        <div class="p-2">All rights reserved.</div>
     </div>
 </footer>
