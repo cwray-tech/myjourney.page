@@ -22,7 +22,7 @@
                         @endif
                     </div>
                     <div class="flex">
-                        <img class="w-4 mx-2" src="/images/edit.svg">
+                        <img class="w-4 h-4 mx-2" src="/images/edit.svg">
                         <div>Edit</div>
                     </div>
                 </a>
