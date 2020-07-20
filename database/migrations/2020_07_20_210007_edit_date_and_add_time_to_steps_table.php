@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddIsSubscribedColumnToUsersTable extends Migration
+class EditDateAndAddTimeToStepsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class AddIsSubscribedColumnToUsersTable extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->boolean('is_subscribed')->default(0);
+        Schema::table('steps', function (Blueprint $table) {
+            $table->date('date')->nullable();
+            $table->time('time')->nullable();
         });
     }
 
@@ -25,8 +26,9 @@ class AddIsSubscribedColumnToUsersTable extends Migration
      */
     public function down()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('is_subscribed');
+        Schema::table('steps', function (Blueprint $table) {
+            $table->dropColumn('date');
+            $table->dropColumn('time');
         });
     }
 }

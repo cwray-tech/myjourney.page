@@ -3,8 +3,8 @@
         <transition name="fade">
             <div>
                 <div @click="toggleModal"  :class="modalOpen ? 'block' : 'hidden'"
-                     class="fixed z-10 inset-0 bg-red-300 bg-opacity-75 w-full h-full"></div>
-                <div v-bind:class="{ block: modalOpen, hidden: !modalOpen }" class="fixed mx-auto z-10 right-0 bg-white left-0 top-0">
+                     class="fixed z-50 inset-0 bg-red-300 bg-opacity-75 w-full h-full"></div>
+                <div v-bind:class="{ block: modalOpen, hidden: !modalOpen }" class="fixed mx-auto z-50 right-0 bg-white left-0 top-0">
                     <button class="absolute top-0 right-0 mt-3 mr-3 btn" @click="toggleModal">Close</button>
                     <div class="container max-w-screen-md max-h-screen relative z-50 p-12 pb-6 mx-auto my-20">
 

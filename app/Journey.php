@@ -60,7 +60,7 @@ class Journey extends Model
 
     public function steps()
     {
-        return $this->hasMany(\App\Step::class);
+        return $this->hasMany(\App\Step::class)->orderBy('date', 'asc');
     }
 
     public function user()

@@ -1,6 +1,6 @@
 <template>
     <transition name="fade">
-        <div v-show="visible" class="fixed top-0 inset-x-0 py-16 px-4" role="alert">
+        <div v-show="visible" class="fixed top-0 inset-x-0 py-20 px-4" role="alert">
             <div :class="level" class="alert relative">
                 <span>{{this.body}}</span>
                 <span @click="hideAlert" role="button" class="absolute top-0 bottom-0 right-0 px-4 py-3">

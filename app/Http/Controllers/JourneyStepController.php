@@ -32,7 +32,7 @@ class JourneyStepController extends Controller
 
     /**
      * @param \App\Http\Requests\StepStoreRequest $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(StepStoreRequest $request, Journey $journey)
     {
@@ -40,19 +40,20 @@ class JourneyStepController extends Controller
             'title' => $request->title,
             'description' => $request->description,
             'date' => $request->date,
+            'time' => $request->time,
             'user_id' => auth()->id(),
             'journey_id' => $journey->id
         ]);
 
         $request->session()->flash('step.id', $step->id);
 
-        return redirect()->route('journeys.steps.index', $journey->id);
+        return redirect()->route('journeys.steps.create', $journey->slug);
     }
 
     /**
      * @param \Illuminate\Http\Request $request
      * @param \App\Step $step
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function show(Request $request, Step $step)
     {
@@ -62,25 +63,33 @@ class JourneyStepController extends Controller
     /**
      * @param \Illuminate\Http\Request $request
      * @param \App\Step $step
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function edit(Request $request, Step $step)
     {
-        return view('step.edit', compact('step'));
+        return view('step.edit', [
+            'step' => $step,
+            'journey' => $step->journey
+        ]);
     }
 
     /**
      * @param \App\Http\Requests\StepUpdateRequest $request
      * @param \App\Step $step
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function update(StepUpdateRequest $request, Step $step)
     {
-        $step->update([]);
+        $step->update([
+            'title' =>  $request->title,
+            'description' => $request->description,
+            'date' => $request->date,
+            'time' => $request->time
+        ]);
 
         $request->session()->flash('step.id', $step->id);
 
-        return redirect()->route('step.index');
+        return redirect()->route('steps.edit', $step->id)->with('status', 'Great job! You updated this step along your journey.');
     }
 
     /**

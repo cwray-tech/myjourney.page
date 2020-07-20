@@ -1,9 +1,9 @@
 <template>
     <div class="relative">
-        <div @click="toggleDropdown" >
+        <div @mouseover="toggleDropdown" @click="toggleDropdown" class="cursor-pointer">
             <slot name="toggle"></slot>
         </div>
-        <div @click="toggleDropdown" v-show="dropdownOpen" class="fixed top-0 bottom-0 right-0 left-0"></div>
+        <div @click="toggleDropdown"  v-show="dropdownOpen" class="fixed inset-0 cursor-pointer"></div>
         <transition name="fade">
             <div @mouseleave="toggleDropdown" v-cloak v-show="dropdownOpen" class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg">
                 <div class="py-1 rounded-md bg-white shadow-xs" role="menu" aria-orientation="vertical"

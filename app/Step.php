@@ -18,6 +18,7 @@ class Step extends Model
         'published_at',
         'description',
         'date',
+        'time',
         'picture',
     ];
 

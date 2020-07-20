@@ -1,5 +1,7 @@
 @extends('layouts.app')
-
+@section('page_title')
+    {{ $journey->title }}
+@endsection
 @section('content')
     <section class="py-40">
         <div class="container px-4 mx-auto">
@@ -7,7 +9,7 @@
             <p>{{$journey->introduction}}</p>
             @foreach($journey->steps as $step)
                 {{$step->title}}
-                @endforeach
+            @endforeach
         </div>
     </section>
 @endsection
