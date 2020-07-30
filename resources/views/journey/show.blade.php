@@ -1,37 +1,101 @@
-@extends('layouts.app')
+@extends('layouts.page')
 @section('page_title')
     {{ $journey->title }}
 @endsection
 
 @section('content')
-    <section class="py-40 border-b border-black">
-        <div class="container px-4 text-center mx-auto">
-            <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
-            <p>{{$journey->introduction}}</p>
+    {{--<navbar-component inline-template>
+        <nav v-cloak  class="py-2 fixed z-50 w-full top-0 transition ease-in-out duration-200">
+            <!-- Nav closer -->
+            <div @click="toggleNav" :class="navOpen ? 'block' : 'hidden'" class="fixed top-0 bottom-0 right-0 left-0"></div>
+            <div class="container px-2 w-full mx-auto">
+                <div class="relative flex items-center justify-between h-16">
+                    <div class="flex items-center mr-3">
+                        <!-- Mobile menu button-->
+                        <button @click="toggleNav"
+                                class="inline-flex items-center justify-center p-2 rounded-md text-black focus:outline-none transition duration-150 ease-in-out"
+                                aria-label="Main menu" aria-expanded="false">
+                            <!-- Icon when menu is closed. -->
+                            <svg v-if="!navOpen" class="block h-10 w-10" fill="none" viewBox="0 0 24 24"
+                                 stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M4 6h16M4 12h16M4 18h16"/>
+                            </svg>
+                            <!-- Icon when menu is open. -->
+                            <svg v-else v-cloak class="block h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                      d="M6 18L18 6M6 6l12 12"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
 
-        </div>
-    </section>
-    <section class="">
-        <div class="container px-6 mb-40 mx-auto relative">
-            <div class="timeline-container">
-                <div class="timeline"></div>
-                <div class="timeline-dot"></div>
+            <!--
+              Mobile menu, toggle classes based on menu state.
+
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <div :class="navOpen ? 'block': 'hidden'" v-cloak
+                 class="origin-bottom-left absolute ml-4 mt-2 bg-white w-1/2 lg:w-1/4 rounded-md shadow-lg">
+
+                <div class=" flex flex-col items-stretch pl-4 pt-2 pb-3 shadow-xs rounded-md">
+                    @foreach($journey->steps as $step)
+                    <a @click="toggleNav" href="#{{ $step->id }}"
+                       class="px-3 py-2 rounded-md font-medium text-grey-900 leading-5 focus:outline-none transition duration-150 ease-in-out">{{ $step->title }}</a>
+                    @endforeach
+                </div>
             </div>
-            @foreach($journey->steps as $step)
-                <div class="journey-step py-40 flex items-center">
-                    <div class="text-4xl pr-20 py-2 w-1/3">
-                        {{ date('F d, Y', strtotime($step->date)) }}
+            </div>
+        </nav>
+    </navbar-component>--}}
+    <div class="">
+        <section class="py-40 min-h-screen justify-center flex flex-col items-center">
+            <div class="container px-4 text-center mx-auto">
+                @if($journey->picture)
+                    <img class="w-1/2 mb-6 mx-auto" src="{{ $journey->picture }}">
+                @endif
+                <h1 class="text-5xl font-bold mb-3">{{$journey->title}}</h1>
+                <p>{{$journey->introduction}}</p>
+                <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
+            </div>
+        </section>
+        <section class="">
+            @if($steps->count() >0 )
+                <div class="journey-section container px-6 mb-40 mx-auto relative">
+
+                    <div class="timeline-container">
+                        <div class="timeline"></div>
+                        <div class="timeline-dot"></div>
                     </div>
-                    <div class="w-2/3">
-                        <h2 class="text-5xl mb-4 capitalize">{{ $step->title }}</h2>
-                        <p class="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad
-                            debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-                    </div>
+
+                    @foreach($steps as $step)
+                        <div id="{{ $step->id }}" class="journey-step py-10 pl-12 md:pl-0">
+                            <div class="border-4 border-black rounded-md journey-step-content px-8 py-16">
+
+                                <div class="text-lg">
+                                    {{ date('F d, Y', strtotime($step->date)) }}
+                                </div>
+                                <h2 class="text-5xl mb-2 capitalize">{{ $step->title }}</h2>
+                                @if($step->time)
+                                    <div class="mb-2">{{ date('h:i:s a',  strtotime($step->time)) }} </div>
+                                @endif
+                                <p class="color-contrast-medium">{{ $step->description }}</p>
+                            </div>
+
+                        </div>
+                    @endforeach
 
                 </div>
-            @endforeach
-        </div>
+            @endif
+            <div class="pb-40 container px-4 mx-auto">
+                <h2 class="text-5xl text-center pb-12">This is my journey but there is probably more to come.</h2>
+                <div class="flex items-center justify-center">
+                    <a href="{{route('journeys.create')}}" class="btn btn-cta">Write a Journey</a>
+                    <a href="{{route('journeys.index')}}" class="btn btn-primary ml-4">View All Journeys</a>
+                </div>
+            </div>
 
-    </section>
+        </section>
+    </div>
+
 @endsection

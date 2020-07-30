@@ -2,20 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/components/TimelineComponent.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/jeep.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/JourneyStoreRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/JourneyStoreRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Journey.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Journey.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/jeep.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/jeep.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/vendor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/NavbarComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/DropdownComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/DropdownComponent.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/TimelineComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/TimelineComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/_custom.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/journey/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/journey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/page/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/page/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/_footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_footer.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
@@ -221,7 +225,8 @@
       <workItem from="1595083393158" duration="939000" />
       <workItem from="1595084946448" duration="35273000" />
       <workItem from="1595885671220" duration="9000" />
-      <workItem from="1596046654375" duration="8944000" />
+      <workItem from="1596046654375" duration="13217000" />
+      <workItem from="1596076309931" duration="16239000" />
     </task>
     <servers />
   </component>
@@ -234,11 +239,11 @@
     </state>
     <state x="2401" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594754966194" />
     <state x="385" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1594657060401" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1595085861332">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2036" y="117" width="1688" height="806" key="DiffContextDialog" timestamp="1596128357380">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595085861332" />
-    <state x="2036" y="117" width="1688" height="806" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594744269450" />
+    <state x="2036" y="117" width="1688" height="806" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596128357380" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1594781109608" />
     <state x="2610" y="218" key="FileChooserDialogImpl" timestamp="1594277432708">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -273,12 +278,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="161" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594420351582" />
-    <state x="401" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1595885673006">
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1596076323156">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595084988961" />
     <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1595084118389" />
-    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1595885673005" />
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1596076323156" />
     <state x="341" y="183" key="run.anything.popup" timestamp="1595113893364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -293,11 +298,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/resources/views/partials/_navbar.blade.php</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/partials/_footer.blade.php</url>
           <line>8</line>

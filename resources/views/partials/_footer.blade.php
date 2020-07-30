@@ -1,4 +1,4 @@
-<footer class="border border-t @auth lg:pb-0 pb-20 @endauth">
+<footer class="border-black border-t @auth lg:pb-0 pb-20 @endauth">
     <div class="container w-full flex flex-row-reverse text-left justify-between items-center mx-auto p-2">
         <div class="flex items-center justify-center">
             <a href="/" class="underline p-2">Home</a>

@@ -33,7 +33,7 @@
     <div class="container px-4 text-center mx-auto">
         <div>
             <h2 class="text-5xl mb-12">You can share your journeys with the world.</h2>
-            <a class="btn btn-cta" href="/register">Start Sharing your Journeys.</a>
+            <a class="btn btn-cta" href="/register">Start Sharing</a>
         </div>
 
     </div>

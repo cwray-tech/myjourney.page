@@ -2,6 +2,7 @@
 
 namespace App;
 
+use Illuminate\Support\Facades\Storage;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
@@ -71,5 +72,9 @@ class Journey extends Model
     public function isPublic()
     {
         return $this->is_public ? true : false;
+    }
+    public function getPictureAttribute($picture)
+    {
+        return  $picture ? asset(Storage::url($picture)) : null;
     }
 }

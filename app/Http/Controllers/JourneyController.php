@@ -6,9 +6,15 @@ use App\Http\Requests\JourneyStoreRequest;
 use App\Http\Requests\JourneyUpdateRequest;
 use App\Journey;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class JourneyController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except('index','show');
+    }
+
     /**
      * @param \Illuminate\Http\Request $request
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
@@ -25,7 +31,6 @@ class JourneyController extends Controller
      */
     public function create(Request $request)
     {
-        $this->authorize('create', Journey::class);
 
         return view('journey.create');
     }
@@ -41,6 +46,7 @@ class JourneyController extends Controller
         $journey = Journey::create([
             'user_id' => auth()->id(),
             'title' => $request->title,
+            'picture' => $request->file('picture')->store('journey-images', 'public'),
             'introduction' => $request->introduction,
         ]);
 
@@ -57,8 +63,8 @@ class JourneyController extends Controller
     public function show(Request $request, Journey $journey)
     {
         $this->authorize('view', $journey);
-
-        return view('journey.show', compact('journey'));
+        $steps = $journey->steps;
+        return view('journey.show', ['journey' => $journey, 'steps' => $steps]);
     }
 
     /**

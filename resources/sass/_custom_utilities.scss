@@ -1,3 +1,18 @@
+html {
+    scroll-behavior: smooth;
+}
+.journey-section {
+
+}
+.journey-step{
+    display:flex;
+}
+.journey-step:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.journey-step-content{
+    width: 45%;
+}
 [v-cloak] {
     display: none;
 }
@@ -9,29 +24,39 @@
 }
 .timeline-container{
     position: absolute;
-    left: 27%;
-    padding: 10rem 0 10rem 0;
+    left: 49%;
     top:0;
     height: 100%;
 }
 .timeline {
     position: absolute;
-    top: 8rem;
-    bottom: 8rem;
-    left: 50%;
+    top: 0;
+    bottom: 0;
+    left: 13.5px;
     background: black;
-    width: 1px;
+    width: 4px;
 }
 .timeline-dot{
     position: sticky;
     top: 50%;
-    left: 50%;
-    width: 20px;
-    height:20px;
-    margin-top: 40px;
-    margin-bottom: 40px;
-    border: black 1px solid;
+    left: auto;
+    right:auto;
+    width: 30px;
+    height:30px;
+    border: black 3px solid;
     border-radius: 50%;
     background: white;
     z-index: auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .timeline-container{
+        left: 5%;
+    }
+    .journey-step{
+        display:block;
+    }
+    .journey-step-content{
+        width: 100%;
+    }
 }

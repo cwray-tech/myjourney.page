@@ -30,11 +30,11 @@
                     <div class="hidden md:block md:ml-6">
                         <div class="flex">
                             <a href="/"
-                               class="px-3 py-2 rounded-md font-medium text-grey-900 leading-5 focus:outline-none transition duration-150 ease-in-out">Home</a>
+                               class="navlink">Home</a>
                             <a href="/journeys"
-                               class="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Journeys</a>
+                               class="navlink">Journeys</a>
                             <a href="/about"
-                               class="ml-4 px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">About</a>
+                               class="navlink">About</a>
                         </div>
                     </div>
                 </div>
@@ -86,9 +86,9 @@
           Menu open: "block", Menu closed: "hidden"
         -->
         <div :class="navOpen ? 'block': 'hidden'" v-cloak
-             class="origin-bottom-left absolute ml-4 mt-2 bg-white w-1/2 lg:hidden rounded-md shadow-lg">
+             class="origin-bottom-left absolute ml-4 mt-2 bg-white w-1/2 lg:hidden rounded-md">
 
-            <div class=" flex flex-col items-stretch pl-4 pt-2 pb-3 shadow-xs rounded-md">
+            <div class=" flex flex-col items-stretch pl-4 pt-2 pb-3 border border-black shadow-md rounded-md">
                 <a href="/"
                    class="px-3 py-2 rounded-md font-medium text-grey-900 leading-5 focus:outline-none transition duration-150 ease-in-out">Home</a>
                 <a href="/journeys"
