@@ -71,9 +71,9 @@
                     @foreach($steps as $step)
                         <div id="{{ $step->id }}" class="journey-step py-10 pl-12 md:pl-0">
                             @if($step->picture)
-                                <img class="md:w-1/3 w-10/12 mb-6 md:mb-0 mx-auto rounded-lg" src="{{ $step->picture }}">
+                                <img class="md:w-1/3 w-10/12 mb-6 md:mb-0 mx-auto" src="{{ $step->picture }}">
                             @endif
-                            <div class="border  border-black journey-step-content px-8 py-16">
+                            <div class="border-4 border-black journey-step-content px-8 py-16">
 
                                 <div class="text-lg">
                                     {{ date('F d, Y', strtotime($step->date)) }}
