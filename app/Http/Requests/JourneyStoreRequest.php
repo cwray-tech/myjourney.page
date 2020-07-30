@@ -25,9 +25,9 @@ class JourneyStoreRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:250',
-            'picture' => 'image',
+            'picture' => 'nullable|image',
             'introduction' => 'required|string',
-            'published_at' => '',
+            'published_at' => 'nullable|date',
         ];
     }
 }

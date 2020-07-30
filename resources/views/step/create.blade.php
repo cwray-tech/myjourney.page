@@ -10,12 +10,15 @@
         <div class="container px-6 mx-auto md:flex flex-row-reverse justify-between">
             <div class="md:w-2/3 md:pl-6">
                 <h1 class="text-5xl mb-3">Add a Step you took on your Journey</h1>
-                <form class="mt-6" method="post" action="{{route('journeys.steps.index', $journey->slug )}}">
+                <form class="mt-6" method="post" action="{{route('journeys.steps.index', $journey->slug )}}" enctype="multipart/form-data">
                     @csrf
                     @include('.partials.forms.form_errors')
                     <label for="title">Step Title*</label>
                     <input name="title" class="input" id="title" autocomplete="off" type="text"
                            value="{{ old('title') }}" placeholder="eg. My Journey to Become Software Developer">
+                    <label for="picture">Step Photo (Optional)</label>
+                    <input name="picture" id="picture" class="input" accept="image/*" type="file"
+                           value="{{ old('picture') }}" >
                     <div class="flex">
                         <div class="w-1/2">
                             <label for="date">Approximate Date*</label>
@@ -23,7 +26,7 @@
                                    value="{{ old('date') }}">
                         </div>
                         <div class="w-1/2 pl-3">
-                            <label for="time">Approximate Time</label>
+                            <label for="time">Approximate Time (Optional)</label>
                             <input name="time" class="input" id="time" autocomplete="off" type="time"
                                    value="{{ old('time') }}">
                         </div>

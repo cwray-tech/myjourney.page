@@ -14,6 +14,12 @@
                     <label for="title">Step Title*</label>
                     <input name="title" class="input" id="title" autocomplete="off" type="text"
                            value="{{ $step->title }}" placeholder="eg. My Journey to Become Software Developer">
+                    <label for="picture">Step Photo (Optional)</label>
+                    @if($step->picture)
+                        <img class="rounded w-40" src="{{$step->picture}}">
+                    @endif
+                    <input name="picture" id="picture" class="input" accept="image/*" type="file">
+
                     <div class="flex">
                         <div class="w-1/2">
                             <label for="date">Approximate Date</label>
@@ -21,7 +27,7 @@
                                    value="@if($step->date){{$step->date->format('yy-m-d')}}@endif">
                         </div>
                         <div class="w-1/2 pl-3">
-                            <label for="time">Approximate Time</label>
+                            <label for="time">Approximate Time (Optional)</label>
                             <input name="time" class="input" id="time" autocomplete="off" type="time"
                                    value="{{ $step->time }}">
                         </div>

@@ -3,6 +3,7 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Storage;
 
 class Step extends Model
 {
@@ -52,5 +53,9 @@ class Step extends Model
     public function journey()
     {
         return $this->belongsTo(\App\Journey::class);
+    }
+    public function getPictureAttribute($picture)
+    {
+        return  $picture ? asset(Storage::url($picture)) : null;
     }
 }

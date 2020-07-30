@@ -52,9 +52,9 @@
         <section class="py-40 min-h-screen justify-center flex flex-col items-center">
             <div class="container px-4 text-center mx-auto">
                 @if($journey->picture)
-                    <img class="w-1/2 mb-6 mx-auto" src="{{ $journey->picture }}">
+                    <img class="w-1/2 mb-6 mx-auto rounded-lg" src="{{ $journey->picture }}">
                 @endif
-                <h1 class="text-5xl font-bold mb-3">{{$journey->title}}</h1>
+                <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
                 <p>{{$journey->introduction}}</p>
                 <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
             </div>
@@ -70,12 +70,15 @@
 
                     @foreach($steps as $step)
                         <div id="{{ $step->id }}" class="journey-step py-10 pl-12 md:pl-0">
-                            <div class="border-4 border-black rounded-md journey-step-content px-8 py-16">
+                            @if($step->picture)
+                                <img class="md:w-1/3 w-10/12 mb-6 md:mb-0 mx-auto rounded-lg" src="{{ $step->picture }}">
+                            @endif
+                            <div class="border  border-black journey-step-content px-8 py-16">
 
                                 <div class="text-lg">
                                     {{ date('F d, Y', strtotime($step->date)) }}
                                 </div>
-                                <h2 class="text-5xl mb-2 capitalize">{{ $step->title }}</h2>
+                                <h2 class="text-4xl mb-2 capitalize">{{ $step->title }}</h2>
                                 @if($step->time)
                                     <div class="mb-2">{{ date('h:i:s a',  strtotime($step->time)) }} </div>
                                 @endif
@@ -88,10 +91,10 @@
                 </div>
             @endif
             <div class="pb-40 container px-4 mx-auto">
-                <h2 class="text-5xl text-center pb-12">This is my journey but there is probably more to come.</h2>
-                <div class="flex items-center justify-center">
-                    <a href="{{route('journeys.create')}}" class="btn btn-cta">Write a Journey</a>
-                    <a href="{{route('journeys.index')}}" class="btn btn-primary ml-4">View All Journeys</a>
+                <h2 class="text-5xl text-center pb-12">This is my journey.</h2>
+                <div class="flex items-center justify-center flex-wrap flex-col md:flex-row">
+                    <a href="{{route('journeys.create')}}" class="btn btn-cta mx-2 mb-3">Write a Journey</a>
+                    <a href="{{route('journeys.index')}}" class="btn btn-primary mx-2 mb-3">View All Journeys</a>
                 </div>
             </div>
 

@@ -25,11 +25,10 @@ class StepStoreRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:250',
-            'published_at' => '',
             'description' => 'required|string',
             'date' => 'date',
-            'time' => '',
-            'picture' => 'string',
+            'time' => 'nullable',
+            'picture' => 'nullable|image',
         ];
     }
 }

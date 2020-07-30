@@ -25,11 +25,10 @@ class StepUpdateRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:250',
-            'published_at' => '',
             'description' => 'string',
             'date' => 'date',
-            'time' => '',
-            'picture' => 'string',
+            'time' => 'nullable|time',
+            'picture' => 'nullable|image',
         ];
     }
 }

@@ -6,6 +6,8 @@ html {
 }
 .journey-step{
     display:flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .journey-step:nth-child(odd) {
     flex-direction: row-reverse;
@@ -13,6 +15,14 @@ html {
 .journey-step-content{
     width: 45%;
 }
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar{
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
 [v-cloak] {
     display: none;
 }
@@ -32,18 +42,18 @@ html {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 13.5px;
+    left: 9px;
     background: black;
-    width: 4px;
+    width: 2px;
 }
 .timeline-dot{
     position: sticky;
     top: 50%;
     left: auto;
     right:auto;
-    width: 30px;
-    height:30px;
-    border: black 3px solid;
+    width: 20px;
+    height:20px;
+    border: black 2px solid;
     border-radius: 50%;
     background: white;
     z-index: auto;

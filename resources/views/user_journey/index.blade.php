@@ -9,24 +9,34 @@
             <p>View the Journeys you've created.</p>
             <div class="mt-6">
                 @forelse($journeys as $journey)
-                    <div  class="rounded-md w-full lg:flex mb-6 bg-white shadow-sm border border-black p-5">
-                        <div class="w-40 py-3">
-                            <img src="/images/devjourney.svg" class="w-full">
+                    <div class="rounded-md w-full lg:flex mb-6 bg-white shadow-sm border border-black p-5">
+                        <div class="md:w-40 py-3">
+                            @if($journey->picture)
+                                <img src="{{$journey->picture}}" class="w-full rounded">
+                            @else
+                                <img src="/images/devjourney.svg" class="w-full rounded">
+                            @endif
                         </div>
-                       <div class="lg:px-6 lg:w-2/3">
-                           <h2 class="text-4xl mb-3">{{ $journey->title }}</h2>
-                           <p>{{ $journey->introduction }}</p>
-                       </div>
+                        <div class="lg:px-6 lg:w-2/3">
+                            <h2 class="text-4xl mb-3">{{ $journey->title }}</h2>
+                            <p>{{ $journey->introduction }}</p>
+                        </div>
                         <div class="lg:w-1/3 py-4">
-                            <a target="_blank" href="{{route('journeys.show', $journey->slug)}}" class="icon-button mb-1"><img class="w-4 mr-2" src="/images/external.svg"> View</a>
-                            <a href="{{route('journeys.edit', $journey->slug)}}" class="icon-button mb-1"><img class="w-4 mr-2" src="/images/edit.svg">Edit</a>
-                            <a href="{{route('journeys.steps.create', $journey->slug)}}" class="icon-button mb-1"><img class="w-4 mr-2" src="/images/add.svg">Add Steps</a>
-                            <modal-component color="red">
+                            <a target="_blank" href="{{route('journeys.show', $journey->slug)}}"
+                               class="icon-button mb-1"><img class="w-4 mr-2" src="/images/external.svg"> View</a>
+                            <a href="{{route('journeys.edit', $journey->slug)}}" class="icon-button mb-1"><img
+                                    class="w-4 mr-2" src="/images/edit.svg">Edit</a>
+                            <a href="{{route('journeys.steps.create', $journey->slug)}}" class="icon-button mb-1"><img
+                                    class="w-4 mr-2" src="/images/add.svg">Add Steps</a>
+                            <modal-component>
                                 <template v-slot:header>Are you sure you want to delete this Journey?</template>
                                 <template v-slot:opener>
-                                    <img class="w-4 mr-2" src="/images/bin.svg">Delete Journey
+                                    <div class="icon-button">
+                                        <img class="w-4 mr-2" src="/images/bin.svg">Delete Journey
+                                    </div>
                                 </template>
-                                <form class="mt-2" method="post" action="{{ route('journeys.destroy', $journey->slug) }}">
+                                <form class="mt-2" method="post"
+                                      action="{{ route('journeys.destroy', $journey->slug) }}">
                                     @method('delete')
                                     @csrf
                                     <button type="submit" class="btn btn-danger">Yes, Delete Journey</button>

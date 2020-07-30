@@ -61,12 +61,12 @@ class Journey extends Model
 
     public function steps()
     {
-        return $this->hasMany(\App\Step::class)->orderBy('date', 'asc');
+        return $this->hasMany(Step::class)->orderBy('date', 'asc');
     }
 
     public function user()
     {
-        return $this->belongsTo(\App\User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function isPublic()

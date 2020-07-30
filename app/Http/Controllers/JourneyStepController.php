@@ -27,6 +27,7 @@ class JourneyStepController extends Controller
      */
     public function create(Request $request, Journey $journey)
     {
+        $this->authorize('update', $journey);
         return view('step.create', compact('journey'));
     }
 
@@ -36,6 +37,7 @@ class JourneyStepController extends Controller
      */
     public function store(StepStoreRequest $request, Journey $journey)
     {
+        $this->authorize('update', $journey);
         $step = Step::create([
             'title' => $request->title,
             'description' => $request->description,
@@ -44,6 +46,11 @@ class JourneyStepController extends Controller
             'user_id' => auth()->id(),
             'journey_id' => $journey->id
         ]);
+        if($request->picture) {
+            $step->update([
+                'picture' => $request->file('picture')->store('journey-images', 'public'),
+            ]);
+        }
 
         $request->session()->flash('step.id', $step->id);
 
@@ -67,6 +74,7 @@ class JourneyStepController extends Controller
      */
     public function edit(Request $request, Step $step)
     {
+        $this->authorize('update', $step);
         return view('step.edit', [
             'step' => $step,
             'journey' => $step->journey
@@ -80,27 +88,32 @@ class JourneyStepController extends Controller
      */
     public function update(StepUpdateRequest $request, Step $step)
     {
+        $this->authorize('update', $step);
+
         $step->update([
             'title' =>  $request->title,
             'description' => $request->description,
             'date' => $request->date,
             'time' => $request->time
         ]);
-
-        $request->session()->flash('step.id', $step->id);
-
+        if($request->picture) {
+            $step->update([
+                'picture' => $request->file('picture')->store('journey-images', 'public'),
+            ]);
+        }
         return redirect()->route('steps.edit', $step->id)->with('status', 'Great job! You updated this step along your journey.');
     }
 
     /**
      * @param \Illuminate\Http\Request $request
      * @param \App\Step $step
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy(Request $request, Step $step)
     {
+        $this->authorize('update', $step);
         $step->delete();
 
-        return redirect()->route('step.index');
+        return redirect()->route('journeys.edit', $step->journey->slug)->with('status', 'Step was deleted.');
     }
 }

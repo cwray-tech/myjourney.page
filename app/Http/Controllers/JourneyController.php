@@ -46,11 +46,14 @@ class JourneyController extends Controller
         $journey = Journey::create([
             'user_id' => auth()->id(),
             'title' => $request->title,
-            'picture' => $request->file('picture')->store('journey-images', 'public'),
             'introduction' => $request->introduction,
         ]);
 
-        $request->session()->flash('journey.id', $journey->id);
+        if($request->picture) {
+            $journey->update([
+                'picture' => $request->file('picture')->store('journey-images', 'public'),
+            ]);
+        }
 
         return redirect()->route('journeys.steps.create', ['journey'=> $journey->slug])->with('status', 'Great Work! You just created a journey! Now, add the steps that were a part of your journey.');
     }
@@ -91,10 +94,13 @@ class JourneyController extends Controller
             'title' => $request->title,
             'introduction' => $request->introduction
         ]);
+        if($request->picture) {
+            $journey->update([
+                'picture' => $request->file('picture')->store('journey-images', 'public'),
+            ]);
+        }
 
-        $request->session()->flash('journey.id', $journey->id);
-
-        return redirect()->route('journeys.edit', $journey->slug);
+        return redirect()->route('journeys.edit', $journey->slug)->with('status', 'Your journey was updated!');
     }
 
     /**

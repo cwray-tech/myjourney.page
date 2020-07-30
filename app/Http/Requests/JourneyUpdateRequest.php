@@ -25,9 +25,9 @@ class JourneyUpdateRequest extends FormRequest
     {
         return [
             'title' => 'required|string|max:250',
-            'picture' => 'string',
+            'picture' => 'nullable|image',
             'introduction' => 'required|string',
-            'published_at' => '',
+            'published_at' => 'nullable',
         ];
     }
 }
