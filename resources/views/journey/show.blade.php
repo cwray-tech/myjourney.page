@@ -54,7 +54,7 @@
                 <div class="md:w-1/3 w-full max-h-screen overflow-hidden">
                     <img class="object-cover h-full" alt="{{ $journey->title }}" src="{{ $journey->picture }}">
                 </div>
-                <div class="p-6 flex flex-col items-start justify-center">
+                <div class="p-6 md:w-2/3 w-full flex flex-col items-start justify-center">
                     <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
                     <p>{{$journey->introduction}}</p>
                     <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
