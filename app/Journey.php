@@ -22,7 +22,8 @@ class Journey extends Model
         'picture',
         'introduction',
         'published_at',
-        'is_public'
+        'is_public',
+        'is_published'
     ];
 
     /**

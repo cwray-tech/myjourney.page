@@ -33,5 +33,11 @@ Route::resource('journeys', 'JourneyController');
 
 Route::resource('journeys.steps', 'JourneyStepController')->shallow();
 
-Route::post('newsletter', 'NewsletterController@store');
-Route::delete('newsletter', 'NewsletterController@destroy');
+Route::post('/newsletter', 'NewsletterController@store');
+Route::delete('/newsletter', 'NewsletterController@destroy');
+
+Route::post('/api/publish/journeys/{journey}', 'Api\PublishJourneyController@store');
+Route::delete('/api/publish/journeys/{journey}', 'Api\PublishJourneyController@destroy');
+
+Route::post('/api/make-public/journeys/{journey}', 'Api\MakePublicJourneyController@store');
+Route::delete('/api/make-public/journeys/{journey}', 'Api\MakePublicJourneyController@destroy');

@@ -42,6 +42,9 @@
                                     <button type="submit" class="btn btn-danger">Yes, Delete Journey</button>
                                 </form>
                             </modal-component>
+
+                            <publish-journey-component :journey="{{ $journey }}"></publish-journey-component>
+                            <make-public-component :journey="{{ $journey }}"></make-public-component>
                         </div>
                     </div>
                 @empty

@@ -23,6 +23,8 @@ Vue.component('navbar-component', require('./components/NavbarComponent.vue').de
 Vue.component('dropdown-component', require('./components/DropdownComponent').default);
 Vue.component('alert-component', require('./components/AlertComponent').default);
 Vue.component('modal-component', require('./components/ModalComponent').default);
+Vue.component('publish-journey-component', require('./components/PublishJourneyComponent').default);
+Vue.component('make-public-component', require('./components/MakePublicJourneyComponent').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

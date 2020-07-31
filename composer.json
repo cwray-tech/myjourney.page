@@ -21,6 +21,7 @@
         "spatie/laravel-sluggable": "^2.2"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.3",
         "facade/ignition": "^2.0",
         "fzaninotto/faker": "^1.9.1",
         "jasonmccreary/laravel-test-assertions": "^1.0",

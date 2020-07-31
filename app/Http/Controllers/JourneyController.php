@@ -21,8 +21,9 @@ class JourneyController extends Controller
      */
     public function index(Request $request)
     {
+        $journeys = Journey::where('is_public', true)->where('is_published', true)->get();
 
-        return view('journey.index');
+        return view('journey.index', compact('journeys'));
     }
 
     /**
