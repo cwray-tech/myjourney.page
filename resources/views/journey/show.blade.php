@@ -50,11 +50,11 @@
     </navbar-component>--}}
 
     @if($journey->picture)
-        <section class="flex min-h-screen max-h-screen items-stretch mb-40 border-b">
-                <div class="w-1/3">
+        <section class="md:flex min-h-screen items-stretch mb-40 border-b">
+                <div class="md:w-1/3 w-full max-h-screen overflow-hidden">
                     <img class="object-cover h-full" alt="{{ $journey->title }}" src="{{ $journey->picture }}">
                 </div>
-                <div class="pl-6 flex flex-col items-start justify-center">
+                <div class="p-6 flex flex-col items-start justify-center">
                     <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
                     <p>{{$journey->introduction}}</p>
                     <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
@@ -82,11 +82,11 @@
                     </div>
 
                     @foreach($steps as $step)
-                        <div id="{{ $step->id }}" class="journey-step py-10 pl-12 md:pl-0">
+                        <div id="{{ $step->id }}" class="journey-step py-10 pl-8 md:pl-0">
                             @if($step->picture)
-                                <img class="md:w-1/3 w-10/12 mb-6 md:mb-0 rounded mx-auto" alt="{{ $step->title }}" src="{{ $step->picture }}">
+                                <img class="md:w-1/3 w-full mb-6 md:mb-0 rounded mx-auto" alt="{{ $step->title }}" src="{{ $step->picture }}">
                             @endif
-                            <div class="border-4 border-black journey-step-content rounded px-8 py-16">
+                            <div class="border journey-step-content rounded p-6">
 
                                 <div class="text-lg">
                                     {{ date('F d, Y', strtotime($step->date)) }}

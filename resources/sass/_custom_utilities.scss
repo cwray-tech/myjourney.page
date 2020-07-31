@@ -43,7 +43,7 @@ html {
     top: 0;
     bottom: 0;
     left: 9px;
-    background: black;
+    background: #e2e8f0;
     width: 2px;
 }
 .timeline-dot{
@@ -55,13 +55,13 @@ html {
     height:20px;
     border: black 2px solid;
     border-radius: 50%;
-    background: white;
+    background: #e2e8f0;
     z-index: auto;
 }
 
 @media only screen and (max-width: 768px) {
     .timeline-container{
-        left: 5%;
+        left: 2%;
     }
     .journey-step{
         display:block;
