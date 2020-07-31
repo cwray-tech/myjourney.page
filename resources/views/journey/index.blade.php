@@ -13,7 +13,7 @@
     </section>
     <section class="py-40">
         <div class="container px-6 mx-auto">
-            <div class="grid grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 @forelse($journeys as $journey)
                     <a href="{{ route('journeys.show', $journey->slug) }}" target="_blank" class="rounded-md w-full shadow-sm overflow-hidden border hover:shadow-lg transition ease-in-out duration-150">
                             @if($journey->picture)
