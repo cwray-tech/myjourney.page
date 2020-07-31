@@ -3,7 +3,7 @@
     Read Journeys
 @endsection
 @section('content')
-    <section class="py-40 min-h-screen justify-center flex flex-col items-center">
+    <section class="py-40 justify-center flex flex-col items-center border-b">
         <div class="container px-4 text-center mx-auto">
             <div>
                 <h1 class="text-5xl">Explore Journeys</h1>
