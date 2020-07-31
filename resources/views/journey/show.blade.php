@@ -51,8 +51,8 @@
 
     @if($journey->picture)
         <section class="md:flex min-h-screen items-stretch mb-40 border-b">
-                <div class="md:w-1/3 w-full max-h-screen overflow-hidden">
-                    <img class="object-cover h-full" alt="{{ $journey->title }}" src="{{ $journey->picture }}">
+                <div class="md:w-1/3 w-full md:max-h-screen md:h-full h-64 overflow-hidden">
+                    <img class="object-cover h-full w-full" alt="{{ $journey->title }}" src="{{ $journey->picture }}">
                 </div>
                 <div class="p-6 md:w-2/3 w-full flex flex-col items-start justify-center">
                     <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
