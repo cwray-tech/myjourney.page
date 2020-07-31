@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/resources/views/journey/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserJourneyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserJourneyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
     </list>
@@ -214,7 +215,7 @@
       <workItem from="1595885671220" duration="9000" />
       <workItem from="1596046654375" duration="13217000" />
       <workItem from="1596076309931" duration="24392000" />
-      <workItem from="1596209862493" duration="17207000" />
+      <workItem from="1596209862493" duration="17416000" />
     </task>
     <servers />
   </component>

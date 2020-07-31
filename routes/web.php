@@ -24,7 +24,7 @@ Route::domain('{page}.ajourney.page')->group(function () {
 Route::get('/dashboard', 'DashboardController@index')->name('home');
 Route::get('/dashboard/info', 'DashboardController@edit');
 Route::patch('/dashboard/info/update', 'DashboardController@update');
-Route::resource('users.journeys', 'UserJourneyController');
+Route::get('/dashboard/journeys', 'UserJourneyController@index');
 
 Route::get('/', 'StaticPageController@index');
 Route::get('/about', 'StaticPageController@about');

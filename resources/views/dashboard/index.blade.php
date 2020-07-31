@@ -8,7 +8,7 @@
             <div class="p-2">
                 <h1 class="text-5xl mb-3">Your Dashboard</h1>
                 <p>Great job! You have registered for your account!
-                    You can't quite create a journey yet, but soon you will be able to.</p>
+                    Now, go ahead and share your journeys.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-4 mt-6">
@@ -25,7 +25,7 @@
                 <div class="rounded-md bg-white shadow-sm border border-black p-6 pb-8">
                     <h2 class="text-4xl mb-3">See Journeys</h2>
                     <p class="mb-6">View Journeys you've shared.</p>
-                    <a href="{{route('users.journeys.index', $user->id)}}" class="btn btn-cta">View Journeys</a>
+                    <a href="/dashboard/journeys" class="btn btn-cta">View Journeys</a>
                 </div>
                 <div
                     class="rounded-md bg-white shadow-sm border-2 border-black p-6 pb-8">

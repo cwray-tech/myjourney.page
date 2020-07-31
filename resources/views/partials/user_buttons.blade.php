@@ -8,7 +8,7 @@
             <img class="w-4 mr-1 h-4" src="/images/dashboard.svg">
             <span>Dash<span class="hidden md:inline-block">board</span></span>
         </a>
-        <a href="{{route('users.journeys.index', $user->id)}}" class="border border-black rounded inline-flex items-center bg-white shadow-sm px-2 py-1 mr-3">
+        <a href="/dashboard/journeys" class="border border-black rounded inline-flex items-center bg-white shadow-sm px-2 py-1 mr-3">
             <img class="w-4 mr-1 h-4" src="/images/eye.svg">
             <span><span class="hidden md:inline-block">Your</span> Journeys</span>
         </a>
