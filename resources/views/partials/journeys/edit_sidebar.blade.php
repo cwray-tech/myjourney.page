@@ -14,15 +14,15 @@
         <div class="mb-6">
             @forelse($journey->steps as $step)
                 <div
-                   class="px-2 pl-4 py-4 flex items-center justify-between border rounded mb-2">
+                   class="px-2 pl-4 py-4 lg:flex items-center justify-between border rounded mb-2">
                     <div>
                         <h3 class="text-lg">{{$step->title}}</h3>
                         @if($step->date)
                             <h4>{{ date('F, Y', strtotime($step->date)) }}</h4>
                         @endif
                     </div>
-                    <div class="flex flex-col items-end">
-                        <a href="{{ route('steps.edit', $step->id) }}" class="flex underline items-center mb-2">
+                    <div class="flex lg:flex-col lg:items-end items-center justify-between mt-2 lg:mt-0">
+                        <a href="{{ route('steps.edit', $step->id) }}" class="flex underline items-center lg:mb-2">
                             <img class="w-4 h-4 mr-2" src="/images/edit.svg">
                             <div>Edit</div>
                         </a>
