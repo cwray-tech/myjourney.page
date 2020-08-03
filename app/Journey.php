@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Journey extends Model
 {
+    protected $appends = ['picture_path'];
     use HasSlug;
     /**
      * The attributes that are mass assignable.
@@ -74,8 +75,8 @@ class Journey extends Model
     {
         return $this->is_public ? true : false;
     }
-    public function getPictureAttribute($picture)
+    public function getPicturePathAttribute()
     {
-        return  $picture ? asset(Storage::url($picture)) : null;
+        return  $this->picture ? asset(Storage::url($this->picture)) : null;
     }
 }

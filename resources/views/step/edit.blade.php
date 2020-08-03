@@ -16,7 +16,7 @@
                            value="{{ $step->title }}" placeholder="eg. My Journey to Become Software Developer">
                     <label for="picture">Step Photo (Optional)</label>
                     @if($step->picture)
-                        <img class="rounded w-40" src="{{$step->picture}}">
+                        <img class="rounded w-40" src="{{$step->picture_path}}">
                     @endif
                     <input name="picture" id="picture" class="input" accept="image/*" type="file">
 

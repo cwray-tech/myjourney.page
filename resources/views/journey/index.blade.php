@@ -3,7 +3,7 @@
     Read Journeys
 @endsection
 @section('content')
-    <section class="py-40 justify-center flex flex-col items-center border-b">
+    <section class="py-40 justify-center flex flex-col items-center min-h-screen">
         <div class="container px-4 text-center mx-auto">
             <div>
                 <h1 class="text-5xl">Explore Journeys</h1>
@@ -18,7 +18,7 @@
                     <a href="{{ route('journeys.show', $journey->slug) }}" target="_blank" class="rounded-md w-full shadow-sm overflow-hidden border hover:shadow-lg transition ease-in-out duration-150">
                             @if($journey->picture)
                                 <div class="h-56 overflow-hidden">
-                                    <img src="{{$journey->picture}}" class="w-full">
+                                    <img src="{{$journey->picture_path}}" class="w-full">
                                 </div>
                             @endif
                         <div class="px-5 pt-5 pb-8">
@@ -27,7 +27,7 @@
                         </div>
                     </a>
                 @empty
-                    <div class="col-span-3">Bummer. We don't have any journeys here to share yet, but come back soon to start reading journeys, or <a href="/register" class="underline"> create your own account</a> to start writing your journeys!</div>
+                    <div class="col-span-3 px-8 text-center">Bummer. We don't have any journeys here to share yet, but come back soon to start reading journeys, or <a href="/register" class="underline"> create your own account</a> to start writing your journeys!</div>
                 @endforelse
             </div>
         </div>

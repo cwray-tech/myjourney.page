@@ -18,7 +18,7 @@
                            value="{{ $journey->title }}" placeholder="eg. My Journey to Become Software Developer">
                     <label for="picture">Journey Photo</label>
                     @if($journey->picture)
-                    <img class="rounded w-40" src="{{$journey->picture}}">
+                    <img class="rounded w-40" src="{{$journey->picture_path}}">
                     @endif
                     <input name="picture" id="picture" class="input" accept="image/*" type="file">
                     <label for="introduction">Journey Introduction</label>

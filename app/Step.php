@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 
 class Step extends Model
 {
+    protected $appends = ['picture_path'];
     /**
      * The attributes that are mass assignable.
      *
@@ -44,7 +45,6 @@ class Step extends Model
         'date',
     ];
 
-
     public function user()
     {
         return $this->belongsTo(\App\User::class);
@@ -54,8 +54,8 @@ class Step extends Model
     {
         return $this->belongsTo(\App\Journey::class);
     }
-    public function getPictureAttribute($picture)
+    public function getPicturePathAttribute()
     {
-        return  $picture ? asset(Storage::url($picture)) : null;
+        return  $this->picture ? asset(Storage::url($this->picture)) : null;
     }
 }

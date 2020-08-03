@@ -5,14 +5,19 @@
 @section('content')
     <section class="py-40">
         <div class="container px-6 mx-auto">
-            <h1 class="text-5xl mb-3">Your Journeys</h1>
-            <p>View the Journeys you've created.</p>
+            <div class="md:flex items-center justify-between">
+                <div class="mb-6">
+                    <h1 class="text-5xl mb-3">Your Journeys</h1>
+                    <p>View the Journeys you've created.</p>
+                </div>
+                <a href="{{ route('journeys.create') }}" class="btn btn-cta">Write Journey</a>
+            </div>
             <div class="mt-6">
                 @forelse($journeys as $journey)
                     <div class="rounded-md w-full lg:flex mb-6 bg-white shadow-sm border border-black p-5">
                         <div class="md:w-40 py-3">
                             @if($journey->picture)
-                                <img src="{{$journey->picture}}" class="w-full rounded">
+                                <img src="{{$journey->picture_path}}" class="w-full rounded">
                             @else
                                 <img src="/images/devjourney.svg" class="w-full rounded">
                             @endif

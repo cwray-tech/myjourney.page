@@ -7,6 +7,7 @@ use App\Http\Requests\StepUpdateRequest;
 use App\Journey;
 use App\Step;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class JourneyStepController extends Controller
 {
@@ -112,6 +113,7 @@ class JourneyStepController extends Controller
     public function destroy(Request $request, Step $step)
     {
         $this->authorize('update', $step);
+        Storage::disk('public')->delete($step->picture);
         $step->delete();
 
         return redirect()->route('journeys.edit', $step->journey->slug)->with('status', 'Step was deleted.');

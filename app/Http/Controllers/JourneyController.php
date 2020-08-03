@@ -112,7 +112,10 @@ class JourneyController extends Controller
     public function destroy(Request $request, Journey $journey)
     {
         $this->authorize('delete', $journey);
-
+        Storage::disk('public')->delete($journey->picture);
+        $journey->steps->each(function ($step){
+            Storage::disk('public')->delete($step->picture);
+        });
         $journey->delete();
 
         return redirect('/dashboard/journeys')->with('status', 'Journey was successfully deleted.');
