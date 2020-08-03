@@ -28,9 +28,9 @@ class JourneyPolicy
      * @param  \App\Journey  $journey
      * @return mixed
      */
-    public function view(User $user, Journey $journey)
+    public function view(?User $user, Journey $journey)
     {
-        if($journey->published_at || $user->id == $journey->user_id){
+        if($journey->is_published || $user->id == $journey->user_id){
             return true;
         }
         return false;

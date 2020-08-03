@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Policies/JourneyPolicy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/JourneyPolicy.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
     </list>
@@ -216,7 +216,7 @@
       <workItem from="1596046654375" duration="13217000" />
       <workItem from="1596076309931" duration="24392000" />
       <workItem from="1596209862493" duration="18248000" />
-      <workItem from="1596480104870" duration="10287000" />
+      <workItem from="1596480104870" duration="10981000" />
     </task>
     <servers />
   </component>
