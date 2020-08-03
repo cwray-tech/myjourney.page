@@ -30,7 +30,7 @@ class JourneyPolicy
      */
     public function view(?User $user, Journey $journey)
     {
-        if($journey->is_published || $user->id == $journey->user_id){
+        if($journey->is_published || optional($user)->id == $journey->user_id){
             return true;
         }
         return false;
