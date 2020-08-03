@@ -24,7 +24,7 @@
                         <div class="w-1/2">
                             <label for="date">Approximate Date</label>
                             <input name="date" class="input" id="date" autocomplete="off" type="date"
-                                   value="@if($step->date){{$step->date->format('yy-m-d')}}@endif">
+                                   value="@if($step->date){{$step->date->format('Y-m-d')}}@endif">
                         </div>
                         <div class="w-1/2 pl-3">
                             <label for="time">Approximate Time (Optional)</label>

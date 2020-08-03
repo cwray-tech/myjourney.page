@@ -2,16 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JourneyStepController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JourneyStepController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Journey.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Journey.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Step.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Step.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/journey/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/journey/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/journey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/step/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/step/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/user_journey/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user_journey/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
     </list>
@@ -224,7 +214,7 @@
       <workItem from="1596046654375" duration="13217000" />
       <workItem from="1596076309931" duration="24392000" />
       <workItem from="1596209862493" duration="18248000" />
-      <workItem from="1596480104870" duration="8150000" />
+      <workItem from="1596480104870" duration="8561000" />
     </task>
     <servers />
   </component>
