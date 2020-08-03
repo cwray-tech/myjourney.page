@@ -7,7 +7,7 @@
         <div class="container px-6 mx-auto md:flex flex-row-reverse justify-between">
             <div class="md:w-2/3 md:pl-6">
                 <h1 class="text-5xl mb-3"><span class="font-bold">Edit Step:</span> {{ $step->title }}</h1>
-                <form class="mt-6" method="post" action="{{route('steps.update', $step->id )}}">
+                <form class="mt-6" method="post" action="{{route('steps.update', $step->id )}}" enctype="multipart/form-data">
                     @csrf
                     @method('PATCH')
                     @include('.partials.forms.form_errors')

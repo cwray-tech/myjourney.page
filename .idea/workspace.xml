@@ -3,13 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/manifest.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/vendor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/journeys/edit_sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/journeys/edit_sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/step/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/step/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
     </list>
@@ -221,7 +216,8 @@
       <workItem from="1595885671220" duration="9000" />
       <workItem from="1596046654375" duration="13217000" />
       <workItem from="1596076309931" duration="24392000" />
-      <workItem from="1596209862493" duration="18063000" />
+      <workItem from="1596209862493" duration="18248000" />
+      <workItem from="1596480104870" duration="1476000" />
     </task>
     <servers />
   </component>
@@ -282,11 +278,11 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="161" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1594420351582" />
-    <state x="401" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1596209904182">
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1596480432345">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595084988961" />
-    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596209904182" />
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596480432345" />
     <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1596076323156" />
     <state x="341" y="183" key="run.anything.popup" timestamp="1595113893364">
       <screen x="0" y="0" width="1536" height="824" />
