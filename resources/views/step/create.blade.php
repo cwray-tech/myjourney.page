@@ -15,7 +15,7 @@
                     @include('.partials.forms.form_errors')
                     <label for="title">Step Title*</label>
                     <input name="title" class="input" id="title" autocomplete="off" type="text"
-                           value="{{ old('title') }}" placeholder="eg. My Journey to Become Software Developer">
+                           value="{{ old('title') }}" placeholder="eg. I started school at Harvard.">
                     <label for="picture">Step Photo (Optional)</label>
                     <input name="picture" id="picture" class="input" accept="image/*" type="file"
                            value="{{ old('picture') }}" >
@@ -34,7 +34,7 @@
 
 
                     <label for="description">Description*</label>
-                    <textarea rows="10" class="input" autocomplete="off" name="description" id="description"
+                    <textarea rows="6" class="input" autocomplete="off" name="description" id="description"
                               placeholder="Describe what happened at this part of your journey and how it helped you on your path.">{{ old('description') }}</textarea>
                     <button type="submit" class="btn btn-primary">Add Step to Journey</button>
                 </form>

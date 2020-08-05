@@ -16,7 +16,7 @@
                 <input name="picture" id="picture" class="input" accept="image/*" type="file"
                        value="{{ old('picture') }}" >
                 <label for="introduction">Journey Introduction</label>
-                <textarea rows="10" class="input" autocomplete="off" name="introduction" id="introduction"
+                <textarea rows="6" class="input" autocomplete="off" name="introduction" id="introduction"
                           placeholder="You can enter anything here, but this serves as an introduction to your journey at the top of your journey page.">{{ old('introduction') }}</textarea>
                 <button type="submit" class="btn btn-primary">Begin Sharing</button>
             </form>
