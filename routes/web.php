@@ -28,6 +28,8 @@ Route::get('/dashboard/journeys', 'UserJourneyController@index');
 
 Route::get('/', 'StaticPageController@index');
 Route::get('/about', 'StaticPageController@about');
+Route::get('/privacy-policy', 'StaticPageController@privacy');
+Route::get('/terms', 'StaticPageController@terms');
 
 Route::resource('journeys', 'JourneyController');
 

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "26b7bc86e85ad4fa2ece2209da479412",
+    "content-hash": "ff694bbc6161ad841b0672b53e06ac5c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1063,16 +1063,16 @@
         },
         {
             "name": "laravel/cashier",
-            "version": "v12.1.0",
+            "version": "v12.2.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/laravel/cashier.git",
-                "reference": "3faad324f8f37e27a05bf455c1f5b326738676e6"
+                "url": "https://github.com/laravel/cashier-stripe.git",
+                "reference": "4331fd1444a4034a8088e8957a8200dd9673313b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/cashier/zipball/3faad324f8f37e27a05bf455c1f5b326738676e6",
-                "reference": "3faad324f8f37e27a05bf455c1f5b326738676e6",
+                "url": "https://api.github.com/repos/laravel/cashier-stripe/zipball/4331fd1444a4034a8088e8957a8200dd9673313b",
+                "reference": "4331fd1444a4034a8088e8957a8200dd9673313b",
                 "shasum": ""
             },
             "require": {
@@ -1133,7 +1133,7 @@
                 "laravel",
                 "stripe"
             ],
-            "time": "2020-06-30T19:47:11+00:00"
+            "time": "2020-07-21T15:04:05+00:00"
         },
         {
             "name": "laravel/framework",

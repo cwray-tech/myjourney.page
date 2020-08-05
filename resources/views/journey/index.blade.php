@@ -15,7 +15,7 @@
         <div class="container px-6 mx-auto">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 @forelse($journeys as $journey)
-                    <a href="{{ route('journeys.show', $journey->slug) }}" target="_blank" class="rounded-md w-full shadow-sm overflow-hidden border hover:shadow-lg transition ease-in-out duration-150">
+                    <a href="{{ route('journeys.show', $journey->slug) }}" target="_blank" class="rounded-md w-full shadow-sm overflow-hidden border border-black hover:shadow-md transition ease-in-out duration-150">
                             @if($journey->picture)
                                 <div class="h-56 overflow-hidden">
                                     <img src="{{$journey->picture_path}}" class="w-full">

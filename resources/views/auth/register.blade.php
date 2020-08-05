@@ -51,7 +51,7 @@
                     <input id="password-confirm" placeholder="***********" type="password" class="input" name="password_confirmation"
                            required autocomplete="new-password">
 
-                    <p>By signing up, you agree to our terms and conditions.</p>
+                    <p>By signing up, you agree to abide by our <a href="/terms" class="underline">terms and conditions</a> and <a href="/privacy-policy" class="underline">privacy policy</a>.</p>
 
                     <button type="submit" class="btn btn-primary mt-8">
                         Start Sharing!

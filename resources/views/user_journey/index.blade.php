@@ -14,7 +14,7 @@
             </div>
             <div class="mt-6">
                 @forelse($journeys as $journey)
-                    <div class="rounded-md w-full lg:flex mb-6 bg-white shadow-sm border p-5">
+                    <div class="rounded-md w-full lg:flex mb-6 bg-white shadow-sm border border-black p-5">
                         <div class="md:w-40 py-3">
                             @if($journey->picture)
                                 <img src="{{$journey->picture_path}}" class="w-full rounded">

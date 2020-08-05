@@ -19,4 +19,12 @@ class StaticPageController extends Controller
     {
         return view('page.about');
     }
+    public function privacy()
+    {
+        return view('page.privacy');
+    }
+    public function terms()
+    {
+        return view('page.terms');
+    }
 }
