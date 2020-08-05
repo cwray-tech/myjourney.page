@@ -6,7 +6,7 @@ I am also hoping to make this open to others in order to help with hosting cost 
 
 ## License Info
 
-Although I have purposely set this up on a "public" GitHub account,  this software is not free to share or use, other than for educational purposes.
+This software is not free to share or use, other than for educational purposes.
 
 You can not redistribute this project or use it for a competing program in any way. 
 
