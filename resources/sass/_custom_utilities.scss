@@ -58,6 +58,21 @@ html {
     background: white;
     z-index: auto;
 }
+.tooltip {
+    position: relative;
+}
+.tooltip .tooltip-text {
+    visibility: hidden;
+    text-align: center;
+    padding: 2px 6px;
+    position: absolute;
+    z-index: 100;
+    min-width: 200px;
+    max-width: 100vw;
+}
+.tooltip:hover .tooltip-text {
+    visibility: visible;
+}
 
 @media only screen and (max-width: 768px) {
     .timeline-container{

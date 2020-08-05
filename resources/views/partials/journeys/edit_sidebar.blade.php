@@ -1,11 +1,14 @@
 <div class="sticky top-10 lg:pr-6 md:w-1/3 pt-0 px-4 border rounded md:mt-0 mt-8 max-h-80 overflow-auto no-scrollbar">
-    <h2 class="text-3xl pb-2 pt-4 border-b border-black mb-4 sticky top-0 bg-white">Your Journey <a
-            class="text-lg underline" target="_blank" href="{{ route('journeys.show', $journey->slug) }}">View</a> <a
-            class="text-lg underline" href="{{ route('journeys.edit', $journey->slug) }}">Edit Intro</a></h2>
+    <h2 class="text-3xl pb-2 pt-4 border-b border-black mb-4 sticky top-0 bg-white">Your Journey
+        <a target="_blank" href="{{route('journeys.show', $journey->slug)}}" class="icon-button text-sm mb-1 ml-4">
+            <img class="w-4 mr-2" src="/images/external.svg">View</a>
+        <a href="{{route('journeys.edit', $journey->slug)}}" class="icon-button text-sm mb-1">
+            <img class="w-4 mr-2" src="/images/edit.svg">Edit</a>
+    </h2>
     <div class="px-1">
-        <label>Journey Title</label>
-        <h3 class="text-2xl">{{ $journey->title }}</h3>
-        <label class="mt-4">Journey Introduction</label>
+        <h3 class="font-bold mb-2">Journey Title</h3>
+        <h4 class="text-2xl">{{ $journey->title }}</h4>
+        <h3 class="mt-4 font-bold mb-2">Journey Introduction</h3>
         <p class="">{{ $journey->introduction }}</p>
     </div>
 
@@ -14,7 +17,7 @@
         <div class="mb-6">
             @forelse($journey->steps as $step)
                 <div
-                   class="px-2 pl-4 py-4 lg:flex items-center justify-between border rounded mb-2">
+                    class="px-2 pl-4 py-4 lg:flex items-center justify-between border rounded mb-2">
                     <div>
                         <h3 class="text-lg">{{$step->title}}</h3>
                         @if($step->date)
@@ -27,7 +30,8 @@
                             <div>Edit</div>
                         </a>
                         <modal-component>
-                            <template v-slot:header>Are you sure you want to delete this step on your journey?</template>
+                            <template v-slot:header>Are you sure you want to delete this step on your journey?
+                            </template>
                             <template v-slot:opener>
                                 <div class="flex underline items-center">
                                     <img class="w-4 mr-2" src="/images/bin.svg">Delete

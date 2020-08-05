@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <label :for="journey.id +'public'" title="Public Journeys are visible to everyone." class="flex items-center cursor-pointer my-6">
+    <div class="flex items-center">
+        <label :for="journey.id +'public'" class="flex items-center cursor-pointer mb-0 py-2">
             <!-- toggle -->
             <div class="relative">
                 <!-- input -->
@@ -11,9 +11,13 @@
                 <div class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0 left-0"></div>
             </div>
             <!-- label -->
-            <div class="ml-3 text-gray-700 font-medium" v-text="label">
+            <div class="ml-3 font-medium" v-text="label">
             </div>
         </label>
+        <div class="tooltip relative">
+            <img src="/images/question.svg" class="m-2 w-4">
+            <span class='tooltip-text bg-blue-200 p-3 bottom-0 lg:top-0 lg:mt-10 mt-0 mb-10 lg:mb-0 right-0 lg:bottom-auto rounded'>Public Journeys are visible on the <a href="/journeys" class="underline">Journeys</a> page if published.</span>
+        </div>
     </div>
 </template>
 
