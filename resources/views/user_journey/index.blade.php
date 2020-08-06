@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('page_title')
-    Your Dashboard
+    Your Journeys
 @endsection
 @section('content')
     <section class="py-40">
