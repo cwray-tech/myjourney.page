@@ -73,6 +73,15 @@ html {
 .tooltip:hover .tooltip-text {
     visibility: visible;
 }
+.plan-label{
+    height:100%;
+    cursor: pointer;
+    transition: .3s ease-in-out all;
+}
+.subscription-radio:checked + label{
+    background-color: black;
+    color:white
+}
 
 @media only screen and (max-width: 768px) {
     .timeline-container{

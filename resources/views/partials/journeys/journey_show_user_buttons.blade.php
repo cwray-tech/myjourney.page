@@ -1,5 +1,5 @@
 <div class="fixed bottom-0 lg:top-0 lg:bottom-auto border inset-x-0">
-    <div class="ml-auto px-3 py-2 flex  flex-wrap justify-end items-center">
+    <div class="ml-auto px-3 py-2 flex  flex-wrap justify-end items-center bg-white">
         <publish-journey-component :journey="{{ $journey }}" class="mx-2"></publish-journey-component>
         <make-public-component :journey="{{ $journey }}" class="mx-2"></make-public-component>
         <a href="{{route('journeys.edit', $journey->slug)}}" class="border-2 border-black rounded inline-flex items-center bg-white shadow-sm px-2 py-1">

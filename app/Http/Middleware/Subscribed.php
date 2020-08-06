@@ -16,7 +16,7 @@ class Subscribed
     public function handle($request, Closure $next)
     {
         if($request->user() and ! $request->user()->subscribed('main'))
-            return redirect('/')->with('status', 'You need to subscribe before you can create or edit journeys.');
+            return redirect('/subscribe')->with('status', 'Subscribe to a plan and start writing Journeys!');
 
         return $next($request);
     }

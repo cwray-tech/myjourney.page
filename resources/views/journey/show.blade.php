@@ -30,7 +30,7 @@
         </section>
 
         @endif
-        <section class="">
+        <section>
             @if($steps->count() >0 )
                 <div class="journey-section container px-6 mb-40 mx-auto relative">
 

@@ -8,6 +8,10 @@ use Illuminate\Support\Facades\Auth;
 
 class UserJourneyController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function index()
     {
         $journeys = Auth::user()->journeys;

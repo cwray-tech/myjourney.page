@@ -43,3 +43,7 @@ Route::delete('/api/publish/journeys/{journey}', 'Api\PublishJourneyController@d
 
 Route::post('/api/make-public/journeys/{journey}', 'Api\MakePublicJourneyController@store');
 Route::delete('/api/make-public/journeys/{journey}', 'Api\MakePublicJourneyController@destroy');
+
+Route::get('/subscribe', 'SubscriptionController@create');
+Route::post('/subscribe', 'SubscriptionController@store');
+Route::delete('/subscribe', 'SubscriptionController@delete');
