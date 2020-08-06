@@ -2,6 +2,9 @@
 @section('page_title')
     {{ $journey->title }}
 @endsection
+@section('page_description')
+    {{ $journey->introduction }}
+@endsection
 
 @section('content')
     @can('update', $journey)

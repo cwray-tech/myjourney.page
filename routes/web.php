@@ -47,3 +47,4 @@ Route::delete('/api/make-public/journeys/{journey}', 'Api\MakePublicJourneyContr
 Route::get('/subscribe', 'SubscriptionController@create');
 Route::post('/subscribe', 'SubscriptionController@store');
 Route::delete('/subscribe', 'SubscriptionController@delete');
+Route::get('/update-subscription', 'SubscriptionController@edit');

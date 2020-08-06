@@ -6,6 +6,11 @@ use Illuminate\Http\Request;
 
 class SubscriptionController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+        $this->middleware('subscribed')->except('create', 'store');
+    }
     /**
      * Display a listing of the resource.
      *
@@ -21,7 +26,7 @@ class SubscriptionController extends Controller
      *
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
-    public function create()
+    public function create(Request $request)
     {
         return view('.subscription.create');
     }
@@ -51,12 +56,13 @@ class SubscriptionController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  Request $request
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request)
     {
-        //
+        $request->user()->createOrGetStripeCustomer();
+        return $request->user()->redirectToBillingPortal();
     }
 
     /**

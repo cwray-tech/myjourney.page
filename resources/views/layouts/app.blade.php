@@ -40,5 +40,10 @@
 <script src="/js/manifest.js"></script>
 <script src="/js/vendor.js"></script>
 <script src="/js/app.js"></script>
+<script src="https://js.stripe.com/v3/"></script>
+<script>
+    var stripe = Stripe("{{ env('STRIPE_KEY') }}");
+</script>
+@yield('body_code')
 </body>
 </html>
