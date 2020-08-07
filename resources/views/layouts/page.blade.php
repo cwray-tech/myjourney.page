@@ -13,7 +13,7 @@
     <title>@yield('page_title') | MyJourney.page</title>
     <meta property="og:title" content="@yield('page_title') | MyJourney.page" />
     <meta property="og:description" content="@yield('page_description') Share your Journeys with the world." />
-    <meta property="og:image" content="https://myjourney.page/images/my-journey-open-graph-image.jpg" />
+    <meta property="og:image" content="@yield('page_image')" />
     <meta property="og:site_name" content="MyJourney.page" />
     <meta property="og:type" content="website" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
