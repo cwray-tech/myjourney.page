@@ -42,7 +42,7 @@
 <script src="/js/app.js"></script>
 <script src="https://js.stripe.com/v3/"></script>
 <script>
-    var stripe = Stripe("{{ env('STRIPE_KEY') }}");
+    var stripe = Stripe("{{ config('services.stripe.key') }}");
 </script>
 @yield('body_code')
 </body>

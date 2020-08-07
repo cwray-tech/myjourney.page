@@ -33,19 +33,18 @@
         @endif
         <section>
             @if($steps->count() >0 )
-                <div class="journey-section container px-6 mb-40 mx-auto relative">
-
+                <div class="journey-section container px-4 mb-40 mx-auto relative">
                     <div class="timeline-container">
                         <div class="timeline"></div>
                         <div class="timeline-dot"></div>
                     </div>
 
                     @foreach($steps as $step)
-                        <div id="{{ $step->id }}" class="journey-step py-10 pl-8 md:pl-0">
+                        <div id="{{ $step->id }}" class="journey-step py-10 pl-6  md:pl-0">
                             @if($step->picture)
                                 <img class="md:w-1/3 w-full mb-6 md:mb-0 rounded mx-auto" alt="{{ $step->title }}" src="{{ $step->picture_path }}">
                             @endif
-                            <div class="border journey-step-content rounded p-6">
+                            <div class="border journey-step-content rounded p-4">
 
                                 <div class="text-lg">
                                     {{ date('F d, Y', strtotime($step->date)) }}
