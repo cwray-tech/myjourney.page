@@ -27,7 +27,6 @@
     @else
         <section class="py-40 min-h-screen justify-center flex flex-col items-center">
             <div class="container px-4 text-center mx-auto">
-
                 <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
                 <p>{{$journey->introduction}}</p>
                 <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
@@ -55,7 +54,7 @@
                             <div class="text-lg">
                                 {{ date('F d, Y', strtotime($step->date)) }}
                             </div>
-                            <h2 class="text-4xl mb-2 capitalize">{{ $step->title }}</h2>
+                            <h2 class="text-4xl mb-2">{{ $step->title }}</h2>
                             @if($step->time)
                                 <div class="mb-2">{{ date('h:i:s a',  strtotime($step->time)) }} </div>
                             @endif
