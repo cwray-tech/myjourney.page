@@ -28,7 +28,7 @@ class StepUpdateRequest extends FormRequest
             'description' => 'string',
             'date' => 'date',
             'time' => 'nullable',
-            'picture' => 'nullable|image',
+            'picture' => 'nullable|image|max:4000',
         ];
     }
 }

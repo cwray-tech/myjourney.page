@@ -28,7 +28,7 @@ class StepStoreRequest extends FormRequest
             'description' => 'required|string',
             'date' => 'date',
             'time' => 'nullable',
-            'picture' => 'nullable|image',
+            'picture' => 'nullable|image|max:4000',
         ];
     }
 }
