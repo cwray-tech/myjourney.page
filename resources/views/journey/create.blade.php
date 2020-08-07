@@ -4,7 +4,7 @@
 @endsection
 @section('content')
     <section class="py-40">
-        <div class="container px-6 max-w-screen-lg mx-auto">
+        <div class="lg:max-w-screen-lg container px-6  mx-auto">
             <h1 class="text-5xl mb-3">Start Writing your Journey</h1>
             <form class="mt-6" method="post" action="/journeys" enctype="multipart/form-data">
                 @csrf
