@@ -47,10 +47,10 @@
                     <div id="{{ $step->id }}"
                          class="md:flex odd:flex-row-reverse justify-between flex-row items-center py-10 pl-6  md:pl-0">
                         @if($step->picture)
-                            <img class="md:w-1/3 w-full mb-6 md:mb-0 rounded rounded-r-none md:rounded-r mx-auto"
+                            <img class="md:w-1/3 w-full rounded rounded-r-none rounded-b-none md:rounded-r mx-auto"
                                  alt="{{ $step->title }}" src="{{ $step->picture_path }}">
                         @endif
-                        <div class="border journey-step-content rounded rounded-r-none md:rounded-r p-4">
+                        <div class="border journey-step-content rounded rounded-r-none @if($step->picture) rounded-t-none md:rounded-t @endif md:rounded-r p-4">
 
                             <div class="text-lg">
                                 {{ date('F d, Y', strtotime($step->date)) }}
@@ -66,7 +66,7 @@
                 @endforeach
 
             </div>
-            <div class="mx-auto container lg:max-w-screen-lg px-4 mb-20">{{ $steps->links('.partials.journeys._journey_step_paginator') }}</div>
+            <div class="mx-auto container lg:max-w-screen-lg px-4">{{ $steps->links('.partials.journeys._journey_step_paginator') }}</div>
         @endif
         <div class="pb-40 container px-4 mx-auto">
             <h2 class="text-5xl text-center pb-12">{{ $journey->title }}</h2>
