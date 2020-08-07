@@ -18,7 +18,7 @@
             @forelse($journey->steps as $step)
                 <div
                     class="px-2 pl-4 py-4 lg:flex items-center justify-between border rounded mb-2">
-                    <div>
+                    <div class="lg:w-3/4">
                         <h3 class="text-lg">{{$step->title}}</h3>
                         @if($step->date)
                             <h4>{{ date('F, Y', strtotime($step->date)) }}</h4>
