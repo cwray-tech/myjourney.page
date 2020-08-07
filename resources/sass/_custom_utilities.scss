@@ -4,14 +4,6 @@ html {
 .journey-section {
 
 }
-.journey-step{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.journey-step:nth-child(odd) {
-    flex-direction: row-reverse;
-}
 .journey-step-content{
     width: 45%;
 }
@@ -87,10 +79,8 @@ html {
     .timeline-container{
         left: .5rem;
     }
-    .journey-step{
-        display:block;
-    }
     .journey-step-content{
         width: 100%;
+        border-right: none;
     }
 }

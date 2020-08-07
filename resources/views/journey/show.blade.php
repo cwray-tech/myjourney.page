@@ -33,18 +33,18 @@
         @endif
         <section>
             @if($steps->count() >0 )
-                <div class="journey-section container px-4 mb-40 mx-auto relative">
+                <div class="journey-section container px-4 md:pr-4 pr-0 mb-40 mx-auto relative">
                     <div class="timeline-container">
                         <div class="timeline"></div>
                         <div class="timeline-dot"></div>
                     </div>
 
                     @foreach($steps as $step)
-                        <div id="{{ $step->id }}" class="journey-step py-10 pl-6  md:pl-0">
+                        <div id="{{ $step->id }}" class="md:flex odd:flex-row-reverse justify-between flex-row items-center py-10 pl-6  md:pl-0">
                             @if($step->picture)
-                                <img class="md:w-1/3 w-full mb-6 md:mb-0 rounded mx-auto" alt="{{ $step->title }}" src="{{ $step->picture_path }}">
+                                <img class="md:w-1/3 w-full mb-6 md:mb-0 rounded rounded-r-none md:rounded-r mx-auto" alt="{{ $step->title }}" src="{{ $step->picture_path }}">
                             @endif
-                            <div class="border journey-step-content rounded p-4">
+                            <div class="border journey-step-content rounded rounded-r-none md:rounded-r p-4">
 
                                 <div class="text-lg">
                                     {{ date('F d, Y', strtotime($step->date)) }}
@@ -62,7 +62,7 @@
                 </div>
             @endif
             <div class="pb-40 container px-4 mx-auto">
-                <h2 class="text-5xl text-center pb-12">This is {{ $journey->title }}</h2>
+                <h2 class="text-5xl text-center pb-12">{{ $journey->title }}</h2>
                 <div class="flex items-center justify-center flex-wrap flex-col md:flex-row">
                     <a href="{{route('journeys.create')}}" class="btn btn-cta mx-2 mb-3">Write a Journey</a>
                     <a href="{{route('journeys.index')}}" class="btn btn-primary mx-2 mb-3">View All Journeys</a>

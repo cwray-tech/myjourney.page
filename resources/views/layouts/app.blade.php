@@ -16,6 +16,15 @@
     <meta property="og:image" content="https://myjourney.page/images/my-journey-open-graph-image.jpg" />
     <meta property="og:site_name" content="MyJourney.page" />
     <meta property="og:type" content="website" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google.tracking_id') }}"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', '{{ config('services.google.tracking_id') }}');
+    </script>
 
 
     <!-- Styles -->

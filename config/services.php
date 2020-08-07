@@ -32,6 +32,9 @@ return [
     'stripe' => [
         'key' => env('STRIPE_KEY'),
         'secret' => env('STRIPE_SECRET')
+    ],
+    'google' => [
+        'tracking_id' => env('GOOGLE_TRACKING_ID')
     ]
 
 ];
