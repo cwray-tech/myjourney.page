@@ -7,9 +7,7 @@
 @endsection
 
 @section('content')
-    @can('update', $journey)
-        @include('.partials.journeys.journey_show_user_buttons')
-    @endcan
+
     @if($journey->picture)
         <section class="md:flex min-h-screen items-stretch mb-40 border-b">
                 <div class="md:w-1/3 w-full md:min-h-screen md:max-h-screen  h-64 overflow-hidden flex items-stretch flex-grow">
@@ -73,5 +71,7 @@
             </div>
 
         </section>
-
+    @can('update', $journey)
+        @include('.partials.journeys.journey_show_user_buttons')
+    @endcan
 @endsection

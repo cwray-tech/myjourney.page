@@ -92,16 +92,18 @@
 
             <div class=" flex flex-col items-stretch pl-4 pt-2 pb-3 border border-black shadow-md rounded-md">
                 <a href="/"
-                   class="px-3 py-2 rounded-md font-medium text-grey-900 leading-5 focus:outline-none transition duration-150 ease-in-out">Home</a>
+                   class="px-3 py-2 rounded-md font-medium  leading-5 focus:outline-none transition duration-150 ease-in-out">Home</a>
                 <a href="/journeys"
-                   class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Journeys</a>
+                   class="px-3 py-2 rounded-md font-medium leading-5  focus:outline-none  transition duration-150 ease-in-out">Public Journeys</a>
+                <a href="/dashboard/journeys"
+                   class="px-3 py-2 rounded-md font-medium leading-5  focus:outline-none  transition duration-150 ease-in-out">Your Journeys</a>
                 <a href="/about"
-                   class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">About</a>
+                   class="px-3 py-2 rounded-md font-medium leading-5  focus:outline-none  transition duration-150 ease-in-out">About</a>
                 @guest
                     <a href="/login"
-                       class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Login</a>
+                       class="px-3 py-2 rounded-md font-medium leading-5  focus:outline-none  transition duration-150 ease-in-out">Login</a>
                     <a href="/register"
-                       class="px-3 py-2 rounded-md font-medium leading-5 text-grey-600 focus:text-grey-900 focus:outline-none  transition duration-150 ease-in-out">Register</a>
+                       class="px-3 py-2 rounded-md font-medium leading-5  focus:outline-none  transition duration-150 ease-in-out">Register</a>
                 @endguest
             </div>
         </div>

@@ -16,7 +16,7 @@ mix.extract(['vue', 'jquery']);
 
 mix.scripts('resources/js/subscribe.js', 'public/js/subscribe.js')
     .js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css').version()
+    .sass('resources/sass/app.scss', 'public/css')
     .options({
         processCssUrls: false,
         postCss: [tailwindcss('tailwind.config.js')],

@@ -2,20 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/js/subscribe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/devjourney.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/devjourney.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/my-journey-open-graph-image.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/my-journey-open-graph-image.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/manifest.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/vendor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/dashboard/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/journey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/subscription/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subscription/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user_journey/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user_journey/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
@@ -166,6 +165,9 @@
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
       <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-debugbar" />
       <path value="$PROJECT_DIR$/vendor/maximebf/debugbar" />
+      <path value="$PROJECT_DIR$/vendor/laravel-shift/faker-registry" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
     </include_path>
   </component>
   <component name="ProjectId" id="1eREj4VKBYCxaRDDDgBcasCaP99" />
@@ -180,7 +182,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/partials/journeys" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../myjourney" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
@@ -232,6 +234,9 @@
       <workItem from="1596480104870" duration="12880000" />
       <workItem from="1596651111669" duration="4613000" />
       <workItem from="1596686840929" duration="11395000" />
+      <workItem from="1596741813606" duration="9000" />
+      <workItem from="1596741879687" duration="1634000" />
+      <workItem from="1596760555654" duration="2841000" />
     </task>
     <servers />
   </component>
@@ -253,16 +258,16 @@
     </state>
     <state x="2465" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596489327637" />
     <state x="436" y="110" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596144403029" />
-    <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1596732428058">
+    <state x="93" y="93" width="1350" height="638" maximized="true" key="DiffContextDialog" timestamp="1596765459119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1596732428058" />
     <state x="2036" y="117" width="1688" height="806" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596220660393" />
-    <state x="-6" y="24" width="1547" height="806" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1596138351780" />
-    <state x="2610" y="218" key="FileChooserDialogImpl" timestamp="1594277432708">
+    <state x="-6" y="24" width="1547" height="806" maximized="true" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1596765459119" />
+    <state x="2610" y="218" key="FileChooserDialogImpl" timestamp="1596741905768">
       <screen x="1920" y="0" width="1920" height="1040" />
     </state>
-    <state x="2610" y="218" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594277432708" />
+    <state x="2610" y="218" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596741905768" />
     <state width="1865" height="268" key="GridCell.Tab.0.bottom" timestamp="1594350536993">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -283,11 +288,12 @@
     </state>
     <state width="1865" height="268" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594276217688" />
     <state width="1865" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594350536993" />
-    <state x="626" y="113" key="RollbackChangesDialog" timestamp="1595085753694">
+    <state x="626" y="113" key="RollbackChangesDialog" timestamp="1596765301337">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="626" y="113" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595085753694" />
     <state x="2703" y="164" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594684509867" />
+    <state x="626" y="113" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596765301337" />
     <state x="161" y="0" key="SettingsEditor" timestamp="1596654724518">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -297,12 +303,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="623" height="498" key="SwitcherDM/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1596670535683" />
-    <state x="401" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1596686850658">
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1596760555671">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595084988961" />
-    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596480432345" />
-    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1596686850658" />
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596741880253" />
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1596760555671" />
     <state x="341" y="183" key="run.anything.popup" timestamp="1595113893364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
