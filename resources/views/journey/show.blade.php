@@ -18,7 +18,8 @@
                      src="{{ $journey->picture_path }}">
             </div>
             <div class="p-6 md:w-2/3 lg:p-10 w-full flex flex-col items-start justify-center">
-                <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
+                <h1 class="text-5xl mb-3">@if(! $steps->onFirstPage())<span class="font-bold">Page {{$steps->currentPage()}} of: </span>@endif{{$journey->title}}</h1>
+
                 <p>{{$journey->introduction}}</p>
                 <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
             </div>
@@ -65,6 +66,7 @@
                 @endforeach
 
             </div>
+            <div class="mx-auto container lg:max-w-screen-lg px-4 mb-20">{{ $steps->links('.partials.journeys._journey_step_paginator') }}</div>
         @endif
         <div class="pb-40 container px-4 mx-auto">
             <h2 class="text-5xl text-center pb-12">{{ $journey->title }}</h2>

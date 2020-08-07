@@ -13,17 +13,18 @@
     </section>
     <section class="py-40">
         <div class="container px-6 mx-auto">
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid gap-8">
                 @forelse($journeys as $journey)
-                    <a href="{{ route('journeys.show', $journey->slug) }}" target="_blank" class="rounded-md w-full shadow-sm overflow-hidden border border-black hover:shadow-md transition ease-in-out duration-150">
+                    <a href="{{ route('journeys.show', $journey->slug) }}" target="_blank" class="rounded-md md:flex items-stretch w-full shadow-sm overflow-hidden border hover:shadow-md transition ease-in-out duration-150">
                             @if($journey->picture)
-                                <div class="h-56 overflow-hidden">
-                                    <img src="{{$journey->picture_path}}" class="w-full">
+                                <div class="md:w-1/2 flex items-stretch max-h-80 overflow-hidden">
+                                    <img src="{{$journey->picture_path}}" class="object-cover" alt="{{$journey->title}}">
                                 </div>
                             @endif
-                        <div class="px-5 pt-5 pb-8">
+                        <div class=" md:1/2 p-6 pb-8 flex flex-col justify-center items-start">
                             <h2 class="text-4xl mb-3">{{ $journey->title }}</h2>
-                            <p>{{ $journey->introduction }}</p>
+                            <p class="mb-4">{{ $journey->introduction }}</p>
+                            <button class="btn btn-cta">Read Journey</button>
                         </div>
                     </a>
                 @empty
