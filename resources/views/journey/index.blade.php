@@ -21,7 +21,7 @@
                                     <img src="{{$journey->picture_path}}" class="object-cover" alt="{{$journey->title}}">
                                 </div>
                             @endif
-                        <div class=" md:1/2 p-6 pb-8 flex flex-col justify-center items-start">
+                        <div class=" md:w-1/2 p-6 pb-8 flex flex-col justify-center items-start">
                             <h2 class="text-4xl mb-3">{{ $journey->title }}</h2>
                             <p class="mb-4">{{ $journey->introduction }}</p>
                             <button class="btn btn-cta">Read Journey</button>
