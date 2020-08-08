@@ -17,13 +17,13 @@
     <meta property="og:site_name" content="MyJourney.page" />
     <meta property="og:type" content="website" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174909030-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google.tracking_id') }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
 
-        gtag('config', 'UA-174909030-1');
+        gtag('config', '{{ config('services.google.tracking_id') }}');
     </script>
 
 
@@ -46,5 +46,8 @@
 <script src="/js/manifest.js"></script>
 <script src="/js/vendor.js"></script>
 <script src="/js/app.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2edc3be623c08a"></script>
+
 </body>
 </html>

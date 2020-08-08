@@ -60,3 +60,14 @@
 
     </div>
 </div>
+{{--
+<div class="container fixed top-10 px-4">
+    <div class="container mx-auto px-6 flex">
+        <a href="{{ route('journeys.steps.create', $journey->slug) }}" class="icon-button bg-white ml-auto">
+            <img src="/images/add.svg" class="w-4 mr-2">
+            <div>Add Step to Journey</div>
+        </a>
+    </div>
+</div>
+--}}
+
