@@ -53,7 +53,7 @@
                             @endif
                         </div>
 
-                        <div class="border-t border-b journey-step-content p-4">
+                        <div class="border-t border-b journey-step-content px-4 py-6">
 
                             <div class="text-lg">
                                 {{ date('F d, Y', strtotime($step->date)) }}

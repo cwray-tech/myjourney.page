@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/journey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/step/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/step/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/step/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/step/edit.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
     </list>
@@ -229,7 +228,7 @@
       <workItem from="1596760555654" duration="2841000" />
       <workItem from="1596813610175" duration="20465000" />
       <workItem from="1596857563857" duration="105000" />
-      <workItem from="1596858687702" duration="363000" />
+      <workItem from="1596858687702" duration="635000" />
     </task>
     <servers />
   </component>
