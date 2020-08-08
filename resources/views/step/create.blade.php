@@ -17,7 +17,6 @@
                     <input name="title" class="input" id="title" autocomplete="off" type="text"
                            value="{{ old('title') }}" placeholder="eg. I started school at Harvard.">
                     <label for="picture">Step Photo (Optional)</label>
-                    <div class="text-xs my-2 bg-gray-200 p-2 rounded">Photos are optional, but journey steps look better either with photos or not.</div>
                     <input name="picture" id="picture" class="input" accept="image/*" type="file"
                            value="{{ old('picture') }}" >
                     <div class="flex">

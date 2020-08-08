@@ -46,10 +46,13 @@
                 @foreach($steps as $step)
                     <div id="{{ $step->id }}"
                          class="md:flex odd:flex-row-reverse justify-between flex-row items-center py-10 pl-6  md:pl-0">
-                        @if($step->picture)
-                            <img class="md:w-1/3 w-full rounded rounded-r-none rounded-b-none md:rounded-r mx-auto"
-                                 alt="{{ $step->title }}" src="{{ $step->picture_path }}">
-                        @endif
+                        <div class="md:w-1/3">
+                            @if($step->picture)
+                                <img class="w-full rounded rounded-r-none rounded-b-none md:rounded-r mx-auto"
+                                     alt="{{ $step->title }}" src="{{ $step->picture_path }}">
+                            @endif
+                        </div>
+
                         <div class="border journey-step-content rounded rounded-r-none @if($step->picture) rounded-t-none md:rounded-t @endif md:rounded-r p-4">
 
                             <div class="text-lg">
