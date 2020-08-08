@@ -66,7 +66,7 @@
                 @endforeach
 
             </div>
-            <div class="mx-auto container lg:max-w-screen-lg px-4">{{ $steps->links('.partials.journeys._journey_step_paginator') }}</div>
+            <div class="mx-auto container lg:max-w-screen-lg px-4 mb-40">{{ $steps->links('.partials.journeys._journey_step_paginator') }}</div>
         @endif
         <div class="pb-40 container px-4 mx-auto">
             <h2 class="text-5xl text-center pb-12">{{ $journey->title }}</h2>
