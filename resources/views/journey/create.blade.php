@@ -13,6 +13,7 @@
                 <input name="title" class="input" id="title" autocomplete="off" type="text"
                        value="{{ old('title') }}" placeholder="eg. My Journey to Become Software Developer">
                 <label for="picture">Journey Photo</label>
+                <div class="p-2 bg-gray-200 rounded text-sm mb-2">Photo must be less than 4MB.</div>
                 <input name="picture" id="picture" class="input" accept="image/*" type="file"
                        value="{{ old('picture') }}" >
                 <label for="introduction">Journey Introduction</label>

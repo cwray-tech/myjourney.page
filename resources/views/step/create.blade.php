@@ -17,8 +17,8 @@
                 <input name="title" class="input" id="title" autocomplete="off" type="text"
                        value="{{ old('title') }}" placeholder="eg. I started school at Harvard.">
                 <label for="picture">Step Photo (Optional)</label>
-                <input name="picture" id="picture" class="input" accept="image/*" type="file"
-                       value="{{ old('picture') }}">
+                <div class="p-2 bg-gray-200 rounded text-sm mb-2">Photo must be less than 4MB.</div>
+                <input name="picture" id="picture" class="input" accept="image/*" type="file">
                 <div class="flex">
                     <div class="w-1/2">
                         <label for="date">Approximate Date*</label>
