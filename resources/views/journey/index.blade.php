@@ -15,10 +15,10 @@
         <div class="container px-6 mx-auto">
             <div class="grid gap-8">
                 @forelse($journeys as $journey)
-                    <a href="{{ route('journeys.show', $journey->slug) }}" target="_blank" class="rounded-md md:flex items-stretch w-full shadow-sm overflow-hidden border hover:shadow-md transition ease-in-out duration-150">
+                    <a href="{{ route('journeys.show', $journey->slug) }}" target="_blank" class="rounded-md md:flex items-stretch justify-start w-full shadow-sm overflow-hidden border hover:shadow-md transition ease-in-out duration-150">
                             @if($journey->picture)
-                                <div class="md:w-1/2 flex items-stretch max-h-80 overflow-hidden">
-                                    <img src="{{$journey->picture_path}}" class="object-cover" alt="{{$journey->title}}">
+                                <div class="md:w-1/2 max-h-80 overflow-hidden">
+                                    <img src="{{$journey->picture_path}}" class="object-cover w-full h-full" alt="{{$journey->title}}">
                                 </div>
                             @endif
                         <div class=" md:w-1/2 p-6 pb-8 flex flex-col justify-center items-start">
