@@ -10,8 +10,8 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('page_title') | MyJourney.page</title>
-    <meta property="og:title" content="@yield('page_title') | MyJourney.page" />
+    <title>@yield('page_title') | MyJourney</title>
+    <meta property="og:title" content="@yield('page_title') | MyJourney" />
     <meta property="og:description" content="@yield('page_description') Share your Journeys with the world." />
     <meta property="og:image" content="@yield('page_image')" />
     <meta property="og:site_name" content="MyJourney.page" />
