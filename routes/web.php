@@ -1,7 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,13 +11,9 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('lang/{locale}', 'LocalizationController@index');
 
 Auth::routes();
-
-Route::domain('{page}.ajourney.page')->group(function () {
-    Route::get('/', 'PageController@index');
-});
 
 
 Route::get('/dashboard', 'DashboardController@index')->name('home');

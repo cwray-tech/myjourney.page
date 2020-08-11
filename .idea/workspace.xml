@@ -2,8 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/es/auth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/es/pagination.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/es/passwords.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/es/validation.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/partials/journeys/_page_number_pagination.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/JourneyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/en/pagination.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/en/pagination.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/journey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/journeys/_journey_step_paginator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/journeys/_journey_step_paginator.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/js/components/NavbarComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/../gamer/resources/views/show.blade.php" afterDir="false" />
     </list>
@@ -170,23 +184,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/partials/journeys" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/lang" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.customizations" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\laragon\www\devjourney\resources\lang" />
+      <recent name="C:\laragon\www\devjourney\resources\views\partials\journeys" />
+      <recent name="C:\laragon\www\devjourney\resources\views\page" />
+      <recent name="C:\laragon\www\devjourney\resources\js\components" />
+      <recent name="C:\laragon\www\devjourney\resources\views\dashboard" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\laragon\www\devjourney\app\Http\Controllers\Api" />
       <recent name="C:\laragon\www\devjourney\app\Http\Controllers" />
       <recent name="C:\laragon\www\devjourney\resources\views\components" />
       <recent name="C:\laragon\www\devjourney\resources\views\dashboard" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\laragon\www\devjourney\resources\views\partials\journeys" />
-      <recent name="C:\laragon\www\devjourney\resources\views\page" />
-      <recent name="C:\laragon\www\devjourney\resources\js\components" />
-      <recent name="C:\laragon\www\devjourney\resources\views\dashboard" />
-      <recent name="C:\laragon\www\devjourney\resources\views\layouts" />
     </key>
   </component>
   <component name="RunManager">
@@ -231,7 +245,7 @@
       <workItem from="1596906430938" duration="2986000" />
       <workItem from="1596996067542" duration="3800000" />
       <workItem from="1597099630676" duration="1361000" />
-      <workItem from="1597153362336" duration="839000" />
+      <workItem from="1597153362336" duration="11613000" />
     </task>
     <servers />
   </component>
@@ -253,11 +267,11 @@
     </state>
     <state x="2465" y="139" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596489327637" />
     <state x="436" y="110" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596144403029" />
-    <state x="93" y="93" width="1350" height="638" maximized="true" key="DiffContextDialog" timestamp="1596765459119">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2036" y="117" width="1688" height="806" key="DiffContextDialog" timestamp="1597168835962">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1596732428058" />
-    <state x="2036" y="117" width="1688" height="806" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1596220660393" />
+    <state x="2036" y="117" width="1688" height="806" key="DiffContextDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597168835962" />
     <state x="-6" y="24" width="1547" height="806" maximized="true" key="DiffContextDialog/0.0.1536.824@0.0.1536.824" timestamp="1596765459119" />
     <state x="2610" y="218" key="FileChooserDialogImpl" timestamp="1596741905768">
       <screen x="1920" y="0" width="1920" height="1040" />
@@ -283,11 +297,11 @@
     </state>
     <state width="1865" height="268" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594276217688" />
     <state width="1865" height="268" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1594350536993" />
-    <state x="626" y="113" key="RollbackChangesDialog" timestamp="1596765301337">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="2703" y="164" key="RollbackChangesDialog" timestamp="1597168832614">
+      <screen x="1920" y="0" width="1920" height="1040" />
     </state>
     <state x="626" y="113" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1595085753694" />
-    <state x="2703" y="164" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1594684509867" />
+    <state x="2703" y="164" key="RollbackChangesDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597168832614" />
     <state x="626" y="113" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596765301337" />
     <state x="161" y="0" key="SettingsEditor" timestamp="1596654724518">
       <screen x="0" y="0" width="1536" height="824" />

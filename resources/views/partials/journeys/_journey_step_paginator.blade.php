@@ -5,14 +5,14 @@
 
         @else
             <a href="{{ $paginator->previousPageUrl() }}" rel="prev" class="icon-button px-3">
-                Previous
+                {{ __('pagination.previous') }}
             </a>
         @endif
 
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
             <a href="{{ $paginator->nextPageUrl() }}" rel="next" class="icon-button px-3">
-                Continue Reading Journey
+                {{ __('pagination.continue') }}
             </a>
         @endif
     </nav>

@@ -14,7 +14,7 @@
         <section class="md:flex min-h-screen items-stretch mb-40 border-b">
             <div
                 class="md:w-1/3 w-full md:min-h-screen md:max-h-screen  h-64 overflow-hidden flex items-stretch flex-grow">
-                <img style="object-fit:cover" class="object-cover" alt="{{ $journey->title }}"
+                <img  class="object-cover w-full h-full" alt="{{ $journey->title }}"
                      src="{{ $journey->picture_path }}">
             </div>
             <div class="p-6 md:w-2/3 lg:p-10 w-full flex flex-col items-start justify-center">
@@ -38,6 +38,7 @@
     <section>
         @if($steps->count() >0 )
             <div class="journey-section container px-4 md:pr-4 pr-0 mb-40 mx-auto relative">
+                {{ $steps->links('.partials.journeys._page_number_pagination') }}
                 <div class="timeline-container">
                     <div class="timeline"></div>
                     <div class="timeline-dot"></div>

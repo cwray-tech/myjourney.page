@@ -40,6 +40,7 @@
                 </div>
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 md:static md:inset-auto md:ml-0 md:pr-0">
                 @include('.partials.user_buttons')
+                @auth()
                     <!-- Profile dropdown -->
                     <dropdown-component>
                         <template v-slot:toggle>
@@ -50,7 +51,7 @@
                             </button>
                         </template>
                         <template>
-                            @auth()
+
                                 <a href="/dashboard"
                                    class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
                                    role="menuitem">Dashboard</a>
@@ -68,16 +69,17 @@
                                     </button>
                                 </form>
 
-                            @else
-                                <a href="/login"
-                                   class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                                   role="menuitem">Login</a>
-                                <a href="/register"
-                                   class="block px-4 py-2 text-sm leading-5  hover:bg-gray-100 focus:outline-none focus:bg-gray-100 transition duration-150 ease-in-out"
-                                   role="menuitem">Register</a>
-                            @endauth
+
                         </template>
                     </dropdown-component>
+                    @else
+                        <a href="/login"
+                           class="navlink"
+                           role="menuitem">Login</a>
+                        <a href="/register"
+                           class="navlink pr-0"
+                           role="menuitem">Register</a>
+                    @endauth
                 </div>
             </div>
         </div>

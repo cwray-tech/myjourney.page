@@ -67,7 +67,7 @@ class JourneyController extends Controller
     public function show(Request $request, Journey $journey)
     {
         $this->authorize('view', $journey);
-        $steps = $journey->steps()->simplePaginate(10);
+        $steps = $journey->steps()->paginate(10);
         return view('journey.show', ['journey' => $journey, 'steps' => $steps]);
     }
 
