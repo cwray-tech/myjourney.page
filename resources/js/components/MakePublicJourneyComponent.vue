@@ -27,6 +27,8 @@
         data: function () {
             return {
                 public: this.journey.is_public,
+                loading: false,
+                errored: false,
             }
         },
         computed: {
@@ -34,18 +36,48 @@
                 return '/api/make-public/journeys/' + this.journey.slug;
             },
             label() {
-                return this.public ? 'Journey is Public' : 'Journey is Private'
+                if(this.loading){
+                    return this.public ?  'Making journey public...' : 'Making journey private...'
+                }
+                else if(this.errored){
+                    return 'Bummer, please try again.'
+                }
+                else if(this.public){
+                    return 'Journey is Public'
+                }
+                else{
+                    return 'Journey is Private'
+                }
             }
         },
         methods: {
             toggle() {
+                this.loading = true;
                 this.public ? this.makePublic() : this.makePrivate();
             },
             makePublic() {
                 axios.post(this.endpoint)
+                    .then(() => {
+                            this.errored = false;
+                            this.public = true
+                    })
+                    .catch(error => {
+                        this.public = false;
+                        this.errored = true;
+                    })
+                    .finally(() => this.loading = false)
             },
             makePrivate() {
                 axios.delete(this.endpoint)
+                    .then(() => {
+                        this.errored = false;
+                        this.public = false
+                    })
+                    .catch(error => {
+                        this.public = true;
+                        this.errored = true;
+                    })
+                    .finally(() => this.loading = false)
             }
         }
     }

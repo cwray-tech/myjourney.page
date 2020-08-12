@@ -1,6 +1,6 @@
 <template>
     <div class="flex items-center">
-        <label :for="journey.id +'publish'"  class="flex items-center cursor-pointer mb-0 py-4">
+        <label :for="journey.id +'publish'" class="flex items-center cursor-pointer mb-0 py-2">
             <!-- toggle -->
             <div class="relative">
                 <!-- input -->
@@ -15,7 +15,7 @@
             </div>
         </label>
         <div class="tooltip relative">
-            <img src="/images/question.svg" class="m-3 w-4">
+            <img src="/images/question.svg" class="m-2 w-4">
             <span class='tooltip-text bg-blue-200 p-3 bottom-0 lg:top-0 lg:mt-10 mt-0 mb-10 lg:mb-0 right-0 lg:bottom-auto rounded'>Published Journeys are visible to anyone with a link to the journey.</span>
         </div>
     </div>
@@ -27,6 +27,8 @@
         data: function () {
             return {
                 published: this.journey.is_published,
+                loading: false,
+                errored: false
             }
         },
         computed: {
@@ -34,18 +36,48 @@
                 return '/api/publish/journeys/' + this.journey.slug;
             },
             label() {
-                return this.published ? 'Journey is Published' : 'Publish Journey?'
+                if(this.loading){
+                    return this.published ?  'Publishing your journey...' : 'Unpublishing your journey...'
+                }
+                else if(this.errored){
+                    return 'Bummer, please try again.'
+                }
+                else if(this.published){
+                    return 'Journey is Published'
+                }
+                else{
+                    return 'Publish Journey?'
+                }
             }
         },
         methods: {
             toggle() {
+                this.loading = true;
                 this.published ? this.publish() : this.unpublish();
             },
             publish() {
                 axios.post(this.endpoint)
+                    .then(() => {
+                        this.errored = false;
+                        this.published = true;
+                    })
+                    .catch(error => {
+                        this.published = false;
+                        this.errored = true;
+                    })
+                    .finally(() => this.loading = false)
             },
             unpublish() {
                 axios.delete(this.endpoint)
+                    .then(() => {
+                        this.errored = false;
+                        this.published = false;
+                    })
+                    .catch(error => {
+                        this.published = true;
+                        this.errored = true;
+                    })
+                    .finally(() => this.loading = false)
             }
         }
     }

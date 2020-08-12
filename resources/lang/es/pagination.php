@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'previous' => 'Pagina Anterior',
+    'previous' => 'Pagina anterior',
     'next' => 'Next',
     'continue' =>'Continuar leyendo este viaje'
 ];
