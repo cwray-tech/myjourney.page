@@ -27,7 +27,7 @@
         </section>
     @else
         <section class="py-40 min-h-screen justify-center flex flex-col items-center">
-            <div class="container px-4 text-center mx-auto">
+            <div class="lg:max-w-screen-lg container px-4 text-center mx-auto">
                 <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
                 <p>{{$journey->introduction}}</p>
                 <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>

@@ -3,6 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/manifest.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/manifest.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/subscribe.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/vendor.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/vendor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user_journey/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user_journey/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -232,7 +238,7 @@
       <workItem from="1597153362336" duration="12778000" />
       <workItem from="1597179418846" duration="2106000" />
       <workItem from="1597187773023" duration="198000" />
-      <workItem from="1597253215494" duration="9047000" />
+      <workItem from="1597253215494" duration="10316000" />
     </task>
     <servers />
   </component>
