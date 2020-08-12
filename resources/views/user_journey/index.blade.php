@@ -17,11 +17,11 @@
                     <div class="rounded-md  shadow-sm border p-4 mb-6">
                         <div class="w-full lg:flex items-start justify-between">
                             @if($journey->picture)
-                                <div class="lg:w-1/5 h-64">
+                                <div class="h-64  flex justify-center items-center">
                                     <img src="{{$journey->picture_path}}" class="w-full h-full object-cover rounded">
                                 </div>
                             @endif
-                            <div class="lg:px-6 lg:w-2/5">
+                            <div class="lg:px-6 ">
                                 <h2 class="text-4xl mb-3">{{ $journey->title }}</h2>
                                 <p>{{ $journey->introduction }}</p>
                             </div>
