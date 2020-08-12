@@ -15,17 +15,17 @@
             <div class="mt-6">
                 @forelse($journeys as $journey)
                     <div class="rounded-md  shadow-sm border p-4 mb-6">
-                        <div class="w-full lg:flex items-start justify-between">
+                        <div class="w-full lg:grid  lg:grid-cols-3">
                             @if($journey->picture)
-                                <div class="h-64 flex justify-center items-center w-1/3">
+                                <div class="h-64 flex justify-center items-center">
                                     <img src="{{$journey->picture_path}}" class="w-full h-full object-cover rounded">
                                 </div>
                             @endif
-                            <div class="lg:px-6 ">
+                            <div class="lg:px-6">
                                 <h2 class="text-4xl mb-3">{{ $journey->title }}</h2>
                                 <p>{{ $journey->introduction }}</p>
                             </div>
-                            <div class="p-4 flex lg:flex-col lg:items-end  justify-start flex-wrap space-x-4">
+                            <div class="p-4 flex lg:flex-col lg:items-end justify-start flex-wrap space-x-4">
                                 <div class="w-full flex items-center lg:justify-end flex-wrap space-x-4">
                                     <a target="_blank" href="{{route('journeys.show', $journey->slug)}}"
                                        class="icon-button my-2"><img class="w-4 mr-2" src="/images/external.svg"> View</a>
