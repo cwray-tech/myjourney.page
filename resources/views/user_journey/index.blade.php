@@ -26,7 +26,7 @@
                                 <p>{{ $journey->introduction }}</p>
                             </div>
                             <div class="col-span-1 lg:col-start-5 flex lg:flex-col lg:items-end justify-start flex-wrap lg:text-right">
-                                <div class="w-full flex items-center lg:justify-end flex-wrap ">
+                                <div class="w-full flex items-center lg:justify-end flex-wrap mb-4">
                                     <a target="_blank" href="{{route('journeys.show', $journey->slug)}}"
                                        class="icon-button my-1 mr-1"><img class="w-4 mr-2" src="/images/external.svg"> View</a>
                                     <a href="{{route('journeys.edit', $journey->slug)}}" class="icon-button my-1 mr-1"><img
