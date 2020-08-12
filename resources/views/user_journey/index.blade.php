@@ -21,13 +21,11 @@
                                     <img src="{{$journey->picture_path}}" class="w-full h-full object-cover rounded">
                                 </div>
                             @endif
-                            <div class="lg:px-6 lg:w-2/5 lg:py-4">
+                            <div class="lg:px-6 lg:w-2/5">
                                 <h2 class="text-4xl mb-3">{{ $journey->title }}</h2>
                                 <p>{{ $journey->introduction }}</p>
                             </div>
                             <div class="lg:w-2/5 p-4 flex lg:flex-col lg:items-end  justify-start flex-wrap space-x-4">
-                                <publish-journey-component :journey="{{ $journey }}"></publish-journey-component>
-                                <make-public-component :journey="{{ $journey }}"></make-public-component>
                                 <div class="w-full flex items-center lg:justify-end flex-wrap space-x-4">
                                     <a target="_blank" href="{{route('journeys.show', $journey->slug)}}"
                                        class="icon-button my-2"><img class="w-4 mr-2" src="/images/external.svg"> View</a>
@@ -50,6 +48,9 @@
                                         </form>
                                     </modal-component>
                                 </div>
+                                <publish-journey-component :journey="{{ $journey }}"></publish-journey-component>
+                                <make-public-component :journey="{{ $journey }}"></make-public-component>
+
                             </div>
                         </div>
 
