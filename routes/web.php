@@ -27,6 +27,7 @@ Route::get('/privacy-policy', 'StaticPageController@privacy');
 Route::get('/terms', 'StaticPageController@terms');
 
 Route::resource('journeys', 'JourneyController');
+Route::patch('/api/journeys/{journey}', 'Api\JourneyController@update')->middleware('auth');
 
 Route::resource('journeys.steps', 'JourneyStepController')->shallow();
 

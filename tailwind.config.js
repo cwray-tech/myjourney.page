@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
     purge: [
         './resources/**/*.blade.php',
@@ -10,7 +12,7 @@ module.exports = {
         },
     },
   },
-    variants: ['responsive', 'group-hover', 'group-focus', 'focus-within', 'first', 'last', 'odd', 'even', 'hover', 'focus', 'active', 'visited', 'disabled'],
+    variants: ['responsive', 'odd', 'hover', 'focus', 'active', 'disabled'],
   plugins: [
       require('@tailwindcss/ui'),
   ],
