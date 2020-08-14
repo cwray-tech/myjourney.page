@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/SubscriptionController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/subscribe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/subscribe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/subscription/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subscription/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +233,7 @@
       <workItem from="1597187773023" duration="198000" />
       <workItem from="1597253215494" duration="12140000" />
       <workItem from="1597284400824" duration="19726000" />
-      <workItem from="1597375700146" duration="2221000" />
+      <workItem from="1597375700146" duration="2912000" />
     </task>
     <servers />
   </component>
