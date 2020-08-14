@@ -25,7 +25,8 @@
 
         gtag('config', '{{ config('services.google.tracking_id') }}');
     </script>
-
+    <!-- Font -->
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
