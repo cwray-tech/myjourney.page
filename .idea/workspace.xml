@@ -8,8 +8,7 @@
       <change beforePath="$PROJECT_DIR$/public/js/subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/subscribe.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/subscribe.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/subscribe.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_navbar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/user_buttons.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/user_buttons.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/subscription/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/subscription/create.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -241,6 +240,7 @@
       <workItem from="1597187773023" duration="198000" />
       <workItem from="1597253215494" duration="12140000" />
       <workItem from="1597284400824" duration="19726000" />
+      <workItem from="1597375700146" duration="2221000" />
     </task>
     <servers />
   </component>
@@ -307,12 +307,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="623" height="498" key="SwitcherDM/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1596670535683" />
-    <state x="401" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1597284713321">
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog" timestamp="1597375700857">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@0.0.1536.824" timestamp="1597153399695" />
     <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1920.1040@1920.0.1920.1040" timestamp="1597253322109" />
-    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1597284713321" />
+    <state x="401" y="195" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1597375700857" />
     <state x="341" y="183" key="run.anything.popup" timestamp="1595113893364">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

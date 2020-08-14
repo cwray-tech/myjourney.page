@@ -6,8 +6,22 @@ const elements = stripe.elements();
 const errors = document.getElementById('stripe-errors');
  const paymentMethod = document.getElementById('payment-method');
 
+var style = {
+    base: {
+        padding: '10px 12px',
+        fontSmoothing: 'antialiased',
+        fontSize: '16px',
+        '::placeholder': {
+            color: '#aab7c4'
+        },
+    },
+    invalid: {
+        color: '#fa755a',
+    }
+};
 const cardElement = elements.create('card',
     {
+        style: style,
         classes: {
             base: 'input',
             focus: 'border-black',

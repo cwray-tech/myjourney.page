@@ -6,25 +6,24 @@
     <section class="py-40">
         <div class="container px-6 mx-auto">
             <div class="grid lg:grid-cols-3 gap-8">
-                <form action="/subscribe" method="post" id="subscribe-form" class="lg:col-span-2">
+                <form action="/subscribe" method="post" id="subscribe-form" class="lg:col-span-2 my-6">
                     <h1 class="text-5xl mb-3">Subscribe to your plan.</h1>
                     @include('.partials.forms.form_errors')
+                    @csrf
                     <div class="grid md:grid-cols-2 gap-4 mb-4">
-                        @csrf
-                        <div>
+                        <div class="h-full">
                             <input class="hidden subscription-radio" type="radio" name="plan" value="price_1HFoWlDuOMuGSHqKxrglTNZI"
                                    id="premium-monthly" checked>
-                            <label class="plan-label p-4 pb-6 text-center font-normal bg-gray-200 rounded" for="premium-monthly">
+                            <label class="plan-label p-4 py-6 text-center font-normal bg-gray-200 border-2 border-gray-200 rounded h-full" for="premium-monthly">
                                 <div class="text-3xl">Premium</div>
                                 <div class="font-italic">Post unlimited journeys.</div>
                                 <div class="font-bold">5$/month</div>
                             </label>
                         </div>
-                        <div>
-
+                        <div class="h-full">
                             <input class="hidden subscription-radio" type="radio" name="plan" value="price_1HDEDCDuOMuGSHqKwu7MufSn"
                                    id="premium-yearly" >
-                            <label class="plan-label p-4 pb-6 text-center font-normal bg-gray-200 rounded" for="premium-yearly">
+                            <label class="plan-label p-4 py-6 text-center font-normal bg-gray-200 border-2 border-gray-200 rounded h-full" for="premium-yearly">
                                 <div class="text-3xl">Premium</div>
                                 <div class="font-italic">Post unlimited journeys.</div>
                                 <div class="font-bold">50$/year</div>
@@ -45,7 +44,7 @@
                     <button id="card-button" data-secret="{{ $intent->client_secret }}" class="btn btn-cta block text-center w-full bg-black text-white opacity-100 disabled:opacity-25">Subscribe</button>
                 </form>
 
-                <div class="rich-text lg:pt-16">
+                <div class="rich-text lg:pt-20">
                     <h2>Why do we require a subscription?</h2>
                     <p>It costs a lot of money to develop, maintain and host a website like this one.</p>
                     <p>Unlike, Facebook, Instagram, and other popular social sharing websites, we don't sell ads or your information to make money.</p>
