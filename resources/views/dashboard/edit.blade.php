@@ -6,7 +6,7 @@
     <section class="py-40">
         <div class="container px-6 mx-auto">
             <h1 class="text-5xl mb-3">Your Info</h1>
-            <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-4 mt-6">
+            <div class="grid md:grid-cols-2 gap-4 mt-6">
                 <div class="rounded-md bg-white shadow-sm border border-black p-5">
                     <h2 class="text-4xl mb-3">Login Info</h2>
                     <form method="post" action="/dashboard/info/update">
