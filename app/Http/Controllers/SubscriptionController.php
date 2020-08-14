@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\User;
 use Illuminate\Http\Request;
 
 class SubscriptionController extends Controller
@@ -28,18 +29,40 @@ class SubscriptionController extends Controller
      */
     public function create(Request $request)
     {
-        return view('.subscription.create');
+        $user = $request->user();
+        $user->createOrGetStripeCustomer();
+        if($user->subscribed()){
+            return $user->redirectToBillingPortal();
+        }
+
+        return view('.subscription.create', [
+            'intent' => $user->createSetupIntent()
+        ]);
     }
 
     /**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(Request $request)
     {
-        //
+
+        $user = $request->user();
+        $plan = $request->plan;
+
+        $paymentMethod = $request->payment_method;
+        // create the subscription
+        try {
+            $user->newSubscription('default', $plan)
+                ->create($paymentMethod, [
+                    'name' => $user->name
+                ]);
+            return redirect('/dashboard')->with('status', 'Sweet job! You have successfully subscribed.');
+        } catch (\Exception $e) {
+            return back()->withErrors(['message' => 'Bummer, there was an issue subscribing.']);
+        }
     }
 
     /**
@@ -63,28 +86,5 @@ class SubscriptionController extends Controller
     {
         $request->user()->createOrGetStripeCustomer();
         return $request->user()->redirectToBillingPortal();
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
-    {
-        //
     }
 }
