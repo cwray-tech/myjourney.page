@@ -9,8 +9,13 @@ use Illuminate\Http\Request;
 
 class JourneyController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     public function update(JourneyUpdateRequest $request, Journey $journey){
         $this->authorize('update', $journey);
+
         $journey->update([
             'title' => $request->title,
             'introduction' => $request->introduction

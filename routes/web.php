@@ -27,9 +27,10 @@ Route::get('/privacy-policy', 'StaticPageController@privacy');
 Route::get('/terms', 'StaticPageController@terms');
 
 Route::resource('journeys', 'JourneyController');
-Route::patch('/api/journeys/{journey}', 'Api\JourneyController@update')->middleware('auth');
+Route::patch('/api/journeys/{journey}', 'Api\JourneyController@update');
 
 Route::resource('journeys.steps', 'JourneyStepController')->shallow();
+Route::patch('/api/steps/{step}/', 'Api\JourneyStepController@update');
 
 Route::post('/newsletter', 'NewsletterController@store');
 Route::delete('/newsletter', 'NewsletterController@destroy');

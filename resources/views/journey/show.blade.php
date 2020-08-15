@@ -53,16 +53,12 @@
                                 @endif
                             </div>
 
-                            <div class="border-t border-b journey-step-content px-4 py-6">
+                            <div class="border-t border-b journey-step-content px-4 py-10">
 
                                 <div class="text-lg">
                                     {{ date('F d, Y', strtotime($step->date)) }}
                                 </div>
-                                <h2 class="text-4xl mb-2">{{ $step->title }}</h2>
-                                @if($step->time)
-                                    <div class="mb-2">{{ date('h:i:s a',  strtotime($step->time)) }} </div>
-                                @endif
-                                <p class="color-contrast-medium">{{ $step->description }}</p>
+                                <journey-step-update-component :step="{{$step}}"></journey-step-update-component>
                             </div>
 
                         </div>
@@ -125,7 +121,7 @@
                                 @endif
                             </div>
 
-                            <div class="border-t border-b journey-step-content px-4 py-6">
+                            <div class="border-t border-b journey-step-content px-4 py-10">
 
                                 <div class="text-lg">
                                     {{ date('F d, Y', strtotime($step->date)) }}

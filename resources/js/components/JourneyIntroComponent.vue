@@ -1,6 +1,5 @@
 <template>
         <div>
-
             <h1 contenteditable="true" @blur="updateTitle" v-text="title" class="text-5xl mb-3"></h1>
             <p contenteditable="true" v-text="introduction" @blur="updateIntroduction"></p>
             <div v-if="saved" class="bg-blue-200 rounded p-2 mt-4">Great work! Successfully saved journey intro.</div>
@@ -24,12 +23,16 @@
         },
         methods: {
             updateTitle(event){
-                this.title = event.target.innerText;
-                this.updateJourney();
+                if(this.title !== event.target.innerText){
+                    this.title = event.target.innerText;
+                    this.updateJourney();
+                }
             },
             updateIntroduction(event){
-                this.introduction = event.target.innerText;
-                this.updateJourney();
+                if(this.introduction !== event.target.innerText){
+                    this.introduction = event.target.innerText;
+                    this.updateJourney();
+                }
             },
             updateJourney(){
                 this.saving = true;
