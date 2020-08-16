@@ -15,7 +15,6 @@ class JourneyController extends Controller
     }
     public function update(JourneyUpdateRequest $request, Journey $journey){
         $this->authorize('update', $journey);
-
         $journey->update([
             'title' => $request->title,
             'introduction' => $request->introduction
