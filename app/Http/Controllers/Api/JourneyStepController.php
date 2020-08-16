@@ -57,8 +57,6 @@ class JourneyStepController extends Controller
         $step->update([
             'title' =>  $request->title,
             'description' => $request->description,
-            'date' => $request->date,
-            'time' => $request->time
         ]);
 
         return response('Success', 204);

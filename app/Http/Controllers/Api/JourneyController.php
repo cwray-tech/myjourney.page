@@ -19,11 +19,6 @@ class JourneyController extends Controller
             'title' => $request->title,
             'introduction' => $request->introduction
         ]);
-        if($request->picture) {
-            $journey->update([
-                'picture' => $request->file('picture')->store('journey-images', 'public'),
-            ]);
-        }
 
         return response('Success', 204);
     }
