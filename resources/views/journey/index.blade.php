@@ -23,7 +23,7 @@
                             @endif
                         <div class=" md:w-1/2 p-6 pb-8 flex flex-col justify-center items-start">
                             <h2 class="text-4xl mb-3">{{ $journey->title }}</h2>
-                            <p class="mb-4">{{ $journey->introduction }}</p>
+                            <p class="mb-4">{{ \Illuminate\Support\Str::limit(strip_tags($journey->introduction),300,'...')}}</p>
                             <button class="btn btn-cta">Read Journey</button>
                         </div>
                     </a>
