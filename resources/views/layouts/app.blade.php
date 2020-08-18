@@ -34,7 +34,7 @@
 
 </head>
 <body>
-<div id="app">
+<div id="app" class="relative bg-gray-50">
     @include('.partials._navbar')
 
     <main class="min-h-screen">
