@@ -9,7 +9,7 @@
         <h3 class="font-bold mb-2">Journey Title</h3>
         <h4 class="text-2xl">{{ $journey->title }}</h4>
         <h3 class="mt-4 font-bold mb-2">Journey Introduction</h3>
-        <p class="">{{ $journey->introduction }}</p>
+        <p class="">{{ \Illuminate\Support\Str::limit(strip_tags($journey->introduction),150,'...')}}</p>
     </div>
 
     <div class="mt-6">
