@@ -1,7 +1,7 @@
 @forelse($journeys as $journey)
     <a href="{{ route('journeys.show', $journey->slug) }}" target="_blank" class="rounded-md bg-white md:flex items-stretch justify-start w-full overflow-hidden border hover:shadow hover:border-yellow-500 transition ease-in-out duration-150">
         @if($journey->picture)
-            <div class="md:w-1/4 overflow-hidden flex items-stretch">
+            <div class="md:w-1/4 overflow-hidden flex items-stretch max-h-1/2">
                 <img src="{{$journey->picture_path}}" class="object-cover" alt="{{$journey->title}}">
             </div>
 
