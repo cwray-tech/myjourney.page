@@ -27,8 +27,7 @@
         @else
             <section class="py-40 min-h-screen justify-center flex flex-col items-center">
                 <div class="lg:max-w-screen-lg container px-4 text-center mx-auto">
-                    <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
-                    <p>{{$journey->introduction}}</p>
+                    <journey-intro :journey="{{ $journey }}"></journey-intro>
                     <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
                 </div>
             </section>
@@ -87,7 +86,7 @@
                 </div>
                 <div class="p-6 md:w-2/3 lg:p-10 w-full flex flex-col items-start justify-center">
                     <h1 class="text-5xl mb-3">@if(! $steps->onFirstPage())<span class="font-bold">Page {{$steps->currentPage()}} of: </span>@endif{{$journey->title}}</h1>
-                    <p>{{$journey->introduction}}</p>
+                    <p class="whitespace-pre-wrap">{{$journey->introduction}}</p>
                     <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
                 </div>
 
@@ -96,7 +95,7 @@
             <section class="py-40 min-h-screen justify-center flex flex-col items-center">
                 <div class="lg:max-w-screen-lg container px-4 text-center mx-auto">
                     <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
-                    <p>{{$journey->introduction}}</p>
+                    <p class="whitespace-pre-wrap">{{$journey->introduction}}</p>
                     <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
                 </div>
             </section>
@@ -130,7 +129,7 @@
                                 @if($step->time)
                                     <div class="mb-2">{{ date('h:i:s a',  strtotime($step->time)) }} </div>
                                 @endif
-                                <p class="color-contrast-medium">{{ $step->description }}</p>
+                                <p class="color-contrast-medium whitespace-pre-wrap">{{ $step->description }}</p>
                             </div>
 
                         </div>

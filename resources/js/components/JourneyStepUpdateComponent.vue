@@ -1,7 +1,7 @@
 <template>
     <div>
         <h2 contenteditable="true" @blur="updateTitle" v-text="title" class="text-4xl mb-2"></h2>
-        <p contenteditable="true" @blur="updateDescription" v-text="description" class="color-contrast-medium"></p>
+        <p contenteditable="true" @blur="updateDescription" v-text="description" class="color-contrast-medium whitespace-pre-wrap"></p>
         <div v-if="saved" class="bg-blue-200 rounded p-2 mt-4">Great work! Successfully saved this step on your journey.</div>
         <div v-if="errored" class="rounded bg-red-200 p-2 mt-4">Bummer, we weren't able to save that change. <span
             @click="updateStep" class="underline cursor-pointer">Try again?</span></div>
