@@ -5,7 +5,7 @@
 @section('content')
     <section class="">
         <div class="max-w-7xl py-16 bg-gray-50 mt-1 min-h-screen mx-auto pb-12 px-4 sm:px-6 lg:px-8">
-            <div class="lg:max-w-screen-lg container px-6  mx-auto">
+            <div class="lg:max-w-screen-lg  mx-auto">
                 <h1 class="text-4xl font-bold leading-9 mb-2">Start writing your Journey</h1>
                 <form class="mt-6 px-4 py-6 pb-8 bg-white rounded shadow shadow-md" method="post" action="/journeys" enctype="multipart/form-data">
                     @csrf
