@@ -8,7 +8,7 @@
 @section('content')
     @component('.partials.journeys._journey_edit_container', ['journey' => $journey])
         @slot('content')
-            <h1 class="text-5xl mb-3">Add a Step you took on your Journey</h1>
+            <h1 class="text-4xl font-bold leading-9 mb-3">Add a step you took on your Journey</h1>
             <form class="mt-6" method="post" action="{{route('journeys.steps.index', $journey->slug )}}"
                   enctype="multipart/form-data">
                 @csrf

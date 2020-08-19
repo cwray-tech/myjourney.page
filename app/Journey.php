@@ -24,7 +24,8 @@ class Journey extends Model
         'introduction',
         'published_at',
         'is_public',
-        'is_published'
+        'is_published',
+        'is_anonymous'
     ];
 
     /**

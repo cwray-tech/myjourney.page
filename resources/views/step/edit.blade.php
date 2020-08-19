@@ -5,7 +5,7 @@
 @section('content')
     @component('.partials.journeys._journey_edit_container', [ 'step' => $step, 'journey' => $journey])
         @slot('content')
-            <h1 class="text-5xl mb-3"><span class="font-bold">Edit Step:</span> {{ $step->title }}</h1>
+            <h1 class="text-4xl font-bold leading-9 mb-3"><span class="font-bold">Edit Step:</span> {{ $step->title }}</h1>
             <form class="mt-6" method="post" action="{{route('steps.update', $step->id )}}"
                   enctype="multipart/form-data">
                 @csrf

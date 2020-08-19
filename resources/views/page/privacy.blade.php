@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    <section class="py-40 min-h-screen justify-center flex flex-col items-center">
+    <section class="py-16 min-h-screen justify-center flex flex-col items-center">
         <div class="container px-8 mx-auto">
             <div class="rich-text">
                 <h1>Privacy policy</h1>

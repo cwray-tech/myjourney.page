@@ -11,7 +11,7 @@
                 <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-800 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
                     Share your business, life and
                     <br class="xl:hidden">
-                    <span class="text-yellow-500">dream journeys</span>
+                    <span class="text-yellow-500">fairy tale journeys</span>
                 </h1>
                 <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
                     MyJourney is a place where you can write and share your journeys. Don't want to share yet? Just keep
@@ -20,13 +20,13 @@
                 <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
                     <div class="rounded-md shadow">
                         <a href="/register"
-                           class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-400 focus:outline-none focus:border-indigo-700 focus:shadow-outline-yellow transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                           class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-9 font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-400 focus:outline-none focus:border-yellow-700 focus:shadow-outline-orange transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
                             Get started
                         </a>
                     </div>
                     <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
                         <a href="/journeys"
-                           class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-yellow-600 bg-white hover:text-yellow-500 focus:outline-none focus:border-yellow-300 focus:shadow-outline-yellow transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
+                           class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base leading-9 font-medium rounded-md text-yellow-600 bg-white hover:text-yellow-500 focus:outline-none focus:border-yellow-300 focus:shadow-outline-orange transition duration-150 ease-in-out md:py-4 md:text-lg md:px-10">
                             Read Journeys
                         </a>
                     </div>
@@ -84,11 +84,11 @@
                                     </div>
                                 </div>
                                 <div class="ml-4">
-                                    <h4 class="text-lg leading-6 font-medium text-gray-900">Each step on your journey
+                                    <h4 class="text-lg leading-9 font-medium text-gray-900">Each step on your journey
                                         has a date.</h4>
-                                    <p class="mt-2 text-base leading-6 text-gray-500">
+                                    <p class="mt-2 text-base leading-9 text-gray-500">
                                         Each step will automatically sort based on the date it happened, making your
-                                        timeline in chronological order, even if you add the steps after they happened.
+                                        timeline in chronological order.
                                     </p>
                                 </div>
                             </div>
@@ -102,8 +102,8 @@
                                     </div>
                                 </div>
                                 <div class="ml-4">
-                                    <h4 class="text-lg leading-6 font-medium text-gray-900">You can add a time too.</h4>
-                                    <p class="mt-2 text-base leading-6 text-gray-500">
+                                    <h4 class="text-lg leading-9 font-medium text-gray-900">You can add a time too.</h4>
+                                    <p class="mt-2 text-base leading-9 text-gray-500">
                                         Sometimes, a time matters. When you woke up that one time at 2 in the morning,
                                         and that was when the life changing idea happened, it is good to be able to
                                         share.
@@ -120,9 +120,9 @@
                                     </div>
                                 </div>
                                 <div class="ml-4">
-                                    <h4 class="text-lg leading-6 font-medium text-gray-900">Your journeys don't have to
+                                    <h4 class="text-lg leading-9 font-medium text-gray-900">Your journeys don't have to
                                         end.</h4>
-                                    <p class="mt-2 text-base leading-6 text-gray-500">
+                                    <p class="mt-2 text-base leading-9 text-gray-500">
                                         Most of us are still in the middle of a journey, and that is okay. Just add a
                                         step at the end of your journey, and let your friends know you will be adding
                                         more as time goes on.
@@ -181,9 +181,8 @@
                                         </div>
                                     </div>
                                     <div class="ml-4">
-                                        <h4 class="text-lg leading-6 font-medium text-gray-900">Your story yet to be
-                                            told.</h4>
-                                        <p class="mt-2 text-base leading-6 text-gray-500">
+                                        <h4 class="text-lg leading-9 font-medium text-gray-900">Your secret.</h4>
+                                        <p class="mt-2 text-base leading-9 text-gray-500">
                                             You can write about that one event that you have never shared with anyone.
                                             Make it anonymous if you want it to be and no one will ever know that this
                                             was your story.
@@ -200,9 +199,8 @@
                                         </div>
                                     </div>
                                     <div class="ml-4">
-                                        <h4 class="text-lg leading-6 font-medium text-gray-900">A story that never
-                                            happened.</h4>
-                                        <p class="mt-2 text-base leading-6 text-gray-500">
+                                        <h4 class="text-lg leading-9 font-medium text-gray-900">Your fairy tale.</h4>
+                                        <p class="mt-2 text-base leading-9 text-gray-500">
                                             Want to tell a journey that never happened? That is totally cool. Share your
                                             story on a timeline and let people decide for themselves what they think.
                                             (or tell them at the end).
@@ -240,12 +238,12 @@
             </h2>
             <div class="mt-8 flex justify-center">
                 <div class="inline-flex rounded-md shadow">
-                    <a href="/register" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-400 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    <a href="/register" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-9 font-medium rounded-md text-white bg-yellow-500 hover:bg-yellow-400 focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
                         Get started
                     </a>
                 </div>
                 <div class="ml-3 inline-flex">
-                    <a href="/about" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-yellow-700 bg-yellow-100 hover:text-yellow-600 hover:bg-yellow-50 focus:outline-none focus:shadow-outline focus:border-yellow-300 transition duration-150 ease-in-out">
+                    <a href="/about" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base leading-9 font-medium rounded-md text-yellow-700 bg-yellow-100 hover:text-yellow-600 hover:bg-yellow-50 focus:outline-none focus:shadow-outline focus:border-yellow-300 transition duration-150 ease-in-out">
                         Learn more
                     </a>
                 </div>

@@ -3,7 +3,7 @@
     Read Journeys
 @endsection
 @section('content')
-    <section class="py-40 justify-center flex flex-col items-center min-h-screen">
+    <section class="py-16 justify-center flex flex-col items-center min-h-screen">
         <div class="container px-4 text-center mx-auto">
             <div>
                 <h1 class="text-5xl">Explore Journeys</h1>
@@ -11,8 +11,8 @@
 
         </div>
     </section>
-    <section class="py-40">
-        <div class="container px-6 mx-auto">
+    <section class="py-16 ">
+        <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
             <div class="grid gap-8">
                 @forelse($journeys as $journey)
                     <a href="{{ route('journeys.show', $journey->slug) }}" target="_blank" class="rounded-md md:flex items-stretch justify-start w-full shadow-sm overflow-hidden border hover:shadow-md transition ease-in-out duration-150">

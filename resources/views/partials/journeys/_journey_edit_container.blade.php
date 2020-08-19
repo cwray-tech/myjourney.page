@@ -1,6 +1,6 @@
-<section class="py-40">
-    <div class="container px-6 mx-auto md:flex flex-row-reverse justify-between">
-        <div class="md:w-2/3 md:p-4 md:pt-0 md:border-2 border-gray-700 md:ml-4 rounded">
+<section class="py-16">
+    <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8 md:flex flex-row-reverse justify-between">
+        <div class="md:w-2/3 px-4 py-8 bg-white shadow shadow-md md:ml-4 rounded">
             {{ $content  }}
         </div>
         @include('.partials.journeys.edit_sidebar')

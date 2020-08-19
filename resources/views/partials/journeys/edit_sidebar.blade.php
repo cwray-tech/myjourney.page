@@ -1,5 +1,5 @@
-<div class="sticky top-10 lg:pr-6 md:w-1/3 pt-0 px-4 border rounded md:mt-0 mt-8 max-h-80 overflow-auto no-scrollbar">
-    <h2 class="text-3xl pb-2 pt-4 border-b border-black mb-4 sticky top-0 bg-white">Your Journey
+<div class="sticky top-10 lg:pr-6 md:w-1/3 py-4 px-4 bg-white shadow rounded md:mt-0 mt-8 max-h-100 overflow-auto no-scrollbar">
+    <h2 class="text-2xl font-bold pb-2 pt-4 border-b border-yellow-500 mb-4 sticky top-0 bg-white">Your Journey
         <a target="_blank" href="{{route('journeys.show', $journey->slug)}}" class="icon-button text-sm mb-1 ml-4">
             <img class="w-4 mr-2" src="/images/external.svg">View</a>
         <a href="{{route('journeys.edit', $journey->slug)}}" class="icon-button text-sm mb-1">
@@ -13,7 +13,7 @@
     </div>
 
     <div class="mt-6">
-        <h2 class="text-3xl pb-2 border-b border-black mb-4">Journey Steps</h2>
+        <h2 class="text-2xl font-bold pb-2 border-b border-yellow-500 mb-4">Journey Steps</h2>
         <div class="mb-6">
             @forelse($journey->steps as $step)
                 <div

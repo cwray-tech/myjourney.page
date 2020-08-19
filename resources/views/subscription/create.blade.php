@@ -3,8 +3,8 @@
     Subscribe to a Plan
 @endsection
 @section('content')
-    <section class="py-40">
-        <div class="container px-6 mx-auto">
+    <section class="py-16 ">
+        <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-3 gap-8">
                 <form action="/subscribe" method="post" id="subscribe-form" class="lg:col-span-2 my-6">
                     <h1 class="text-5xl mb-3">Subscribe to your plan.</h1>

@@ -1,30 +1,9 @@
-<?xml version="1.0"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px" class=""><g><g>
-	<g>
-		<path d="M492,60.163h-98.489V40c0-11.046-8.954-20-20-20c-11.046,0-20,8.954-20,20v20.163H158.489V40c0-11.046-8.954-20-20-20    s-20,8.954-20,20v20.163H20c-11.046,0-20,8.955-20,20V472c0,11.045,8.954,20,20,20h472c11.046,0,20-8.955,20-20V80.163    C512,69.118,503.046,60.163,492,60.163z M472,452H40V100.163h78.489v20.164c0,11.046,8.954,20,20,20s20-8.954,20-20v-20.164    H353.51v20.164c0,11.046,8.954,20,20,20c11.046,0,20-8.954,20-20v-20.164H472V452z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
-	</g>
-</g><g>
-	<g>
-		<circle cx="256" cy="234.95" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
-	</g>
-</g><g>
-	<g>
-		<circle cx="256" cy="352.46" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
-	</g>
-</g><g>
-	<g>
-		<circle cx="138.49" cy="234.95" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
-	</g>
-</g><g>
-	<g>
-		<circle cx="373.51" cy="234.95" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
-	</g>
-</g><g>
-	<g>
-		<circle cx="138.49" cy="352.46" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
-	</g>
-</g><g>
-	<g>
-		<circle cx="373.51" cy="352.46" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFFFFF"/>
-	</g>
-</g></g> </svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512">
+    <path d="M492 60.163h-98.489V40c0-11.046-8.954-20-20-20s-20 8.954-20 20v20.163H158.489V40c0-11.046-8.954-20-20-20s-20 8.954-20 20v20.163H20c-11.046 0-20 8.955-20 20V472c0 11.045 8.954 20 20 20h472c11.046 0 20-8.955 20-20V80.163c0-11.045-8.954-20-20-20zM472 452H40V100.163h78.489v20.164c0 11.046 8.954 20 20 20s20-8.954 20-20v-20.164H353.51v20.164c0 11.046 8.954 20 20 20s20-8.954 20-20v-20.164H472V452z" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFF"/>
+    <circle cx="256" cy="234.95" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFF"/>
+    <circle cx="256" cy="352.46" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFF"/>
+    <circle cx="138.49" cy="234.95" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFF"/>
+    <circle cx="373.51" cy="234.95" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFF"/>
+    <circle cx="138.49" cy="352.46" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFF"/>
+    <circle cx="373.51" cy="352.46" r="27" data-original="#000000" class="active-path" data-old_color="#000000" fill="#FFF"/>
+</svg>

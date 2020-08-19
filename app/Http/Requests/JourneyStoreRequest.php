@@ -28,6 +28,7 @@ class JourneyStoreRequest extends FormRequest
             'picture' => 'nullable|image|max:4000',
             'introduction' => 'required|string',
             'published_at' => 'nullable|date',
+            'is_anonymous' => 'boolean|nullable'
         ];
     }
 }
