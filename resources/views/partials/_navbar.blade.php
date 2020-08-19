@@ -71,12 +71,12 @@
                 <div class="flex items-center space-x-4">
                     @guest
                         <a href="{{ route('login') }}"
-                           class="whitespace-no-wrap text-base leading-9 font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
+                           class="whitespace-no-wrap mr-6 text-base font-medium text-gray-500 hover:text-gray-900 transition ease-in-out duration-150">
                             Sign in
                         </a>
                         <span class="inline-flex rounded-md shadow-sm">
                             <a href="{{ route('register') }}"
-                                class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base leading-9 font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:border-yellow-700 focus:shadow-outline-orange active:bg-yellow-700 transition ease-in-out duration-150">
+                                class="whitespace-no-wrap inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:border-yellow-700 focus:shadow-outline-orange active:bg-yellow-700 transition ease-in-out duration-150">
                             Sign up
                             </a>
                         </span>

@@ -1,5 +1,5 @@
 .btn{
-    @apply flex items-center justify-center px-4 py-3 border border-transparent text-base leading-6 font-medium rounded-md text-yellow-600 bg-white transition duration-150 ease-in-out;
+    @apply flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-yellow-600 bg-white transition duration-150 ease-in-out;
 }
 .btn:hover{
     @apply text-yellow-500;

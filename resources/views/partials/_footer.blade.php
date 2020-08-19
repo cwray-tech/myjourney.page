@@ -1,4 +1,4 @@
-<div class="@auth lg:pb-0 pb-10 @endauth bg-white">
+<div class="@auth lg:pb-0 pb-10 @endauth bg-white border-t">
     <div class="max-w-screen-xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8">
         <div class="md:grid md:grid-cols-3 md:gap-8">
             <div class="md:col-span-1">

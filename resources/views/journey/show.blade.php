@@ -32,7 +32,7 @@
             <section class="py-16 min-h-screen justify-center flex flex-col items-center">
                 <div class="lg:max-w-screen-lg container px-4 text-center mx-auto">
                     <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
-                    <p>{{$journey->introduction}}</p>
+                    <p class="whitespace-pre-wrap">{{$journey->introduction}}</p>
                     @if($journey->is_anonymous)
                         <div class="text-2xl font-bold my-8">by anonymous</div>
                     @else
@@ -97,7 +97,7 @@
                 <div class="p-6 md:w-2/3 lg:p-10 w-full flex flex-col items-start justify-center">
                     <h1 class="text-5xl mb-3">@if(! $steps->onFirstPage())<span class="font-bold">Page {{$steps->currentPage()}} of: </span>@endif{{$journey->title}}
                     </h1>
-                    <p>{{$journey->introduction}}</p>
+                    <p class="whitespace-pre-wrap">{{$journey->introduction}}</p>
                     @if($journey->is_anonymous)
                         <div class="text-2xl font-bold my-8">by anonymous</div>
                     @else
@@ -110,7 +110,7 @@
             <section class="py-16 min-h-screen justify-center flex flex-col items-center">
                 <div class="lg:max-w-screen-lg container px-4 text-center mx-auto">
                     <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
-                    <p>{{$journey->introduction}}</p>
+                    <p class="whitespace-pre-wrap">{{$journey->introduction}}</p>
                     @if($journey->is_anonymous)
                         <div class="text-2xl font-bold my-8">by anonymous</div>
                     @else

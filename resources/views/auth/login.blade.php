@@ -3,8 +3,8 @@
     Login
 @endsection
 @section('content')
-    <div class="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-        <div class="sm:mx-auto sm:w-full sm:max-w-md">
+    <div class="min-h-screen flex flex-col justify-center py-12 sm:px-6 lg:px-8">
+        <div class="sm:mx-auto sm:w-full sm:max-w-lg">
             <img class="mx-auto h-12 w-auto" src="/images/devjourney.svg" alt="MyJourney">
             <h2 class="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
                 Sign in and start sharing

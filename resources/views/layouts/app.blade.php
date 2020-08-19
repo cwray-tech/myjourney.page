@@ -37,7 +37,7 @@
 <div id="app" class="bg-white">
     @include('.partials._navbar')
 
-    <main class="bg-gray-50">
+    <main>
         @yield('content')
     </main>
 
