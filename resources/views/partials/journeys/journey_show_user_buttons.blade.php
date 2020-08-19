@@ -2,7 +2,7 @@
     <div class="ml-auto px-3 py-2 flex  flex-wrap justify-end items-center bg-white">
         <publish-journey-component :journey="{{ $journey }}" class="mx-2"></publish-journey-component>
         <make-public-component :journey="{{ $journey }}" class="mx-2"></make-public-component>
-        <a href="{{route('journeys.edit', $journey->slug)}}" class="border-2 border-yellow-500 rounded inline-flex items-center bg-white shadow-sm px-2 py-1">
+        <a href="{{route('journeys.edit', $journey->slug)}}" class="border-2 border-yellow-500 rounded-md inline-flex items-center bg-white shadow-sm px-2 py-1">
             <img class="w-4 mr-1 h-4" src="/images/edit.svg">
             <span>Edit <span class="hidden md:inline-block">Journey</span></span>
         </a>

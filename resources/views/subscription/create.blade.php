@@ -14,7 +14,7 @@
                         <div class="h-full">
                             <input class="hidden subscription-radio" type="radio" name="plan" value="price_1HFoWlDuOMuGSHqKxrglTNZI"
                                    id="premium-monthly" checked>
-                            <label class="plan-label p-4 py-6 text-center font-normal bg-gray-200 border-2 border-gray-200 rounded h-full" for="premium-monthly">
+                            <label class="plan-label p-4 py-6 text-center font-normal bg-gray-200 border-2 border-gray-200 rounded-md h-full" for="premium-monthly">
                                 <div class="text-3xl">Premium</div>
                                 <div class="font-italic">Post unlimited journeys.</div>
                                 <div class="font-bold">5$/month</div>
@@ -23,7 +23,7 @@
                         <div class="h-full">
                             <input class="hidden subscription-radio" type="radio" name="plan" value="price_1HDEDCDuOMuGSHqKwu7MufSn"
                                    id="premium-yearly" >
-                            <label class="plan-label p-4 py-6 text-center font-normal bg-gray-200 border-2 border-gray-200 rounded h-full" for="premium-yearly">
+                            <label class="plan-label p-4 py-6 text-center font-normal bg-gray-200 border-2 border-gray-200 rounded-md h-full" for="premium-yearly">
                                 <div class="text-3xl">Premium</div>
                                 <div class="font-italic">Post unlimited journeys.</div>
                                 <div class="font-bold">50$/year</div>

@@ -11,7 +11,7 @@
                 <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-800 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
                     Share your business, life and
                     <br class="xl:hidden">
-                    <span class="text-yellow-500">anything journeys</span>
+                    <span class="text-yellow-500">dream journeys</span>
                 </h1>
                 <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
                     MyJourney is a place where you can write and share your journeys. Don't want to share yet? Just keep
@@ -58,7 +58,7 @@
                     Your journey matters
                 </h2>
                 <p class="mt-4 max-w-3xl mx-auto text-center text-xl leading-9 text-gray-500">
-                    Here you can share your journeys in small steps on a timeline with those you
+                    You can share your journeys on a timeline with those you
                     love, or with the world.
                 </p>
             </div>
@@ -144,7 +144,7 @@
                         </defs>
                         <rect width="784" height="404" fill="url(#ca9667ae-9f92-4be7-abcb-9e3d727f2941)"/>
                     </svg>
-                    <img class="relative mx-auto sm:rounded shadow shadow-md" width="490"
+                    <img class="relative mx-auto sm:rounded-md shadow shadow-md" width="490"
                          src="/images/journey-step.png" alt="Step on a journey">
                 </div>
             </div>
@@ -222,7 +222,7 @@
                             </defs>
                             <rect width="784" height="404" fill="url(#e80155a9-dfde-425a-b5ea-1f6fadd20131)"/>
                         </svg>
-                        <img class="relative mx-auto sm:rounded shadow shadow-md" width="490"
+                        <img class="relative mx-auto sm:rounded-md shadow shadow-md" width="490"
                              src="/images/Cyborg-attack-story.png" alt="Cyborg Attack Journey">
                     </div>
                 </div>

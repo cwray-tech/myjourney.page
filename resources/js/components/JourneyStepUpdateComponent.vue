@@ -1,9 +1,9 @@
 <template>
     <div>
         <h2 contenteditable="true" @blur="updateTitle" v-text="title" class="mb-4 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"></h2>
-        <p contenteditable="true" @blur="updateDescription" v-text="description" class="whitespace-pre-wrap text-lg text-gray-500 mx-auto"></p>
-        <div v-if="saved" class="bg-blue-200 rounded p-2 mt-4">Great work! Successfully saved this step on your journey.</div>
-        <div v-if="errored" class="rounded bg-red-200 p-2 mt-4">Bummer, we weren't able to save that change. <span
+        <p contenteditable="true" @blur="updateDescription" v-text="description" class="whitespace-pre-wrap text-gray-500 mx-auto"></p>
+        <div v-if="saved" class="bg-blue-200 rounded-md p-2 mt-4">Great work! Successfully saved this step on your journey.</div>
+        <div v-if="errored" class="rounded-md bg-red-200 p-2 mt-4">Bummer, we weren't able to save that change. <span
             @click="updateStep" class="underline cursor-pointer">Try again?</span></div>
         <div v-if="saving" class="fixed inset-0 z-50 bg-white opacity-75 flex items-center justify-center">
             <div class="mx-auto text-center text-5xl">Saving Journey...</div>

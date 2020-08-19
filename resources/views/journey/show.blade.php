@@ -30,9 +30,37 @@
         </section>
 
     @endif
-    <section class="bg-gray-50 py-10">
+    <section class="py-10 relative">
+        <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+            <div class="relative h-full text-lg max-w-prose mx-auto">
+                <svg class="absolute top-0 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+                </svg>
+                <svg class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+                </svg>
+                <svg class="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                </svg>
+            </div>
+        </div>
         @if($steps->count() >0 )
-            <div class="journey-section container px-4 md:pr-4 pr-0 mb-40 mx-auto relative">
+            <div class="journey-section max-w-screen-xl px-4 md:pr-4 pr-0 mb-40 mx-auto relative">
                 {{ $steps->links('.partials.journeys._page_number_pagination') }}
                 <div class="timeline-container">
                     <div class="timeline"></div>
@@ -40,42 +68,14 @@
                 </div>
 
                 @foreach($steps as $step)
-                    <div id="{{ $step->id }}"
-                         class="md:flex odd:flex-row-reverse justify-center flex-row items-center py-16 pl-6 md:pl-0">
-                        @if($step->picture)
-                            <div class="md:w-1/3 mx-auto">
-
-                                <img
-                                    class="w-full rounded rounded-r-none shadow shadow-sm rounded-b-none md:rounded-r md:rounded-b"
-                                    alt="{{ $step->title }}" src="{{ $step->picture_path }}">
-
-                            </div>
-                        @endif
-                        <div
-                            class="relative bg-white shadow shadow-md rounded journey-step-content px-6 py-10 rounded-r-none md:rounded-r">
-                            @if($step->time)
-                                <div class="text-3xl leading-6 mb-6">{{ $step->formattedTime() }} </div>
-                            @endif
-                            @can('update', $journey)
-                                <journey-step-update-component :step="{{$step}}"></journey-step-update-component>
-                            @else
-                                <h2 class="mb-4 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">{{ $step->title }}</h2>
-
-                                <p class="whitespace-pre-wrap text-lg text-gray-500 mx-auto">{{ $step->description }}</p>
-                            @endcan
-                            <div class="text-lg font-bold text-gray-600 mt-3">
-                                {{ $step->formatted_date }}
-                            </div>
-                        </div>
-
-                    </div>
+                    @include('.partials.steps._step')
                 @endforeach
 
             </div>
             <div
                 class="mx-auto container lg:max-w-screen-lg px-4 mb-40">{{ $steps->links('.partials.journeys._journey_step_paginator') }}</div>
         @endif
-        <div class="pb-40 container px-4 mx-auto">
+        <div class="relative pb-40 container px-4 mx-auto">
             <h2 class="text-5xl text-center pb-12">{{ $journey->title }}</h2>
             <div class="flex items-center justify-center flex-wrap flex-col md:flex-row">
                 <a href="{{route('journeys.create')}}" class="btn btn-cta mx-2 mb-3">Write a Journey</a>

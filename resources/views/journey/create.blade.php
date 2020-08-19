@@ -4,17 +4,17 @@
 @endsection
 @section('content')
     <section class="">
-        <div class="max-w-7xl py-16 bg-gray-50 mt-1 min-h-screen mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl py-16  mt-1 min-h-screen mx-auto pb-12 px-4 sm:px-6 lg:px-8">
             <div class="lg:max-w-screen-lg  mx-auto">
                 <h1 class="text-4xl font-bold leading-9 mb-2">Start writing your Journey</h1>
-                <form class="mt-6 px-4 py-6 pb-8 bg-white rounded shadow shadow-md" method="post" action="/journeys" enctype="multipart/form-data">
+                <form class="mt-6 px-4 py-6 pb-8 bg-white rounded-md border border-yellow-500" method="post" action="/journeys" enctype="multipart/form-data">
                     @csrf
                     @include('.partials.forms.form_errors')
                     <label for="title">Journey Title</label>
                     <input name="title" class="input" id="title" autocomplete="off" type="text"
                            value="{{ old('title') }}" placeholder="eg. How we traveled to the sixth galaxy of the jyrono universe.">
                     <label for="picture">Journey Photo</label>
-                    <div class="p-2 bg-gray-200 rounded text-sm mb-2">Photo must be less than 4MB.</div>
+                    <div class="p-2 bg-gray-200 rounded-md text-sm mb-2">Photo must be less than 4MB.</div>
                     <input name="picture" id="picture" class="input" accept="image/*" type="file"
                            value="{{ old('picture') }}" >
                     <div>

@@ -6,6 +6,13 @@ module.exports = {
         './resources/**/*.vue',
     ],
   theme: {
+      typography: {
+          default: {
+              css: {
+                  color: '#333',
+              },
+          },
+      },
     extend: {
         fontFamily: {
             sans: ['Inter var', ...defaultTheme.fontFamily.sans],

@@ -1,4 +1,4 @@
-<div class="sticky top-0 sidebar lg:pr-6 md:w-1/3 px-4 bg-white shadow rounded md:mt-0 mt-8 max-h-screen overflow-hidden hover:overflow-auto transition-all ease-in-out duration-300">
+<div class="sticky top-0 border sidebar lg:pr-6 md:w-1/3 px-4 bg-white rounded-md md:mt-0 mt-8 max-h-screen overflow-hidden hover:overflow-auto transition-all ease-in-out duration-300">
     <h2 class="text-2xl font-bold pb-2 pt-8 border-b border-yellow-500 mb-4 sticky top-0 bg-white">Your Journey
         <a target="_blank" href="{{route('journeys.show', $journey->slug)}}" class="icon-button text-sm mb-1 ml-4">
             <img class="w-4 mr-2" src="/images/external.svg">View</a>
@@ -17,7 +17,7 @@
         <div class="mb-6">
             @forelse($journey->steps as $step)
                 <div
-                    class="px-2 pl-4 py-4 lg:flex items-center justify-between border rounded mb-2">
+                    class="px-2 pl-4 py-4 lg:flex items-center justify-between border rounded-md mb-2">
                     <div class="lg:w-3/4">
                         <h3 class="text-lg">{{$step->title}}</h3>
                         @if($step->date)
@@ -49,7 +49,7 @@
 
                 </div>
             @empty
-                <p class="bg-black p-4 rounded text-white">Add the first step you took down this journey, or
+                <p class="bg-black p-4 rounded-md text-white">Add the first step you took down this journey, or
                     the first step you dream of taking.</p>
             @endforelse
         </div>

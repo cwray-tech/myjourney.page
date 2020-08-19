@@ -4,19 +4,19 @@
 @endsection
 @section('content')
     <section class="">
-        <div class="max-w-7xl bg-gray-50 mt-1 py-16 mx-auto pb-12 px-4 sm:px-6 lg:px-8 min-h-screen">
+        <div class="max-w-7xl mt-1 py-16 mx-auto pb-12 px-4 sm:px-6 lg:px-8 min-h-screen">
             <div class="p-2">
                 <h1 class="text-4xl leading-9 font-bold">Your Dashboard</h1>
             </div>
 
             <div class="grid md:grid-cols-2 gap-4 mt-6">
-                <a href="/dashboard/journeys" class="block rounded-md bg-white shadow sm:rounded-lg p-6 pb-8">
+                <a href="/dashboard/journeys" class="block rounded-md bg-white bg-white border hover:shadow hover:border-yellow-500 transition ease-in-out duration-150 p-6 pb-8">
                     <h2 class="text-3xl font-bold mb-3">See Journeys</h2>
                     <p class="mb-6">View all of the Journeys you have shared.</p>
                     <button class="btn btn-cta">View Journeys</button>
                 </a>
                 <a href="{{ route('journeys.create') }}"
-                    class="block rounded-md bg-white bg-white shadow sm:rounded-lg p-6 pb-8">
+                    class="block rounded-md bg-white bg-white border hover:shadow hover:border-yellow-500 transition ease-in-out duration-150 p-6 pb-8">
                     <h2 class="text-3xl font-bold mb-3">Share a Journey</h2>
                     <p class="mb-6">Share a life journey you have had or wish you could have.</p>
                     <button class="btn btn-cta">Start Writing!</button>

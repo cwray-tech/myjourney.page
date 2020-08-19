@@ -21,10 +21,10 @@ Route::get('/dashboard/info', 'DashboardController@edit')->name('info');
 Route::patch('/dashboard/info/update', 'DashboardController@update')->name('update-info');
 Route::get('/dashboard/journeys', 'UserJourneyController@index')->name('user-journeys');
 
-Route::get('/', 'StaticPageController@index');
-Route::get('/about', 'StaticPageController@about');
-Route::get('/privacy-policy', 'StaticPageController@privacy');
-Route::get('/terms', 'StaticPageController@terms');
+Route::get('/', 'StaticPageController@index')->name('home');
+Route::get('/about', 'StaticPageController@about')->name('about');
+Route::get('/privacy-policy', 'StaticPageController@privacy')->name('privacy');
+Route::get('/terms', 'StaticPageController@terms')->name('terms');
 
 Route::resource('journeys', 'JourneyController');
 Route::patch('/api/journeys/{journey}', 'Api\JourneyController@update');

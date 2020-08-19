@@ -1,16 +1,16 @@
-<div class="rounded-md bg-white shadow shadow-sm mb-4">
+<div class="rounded-md bg-white border shadow shadow-sm mb-4">
     <div class="w-full grid lg:grid-cols-6">
         @if($journey->picture)
             <div class="flex justify-center items-center h-full max-h-1/2">
-                <img src="{{$journey->picture_path}}" class="w-full h-full object-cover rounded">
+                <img src="{{$journey->picture_path}}" class="w-full h-full object-cover rounded-md">
             </div>
         <div class="lg:col-span-3 md:p-6 p-4">
-            <h2 class="mt-2 mb-8 text-3xl  leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">{{ $journey->title }}</h2>
+            <h2 class="mb-4 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">{{ $journey->title }}</h2>
             <p class="leading-5 text-gray-500">{{ $journey->intro_preview }}</p>
         </div>
         @else
             <div class="lg:col-span-4 md:p-6 p-4">
-                <h2 class="mt-2 mb-8 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">{{ $journey->title }}</h2>
+                <h2 class="mb-4 text-3xl leading-8 font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">{{ $journey->title }}</h2>
                 <p class="leading-5 text-gray-500">{{ $journey->intro_preview }}</p>
             </div>
         @endif

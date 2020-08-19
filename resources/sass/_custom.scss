@@ -9,14 +9,14 @@
 }
 
 .btn-cta{
-    @apply border-black text-black transition duration-150 ease-in-out;
+    @apply border-yellow-500 text-yellow-500;
 }
 .btn-cta:hover{
     @apply border-yellow-400 text-yellow-400;
 }
 
 .btn-primary{
-    @apply  text-white bg-yellow-600  transition duration-150 ease-in-out;
+    @apply  text-white bg-yellow-600;
 }
 .btn-primary:hover{
     @apply bg-yellow-400 text-white;
@@ -49,34 +49,6 @@ label {
 .alert{
     @apply border mx-auto bg-white px-4 py-3 max-w-lg rounded;
 }
-
 .danger{
     @apply border-red-700 bg-red-200;
-}
-.navlink{
-    @apply px-3 py-2 font-medium leading-5 border-b border-white transition duration-150 ease-in-out;
-}
-
-.rich-text{
-    a {
-        @apply underline;
-    }
-    h1 {
-        @apply text-5xl mb-2 mt-6;
-    }
-    h2 {
-        @apply text-3xl mb-2 mt-6;
-    }
-    h3 {
-        @apply text-2xl mb-2 mt-6;
-    }
-    p {
-        @apply mb-4;
-    }
-    ul {
-        @apply list-disc list-inside mb-4;
-    }
-    ol {
-        @apply list-disc list-inside mb-4;
-    }
 }

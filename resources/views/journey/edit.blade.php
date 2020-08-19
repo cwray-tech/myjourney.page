@@ -17,12 +17,12 @@
                        value="{{ $journey->title }}" placeholder="eg. My Journey to Become Software Developer">
                 <label for="picture">Journey Photo</label>
                 @if($journey->picture)
-                    <div class="flex border rounded items-end my-2">
-                        <img class="rounded w-40" src="{{$journey->picture_path}}">
-                        <div class="p-2 m-2 bottom-0 bg-gray-200 rounded right-0 text-sm">Current Picture</div>
+                    <div class="flex border rounded-md items-end my-2">
+                        <img class="rounded-md w-40" src="{{$journey->picture_path}}">
+                        <div class="p-2 m-2 bottom-0 bg-gray-200 rounded-md right-0 text-sm">Current Picture</div>
                     </div>
                 @endif
-                <div class="p-2 bg-gray-200 rounded text-sm my-2">Photos must be less than 4MB.</div>
+                <div class="p-2 bg-gray-200 rounded-md text-sm my-2">Photos must be less than 4MB.</div>
                 <input name="picture" id="picture" class="input" accept="image/*" type="file">
                 <label for="anonymous">Do you want this Journey to be anonymous?</label>
                 <select name="is_anonymous" id="anonymous" class="input form-select">

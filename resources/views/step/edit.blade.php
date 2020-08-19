@@ -16,12 +16,12 @@
                        value="{{ $step->title }}" placeholder="eg. I started school at Harvard.">
                 <label for="picture">Step Photo (Optional)</label>
                 @if($step->picture)
-                    <div class="flex border rounded items-end">
-                        <img class="rounded w-40" src="{{$step->picture_path}}">
-                        <div class="p-2 m-2 bottom-0 bg-gray-200 rounded right-0 text-sm">Current Picture</div>
+                    <div class="flex border rounded-md items-end">
+                        <img class="rounded-md w-40" src="{{$step->picture_path}}">
+                        <div class="p-2 m-2 bottom-0 bg-gray-200 rounded-md right-0 text-sm">Current Picture</div>
                     </div>
                 @endif
-                <div class="p-2 bg-gray-200 rounded text-sm my-2">Photos must be less than 4MB.</div>
+                <div class="p-2 bg-gray-200 rounded-md text-sm my-2">Photos must be less than 4MB.</div>
                 <input name="picture" id="picture" class="input" accept="image/*" type="file">
 
                 <div class="flex">

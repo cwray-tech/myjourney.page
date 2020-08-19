@@ -6,7 +6,7 @@
                     <div class="-ml-2 mr-2 flex items-center md:hidden">
                         <!-- Mobile menu button -->
                         <button @click="toggleNav"
-                                class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out"
+                                class="inline-flex items-center justify-center p-2 rounded-md text-yellow-500 focus:outline-none transition duration-150 ease-in-out"
                                 aria-label="Main menu" aria-expanded="false">
                             <!-- Icon when menu is closed. -->
                             <!-- Menu open: "hidden", Menu closed: "block" -->
@@ -36,32 +36,32 @@
                     <div class="hidden md:ml-6 md:flex">
                         @guest
                         <a href="/"
-                           class="inline-flex items-center px-1 pt-1 border-b-2 border-yellow-500 text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-yellow-700 transition duration-150 ease-in-out">
+                           class="inline-flex items-center px-1 pt-1 border-b-2 @if(request()->routeIs('home')) border-yellow-500 @else border-transparent @endif text-sm font-medium leading-5 text-gray-900 focus:outline-none focus:border-yellow-700 transition duration-150 ease-in-out">
                             Home
                         </a>
                         <a href="{{ route('journeys.index') }}"
-                           class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                           class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 @if(request()->routeIs('journeys.index')) border-yellow-500 @else border-transparent @endif text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                             Public Journeys
                         </a>
                         <a href="{{ route('dashboard') }}"
-                           class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                           class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 @if(request()->routeIs('dashboard')) border-yellow-500 @else border-transparent @endif text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                             Dashboard
                         </a>
                         <a href="{{ route('user-journeys') }}"
-                           class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                           class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 @if(request()->routeIs('user-journeys')) border-yellow-500 @else border-transparent @endif text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                             Your Journeys
                         </a>
                             @else
                             <a href="{{ route('dashboard') }}"
-                               class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                               class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 @if(request()->routeIs('dashboard')) border-yellow-500 @else border-transparent @endif text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                                 Dashboard
                             </a>
                             <a href="{{ route('user-journeys') }}"
-                               class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                               class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 @if(request()->routeIs('user-journeys')) border-yellow-500 @else border-transparent @endif text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                                 Your Journeys
                             </a>
                             <a href="{{ route('journeys.index') }}"
-                               class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 border-transparent text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
+                               class="ml-8 inline-flex items-center px-1 pt-1 border-b-2 @if(request()->routeIs('journeys.index')) border-yellow-500 @else border-transparent @endif text-sm font-medium leading-5 text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
                                 Public Journeys
                             </a>
                             @endguest
@@ -83,7 +83,7 @@
                     @else
                     <div class="flex-shrink-0">
                         <a href="{{ route('journeys.create') }}"
-                                class="relative inline-flex items-center px-4 py-2 border border-transparent text-sm leading-5 font-medium rounded-md text-white bg-yellow-600 shadow-sm hover:bg-yellow-500 focus:outline-none focus:border-yellow-700 focus:shadow-outline-orange active:bg-yellow-700 transition ease-in-out duration-150">
+                                class="btn btn-cta">
                             <svg class="-ml-1 mr-2 h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
                                 <path fill-rule="evenodd"
                                       d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
@@ -130,14 +130,14 @@
         <div v-if="navOpen" v-cloak class="md:hidden">
             <div class="pt-2 pb-3">
                 <a href="/"
-                   class="block pl-3 pr-4 py-2 border-l-4 border-yellow-500 text-base font-medium text-yellow-700 bg-yellow-50 focus:outline-none focus:text-yellow-800 focus:bg-yellow-100 focus:border-yellow-700 transition duration-150 ease-in-out sm:pl-5 sm:pr-6">Home</a>
+                   class="block pl-3 pr-4 py-2 border-l-4 @if(request()->routeIs('home')) border-yellow-500 text-yellow-700 bg-yellow-50 focus:outline-none focus:text-yellow-800 focus:bg-yellow-100 focus:border-yellow-700  @else border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300  @endif text-base font-medium transition duration-150 ease-in-out sm:pl-5 sm:pr-6">Home</a>
                 <a href="{{route('journeys.index')}}"
-                   class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out sm:pl-5 sm:pr-6">Public
+                   class="mt-1 block pl-3 pr-4 py-2 border-l-4 @if(request()->routeIs('journeys.index')) border-yellow-500 text-yellow-700 bg-yellow-50 focus:outline-none focus:text-yellow-800 focus:bg-yellow-100 focus:border-yellow-700  @else border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300  @endif text-base font-medium transition duration-150 ease-in-out sm:pl-5 sm:pr-6">Public
                     Journeys</a>
                 <a href="{{ route('dashboard') }}"
-                   class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out sm:pl-5 sm:pr-6">Dashboard</a>
+                   class="mt-1 block pl-3 pr-4 py-2 border-l-4 @if(request()->routeIs('dashboard')) border-yellow-500 text-yellow-700 bg-yellow-50 focus:outline-none focus:text-yellow-800 focus:bg-yellow-100 focus:border-yellow-700  @else border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300  @endif  text-base font-medium transition duration-150 ease-in-out sm:pl-5 sm:pr-6">Dashboard</a>
                 <a href="{{ route('user-journeys') }}"
-                   class="mt-1 block pl-3 pr-4 py-2 border-l-4 border-transparent text-base font-medium text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300 transition duration-150 ease-in-out sm:pl-5 sm:pr-6">Your
+                   class="mt-1 block pl-3 pr-4 py-2 border-l-4 @if(request()->routeIs('user-journeys')) border-yellow-500 text-yellow-700 bg-yellow-50 focus:outline-none focus:text-yellow-800 focus:bg-yellow-100 focus:border-yellow-700  @else border-transparent text-gray-600 hover:text-gray-800 hover:bg-gray-50 hover:border-gray-300 focus:outline-none focus:text-gray-800 focus:bg-gray-50 focus:border-gray-300  @endif  text-base font-medium transition duration-150 ease-in-out sm:pl-5 sm:pr-6">Your
                     Journeys</a>
             </div>
             @auth
