@@ -28,6 +28,7 @@ class JourneyUpdateRequest extends FormRequest
             'picture' => 'nullable|image|max:4000',
             'introduction' => 'required|string',
             'published_at' => 'nullable',
+            'is_anonymous' => 'boolean|nullable'
         ];
     }
 }

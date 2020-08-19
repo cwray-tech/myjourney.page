@@ -25,7 +25,7 @@ Vue.component('alert-component', require('./components/AlertComponent').default)
 Vue.component('modal-component', require('./components/ModalComponent').default);
 Vue.component('publish-journey-component', require('./components/PublishJourneyComponent').default);
 Vue.component('make-public-component', require('./components/MakePublicJourneyComponent').default);
-Vue.component('journey-intro', require('./components/JourneyIntroComponent').default);
+Vue.component('journey-intro-component', require('./components/JourneyIntroComponent').default);
 Vue.component('journey-step-update-component', require('./components/JourneyStepUpdateComponent').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to

@@ -1,11 +1,28 @@
-.btn {
-    @apply py-2 px-6 rounded;
+.btn{
+    @apply flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-yellow-600 bg-white transition duration-150 ease-in-out;
 }
+.btn:hover{
+    @apply text-yellow-500;
+}
+.btn:focus{
+    @apply outline-none border-yellow-300 shadow-outline-orange;
+}
+
 .btn-cta{
-    @apply border-2 border-black;
+    @apply border-yellow-500 text-yellow-500;
 }
+.btn-cta:hover{
+    @apply border-yellow-400 text-yellow-400;
+}
+
 .btn-primary{
-    @apply bg-black border-2 border-black  text-white px-6;
+    @apply  text-white bg-yellow-600;
+}
+.btn-primary:hover{
+    @apply bg-yellow-400 text-white;
+}
+.btn-primary:focus{
+   @apply outline-none border-yellow-700 shadow-outline-orange;
 }
 .btn-danger {
     @apply border border-red-500;
@@ -14,11 +31,17 @@
     @apply border border-black rounded inline-flex items-center bg-white shadow-sm px-2 py-1;
 }
 .input {
-    @apply border py-2 px-2 mb-4 w-full rounded;
+    @apply appearance-none mt-1 mb-4 block w-full px-3 py-2 border border-gray-300 rounded-md transition duration-150 ease-in-out;
+}
+.input::placeholder {
+    @apply text-gray-400;
+    }
+.input:focus {
+    @apply outline-none shadow-outline-orange border-yellow-300;
 }
 
 label {
-    @apply block text-gray-700 font-bold text-sm mb-2;
+    @apply block text-sm font-medium leading-5 text-gray-700;
 }
 .checkbox {
     @apply mb-0 mr-4;
@@ -26,34 +49,6 @@ label {
 .alert{
     @apply border mx-auto bg-white px-4 py-3 max-w-lg rounded;
 }
-
 .danger{
     @apply border-red-700 bg-red-200;
-}
-.navlink{
-    @apply px-3 py-2 font-medium leading-5 border-b border-white transition duration-150 ease-in-out;
-}
-
-.rich-text{
-    a {
-        @apply underline;
-    }
-    h1 {
-        @apply text-5xl mb-2 mt-6;
-    }
-    h2 {
-        @apply text-3xl mb-2 mt-6;
-    }
-    h3 {
-        @apply text-2xl mb-2 mt-6;
-    }
-    p {
-        @apply mb-4;
-    }
-    ul {
-        @apply list-disc list-inside mb-4;
-    }
-    ol {
-        @apply list-disc list-inside mb-4;
-    }
 }

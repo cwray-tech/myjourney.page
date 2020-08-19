@@ -3,7 +3,7 @@
     Verify your Email
 @endsection
 @section('content')
-<section class="py-40 min-h-screen justify-center flex flex-col">
+<section class="py-16 min-h-screen justify-center flex flex-col">
     <div class="container mx-auto px-4">
         <div class="">
             <div class="">

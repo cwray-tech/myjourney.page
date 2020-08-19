@@ -10,142 +10,81 @@
 @section('page_image'){{$journey->picture ? $journey->picture_path : "https://myjourney.page/images/my-journey-open-graph-image.jpg" }}@endsection
 
 @section('content')
-    @can('update', $journey)
-        @if($journey->picture)
-            <section class="md:flex min-h-screen items-stretch mb-40 border-b" >
-                <div
-                    class="md:w-1/3 w-full md:min-h-screen md:max-h-screen  h-64 overflow-hidden flex items-stretch flex-grow">
-                    <img  class="object-cover w-full h-full" alt="{{ $journey->title }}"
-                          src="{{ $journey->picture_path }}" >
-                </div>
-                <div class="p-6 md:w-2/3 lg:p-10 w-full flex flex-col items-start justify-center">
-                    <journey-intro :journey="{{ $journey }}"></journey-intro>
-                    <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
-                </div>
+    @if($journey->picture)
+        <section class="md:flex min-h-screen items-stretch">
+            <div class="md:w-1/2 overflow-hidden flex items-stretch flex-grow">
+                <img class="object-cover w-full h-full" alt="{{ $journey->title }}"
+                     src="{{ $journey->picture_path }}">
+            </div>
+            <div class="py-16 md:w-1/2 lg:p-20 w-full flex flex-col items-start justify-center">
+                @include('.partials.journeys._journey_intro')
 
-            </section>
-        @else
-            <section class="py-40 min-h-screen justify-center flex flex-col items-center">
-                <div class="lg:max-w-screen-lg container px-4 text-center mx-auto">
-                    <journey-intro :journey="{{ $journey }}"></journey-intro>
-                    <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
-                </div>
-            </section>
-
-        @endif
-        <section>
-            @if($steps->count() >0 )
-                <div class="journey-section container px-4 md:pr-4 pr-0 mb-40 mx-auto relative">
-                    {{ $steps->links('.partials.journeys._page_number_pagination') }}
-                    <div class="timeline-container">
-                        <div class="timeline"></div>
-                        <div class="timeline-dot"></div>
-                    </div>
-
-                    @foreach($steps as $step)
-                        <div id="{{ $step->id }}"
-                             class="md:flex odd:flex-row-reverse justify-between flex-row items-center py-10 pl-6  md:pl-0">
-                            <div class="md:w-1/3 mx-auto">
-                                @if($step->picture)
-                                    <img class="w-full rounded rounded-r-none rounded-b-none md:rounded-r md:rounded-b"
-                                         alt="{{ $step->title }}" src="{{ $step->picture_path }}">
-                                @endif
-                            </div>
-
-                            <div class="border-t border-b journey-step-content px-4 py-10">
-
-                                <div class="text-lg">
-                                    {{ date('F d, Y', strtotime($step->date)) }}
-                                </div>
-                                <journey-step-update-component :step="{{$step}}"></journey-step-update-component>
-                            </div>
-
-                        </div>
-                    @endforeach
-
-                </div>
-                <div class="mx-auto container lg:max-w-screen-lg px-4 mb-40">{{ $steps->links('.partials.journeys._journey_step_paginator') }}</div>
-            @endif
-            <div class="pb-40 container px-4 mx-auto">
-                <h2 class="text-5xl text-center pb-12">{{ $journey->title }}</h2>
-                <div class="flex items-center justify-center flex-wrap flex-col md:flex-row">
-                    <a href="{{route('journeys.create')}}" class="btn btn-cta mx-2 mb-3">Write a Journey</a>
-                    <a href="{{route('journeys.index')}}" class="btn btn-primary mx-2 mb-3">View All Journeys</a>
-                </div>
             </div>
 
         </section>
-        @include('.partials.journeys.journey_show_user_buttons')
     @else
-        @if($journey->picture)
-            <section class="md:flex min-h-screen items-stretch mb-40 border-b" >
-                <div
-                    class="md:w-1/3 w-full md:min-h-screen md:max-h-screen  h-64 overflow-hidden flex items-stretch flex-grow">
-                    <img  class="object-cover w-full h-full" alt="{{ $journey->title }}"
-                          src="{{ $journey->picture_path }}" >
-                </div>
-                <div class="p-6 md:w-2/3 lg:p-10 w-full flex flex-col items-start justify-center">
-                    <h1 class="text-5xl mb-3">@if(! $steps->onFirstPage())<span class="font-bold">Page {{$steps->currentPage()}} of: </span>@endif{{$journey->title}}</h1>
-                    <p class="whitespace-pre-wrap">{{$journey->introduction}}</p>
-                    <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
-                </div>
-
-            </section>
-        @else
-            <section class="py-40 min-h-screen justify-center flex flex-col items-center">
-                <div class="lg:max-w-screen-lg container px-4 text-center mx-auto">
-                    <h1 class="text-5xl mb-3">{{$journey->title}}</h1>
-                    <p class="whitespace-pre-wrap">{{$journey->introduction}}</p>
-                    <div class="text-2xl font-bold my-8">by {{$journey->user->name}}</div>
-                </div>
-            </section>
-
-        @endif
-        <section>
-            @if($steps->count() >0 )
-                <div class="journey-section container px-4 md:pr-4 pr-0 mb-40 mx-auto relative">
-                    {{ $steps->links('.partials.journeys._page_number_pagination') }}
-                    <div class="timeline-container">
-                        <div class="timeline"></div>
-                        <div class="timeline-dot"></div>
-                    </div>
-
-                    @foreach($steps as $step)
-                        <div id="{{ $step->id }}"
-                             class="md:flex odd:flex-row-reverse justify-between flex-row items-center py-10 pl-6  md:pl-0">
-                            <div class="md:w-1/3 mx-auto">
-                                @if($step->picture)
-                                    <img class="w-full rounded rounded-r-none rounded-b-none md:rounded-r md:rounded-b"
-                                         alt="{{ $step->title }}" src="{{ $step->picture_path }}">
-                                @endif
-                            </div>
-
-                            <div class="border-t border-b journey-step-content px-4 py-10">
-
-                                <div class="text-lg">
-                                    {{ date('F d, Y', strtotime($step->date)) }}
-                                </div>
-                                <h2 class="text-4xl mb-2">{{ $step->title }}</h2>
-                                @if($step->time)
-                                    <div class="mb-2">{{ date('h:i:s a',  strtotime($step->time)) }} </div>
-                                @endif
-                                <p class="color-contrast-medium whitespace-pre-wrap">{{ $step->description }}</p>
-                            </div>
-
-                        </div>
-                    @endforeach
-
-                </div>
-                <div class="mx-auto container lg:max-w-screen-lg px-4 mb-40">{{ $steps->links('.partials.journeys._journey_step_paginator') }}</div>
-            @endif
-            <div class="pb-40 container px-4 mx-auto">
-                <h2 class="text-5xl text-center pb-12">{{ $journey->title }}</h2>
-                <div class="flex items-center justify-center flex-wrap flex-col md:flex-row">
-                    <a href="{{route('journeys.create')}}" class="btn btn-cta mx-2 mb-3">Write a Journey</a>
-                    <a href="{{route('journeys.index')}}" class="btn btn-primary mx-2 mb-3">View All Journeys</a>
-                </div>
-            </div>
-
+        <section class="py-16 min-h-screen justify-center flex flex-col items-center">
+                @include('.partials.journeys._journey_intro')
         </section>
+
+    @endif
+    <section class="py-10 relative">
+        <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
+            <div class="relative h-full text-lg max-w-prose mx-auto">
+                <svg class="absolute top-0 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="74b3fd99-0a6f-4271-bef2-e80eeafdf357" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#74b3fd99-0a6f-4271-bef2-e80eeafdf357)" />
+                </svg>
+                <svg class="absolute top-1/2 right-full transform -translate-y-1/2 -translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="f210dbf6-a58d-4871-961e-36d5016a0f49" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#f210dbf6-a58d-4871-961e-36d5016a0f49)" />
+                </svg>
+                <svg class="absolute bottom-12 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">
+                    <defs>
+                        <pattern id="d3eb07ae-5182-43e6-857d-35c643af9034" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                            <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                        </pattern>
+                    </defs>
+                    <rect width="404" height="384" fill="url(#d3eb07ae-5182-43e6-857d-35c643af9034)" />
+                </svg>
+            </div>
+        </div>
+        @if($steps->count() >0 )
+            <div class="journey-section max-w-screen-xl px-4 md:pr-4 pr-0 mb-40 mx-auto relative">
+                {{ $steps->links('.partials.journeys._page_number_pagination') }}
+                <div class="timeline-container">
+                    <div class="timeline"></div>
+                    <div class="timeline-dot"></div>
+
+                </div>
+
+                @foreach($steps as $step)
+                    @include('.partials.steps._step')
+                @endforeach
+
+
+            </div>
+            <div
+                class="mx-auto container lg:max-w-screen-lg px-4 mb-40">{{ $steps->links('.partials.journeys._journey_step_paginator') }}</div>
+        @endif
+        <div class="relative pb-40 container px-4 mx-auto">
+            <h2 class="text-4xl font-extrabold text-center mb-8">{{ $journey->title }}</h2>
+            <div class="flex items-center justify-center flex-wrap flex-col md:flex-row">
+                <a href="{{route('journeys.create')}}" class="btn btn-cta mx-2 mb-3">Write a Journey</a>
+                <a href="{{route('journeys.index')}}" class="btn btn-primary mx-2 mb-3">View All Journeys</a>
+            </div>
+        </div>
+
+    </section>
+    @can('update', $journey)
+        @include('.partials.journeys.journey_show_user_buttons')
     @endcan
 @endsection

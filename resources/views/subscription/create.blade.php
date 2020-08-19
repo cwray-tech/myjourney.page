@@ -3,8 +3,8 @@
     Subscribe to a Plan
 @endsection
 @section('content')
-    <section class="py-40">
-        <div class="container px-6 mx-auto">
+    <section class="py-16 ">
+        <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
             <div class="grid lg:grid-cols-3 gap-8">
                 <form action="/subscribe" method="post" id="subscribe-form" class="lg:col-span-2 my-6">
                     <h1 class="text-5xl mb-3">Subscribe to your plan.</h1>
@@ -14,7 +14,7 @@
                         <div class="h-full">
                             <input class="hidden subscription-radio" type="radio" name="plan" value="price_1HFoWlDuOMuGSHqKxrglTNZI"
                                    id="premium-monthly" checked>
-                            <label class="plan-label p-4 py-6 text-center font-normal bg-gray-200 border-2 border-gray-200 rounded h-full" for="premium-monthly">
+                            <label class="plan-label p-4 py-6 text-center font-normal bg-gray-200 border-2 border-gray-200 rounded-md h-full" for="premium-monthly">
                                 <div class="text-3xl">Premium</div>
                                 <div class="font-italic">Post unlimited journeys.</div>
                                 <div class="font-bold">5$/month</div>
@@ -23,7 +23,7 @@
                         <div class="h-full">
                             <input class="hidden subscription-radio" type="radio" name="plan" value="price_1HDEDCDuOMuGSHqKwu7MufSn"
                                    id="premium-yearly" >
-                            <label class="plan-label p-4 py-6 text-center font-normal bg-gray-200 border-2 border-gray-200 rounded h-full" for="premium-yearly">
+                            <label class="plan-label p-4 py-6 text-center font-normal bg-gray-200 border-2 border-gray-200 rounded-md h-full" for="premium-yearly">
                                 <div class="text-3xl">Premium</div>
                                 <div class="font-italic">Post unlimited journeys.</div>
                                 <div class="font-bold">50$/year</div>

@@ -34,10 +34,10 @@
 
 </head>
 <body>
-<div id="app">
+<div id="app" class="bg-white">
     @include('.partials._navbar')
 
-    <main class="min-h-screen">
+    <main>
         @yield('content')
     </main>
 

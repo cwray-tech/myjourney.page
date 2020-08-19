@@ -6,13 +6,23 @@ module.exports = {
         './resources/**/*.vue',
     ],
   theme: {
+      typography: {
+          default: {
+              css: {
+                  color: '#333',
+              },
+          },
+      },
     extend: {
         fontFamily: {
             sans: ['Inter var', ...defaultTheme.fontFamily.sans],
         },
     },
   },
-    variants: ['responsive', 'odd', 'hover', 'focus', 'active', 'disabled'],
+    variants: {
+        overflow: ['responsive', 'hover'],
+        flexDirection: ['responsive', 'odd']
+    },
   plugins: [
       require('@tailwindcss/ui'),
   ],

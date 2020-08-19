@@ -47,6 +47,7 @@ class JourneyController extends Controller
         $journey = Journey::create([
             'user_id' => auth()->id(),
             'title' => $request->title,
+            'is_anonymous' => $request->is_anonymous == true ? '1' : '0',
             'introduction' => $request->introduction,
         ]);
 
@@ -93,7 +94,8 @@ class JourneyController extends Controller
         $this->authorize('update', $journey);
         $journey->update([
             'title' => $request->title,
-            'introduction' => $request->introduction
+            'introduction' => $request->introduction,
+            'is_anonymous' => $request->is_anonymous == true ? '1' : '0',
         ]);
         if($request->picture) {
             $journey->update([
