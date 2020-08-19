@@ -1,28 +1,16 @@
 html {
     scroll-behavior: smooth;
 }
-.journey-section {
 
-}
 .journey-step-content{
     width: 45%;
-}
-.no-scrollbar::-webkit-scrollbar {
-    display: none;
-}
-.no-scrollbar{
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
 }
 
 [v-cloak] {
     display: none;
 }
-.max-h-80 {
-    max-height: 80VH;
-}
-.top-10 {
-    top: 13VH;
+.max-h-1\/2{
+    max-height: 50VH;
 }
 .timeline-container{
     position: absolute;
@@ -74,6 +62,20 @@ html {
     border-color: black;
     background-color: white;
 }
+.sidebar::-webkit-scrollbar {
+    width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: rgb(54, 49, 49);
+}
+
 
 @media only screen and (max-width: 768px) {
     .timeline-container{

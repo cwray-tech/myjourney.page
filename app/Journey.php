@@ -3,13 +3,14 @@
 namespace App;
 
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 use Illuminate\Database\Eloquent\Model;
 
 class Journey extends Model
 {
-    protected $appends = ['picture_path'];
+    protected $appends = ['picture_path', 'author', 'intro_preview'];
     use HasSlug;
     /**
      * The attributes that are mass assignable.
@@ -80,5 +81,15 @@ class Journey extends Model
     public function getPicturePathAttribute()
     {
         return  $this->picture ? asset(Storage::url($this->picture)) : null;
+    }
+
+    public function getIntroPreviewAttribute()
+    {
+        return Str::limit(strip_tags($this->introduction),300,'...');
+    }
+
+    public function getAuthorAttribute()
+    {
+        return $this->is_anonymous ? 'anonymous' : $this->user->name;
     }
 }

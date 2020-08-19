@@ -12,7 +12,10 @@ module.exports = {
         },
     },
   },
-    variants: ['responsive', 'odd', 'hover', 'focus', 'active', 'disabled'],
+    variants: {
+        overflow: ['responsive', 'hover'],
+        flexDirection: ['responsive', 'odd']
+    },
   plugins: [
       require('@tailwindcss/ui'),
   ],

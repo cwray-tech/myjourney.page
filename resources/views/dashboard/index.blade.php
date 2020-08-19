@@ -3,8 +3,8 @@
     Your Dashboard
 @endsection
 @section('content')
-    <section class="py-16 min-h-screen">
-        <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
+    <section class="">
+        <div class="max-w-7xl bg-gray-50 mt-1 py-16 mx-auto pb-12 px-4 sm:px-6 lg:px-8 min-h-screen">
             <div class="p-2">
                 <h1 class="text-4xl leading-9 font-bold">Your Dashboard</h1>
             </div>
@@ -24,7 +24,7 @@
             </div>
             <div class="mt-10">
                 <div class="md:flex items-center justify-between px-2">
-                    <div class="md:mb-0">
+                    <div class="mb-6 md:mb-0">
                         <h2 class="text-4xl leading-9 font-bold">Recent Journeys</h2>
                     </div>
                     <a href="{{ route('journeys.create') }}" class="btn btn-primary py-3 mt-0">Write Journey</a>

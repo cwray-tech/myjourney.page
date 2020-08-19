@@ -1,5 +1,5 @@
-<div class="sticky top-10 lg:pr-6 md:w-1/3 py-4 px-4 bg-white shadow rounded md:mt-0 mt-8 max-h-100 overflow-auto no-scrollbar">
-    <h2 class="text-2xl font-bold pb-2 pt-4 border-b border-yellow-500 mb-4 sticky top-0 bg-white">Your Journey
+<div class="sticky top-0 sidebar lg:pr-6 md:w-1/3 px-4 bg-white shadow rounded md:mt-0 mt-8 max-h-screen overflow-hidden hover:overflow-auto transition-all ease-in-out duration-300">
+    <h2 class="text-2xl font-bold pb-2 pt-8 border-b border-yellow-500 mb-4 sticky top-0 bg-white">Your Journey
         <a target="_blank" href="{{route('journeys.show', $journey->slug)}}" class="icon-button text-sm mb-1 ml-4">
             <img class="w-4 mr-2" src="/images/external.svg">View</a>
         <a href="{{route('journeys.edit', $journey->slug)}}" class="icon-button text-sm mb-1">
@@ -9,7 +9,7 @@
         <h3 class="font-bold mb-2">Journey Title</h3>
         <h4 class="text-2xl">{{ $journey->title }}</h4>
         <h3 class="mt-4 font-bold mb-2">Journey Introduction</h3>
-        <p class="">{{ \Illuminate\Support\Str::limit(strip_tags($journey->introduction),150,'...')}}</p>
+        <p class="">{{ $journey->intro_preview }}</p>
     </div>
 
     <div class="mt-6">
@@ -21,7 +21,7 @@
                     <div class="lg:w-3/4">
                         <h3 class="text-lg">{{$step->title}}</h3>
                         @if($step->date)
-                            <h4>{{ date('F, Y', strtotime($step->date)) }}</h4>
+                            <h4 class="text-sm">{{ date('F, Y', strtotime($step->date)) }}</h4>
                         @endif
                     </div>
                     <div class="flex lg:flex-col lg:items-end items-center justify-between mt-2 lg:mt-0">
