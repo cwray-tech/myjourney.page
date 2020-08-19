@@ -18,6 +18,7 @@
             </div>
             <div class="py-16 md:w-1/2 lg:p-20 w-full flex flex-col items-start justify-center">
                 @include('.partials.journeys._journey_intro')
+
             </div>
 
         </section>
@@ -62,11 +63,13 @@
                 <div class="timeline-container">
                     <div class="timeline"></div>
                     <div class="timeline-dot"></div>
+
                 </div>
 
                 @foreach($steps as $step)
                     @include('.partials.steps._step')
                 @endforeach
+
 
             </div>
             <div

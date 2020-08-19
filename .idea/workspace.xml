@@ -8,10 +8,6 @@
       <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/JourneyIntroComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/JourneyIntroComponent.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/js/components/JourneyStepUpdateComponent.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/JourneyStepUpdateComponent.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_custom_utilities.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/journey/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/journey/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/journeys/_journey_intro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/journeys/_journey_intro.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/steps/_step.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/steps/_step.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

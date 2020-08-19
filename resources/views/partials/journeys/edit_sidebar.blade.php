@@ -10,6 +10,7 @@
         <h4 class="text-2xl">{{ $journey->title }}</h4>
         <h3 class="mt-4 font-bold mb-2">Journey Introduction</h3>
         <p class="">{{ $journey->intro_preview }}</p>
+
     </div>
 
     <div class="mt-6">
