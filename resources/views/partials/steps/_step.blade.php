@@ -9,7 +9,7 @@
         </div>
     @endif
     <div
-        class="relative bg-white border-2 border-black border-r-none md:border-r-2 rounded-md journey-step-content px-6 pb-10 rounded-r-none md:rounded-r prose prose-lg text-gray-500">
+        class="relative bg-white border-2 border-black border-r-none md:border-r-2 rounded-md journey-step-content px-6 py-10 rounded-r-none md:rounded-r prose prose-lg text-gray-500">
         @if($step->time)
             <h3>{{ $step->formattedTime() }} </h3>
         @endif
