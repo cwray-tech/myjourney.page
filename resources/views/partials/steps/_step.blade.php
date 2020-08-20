@@ -9,18 +9,21 @@
         </div>
     @endif
     <div
-        class="relative bg-white border-2 border-black border-r-none md:border-r-2 rounded-md journey-step-content px-6 py-10 rounded-r-none md:rounded-r prose prose-lg text-gray-500">
-        @if($step->time)
-            <h3>{{ $step->formattedTime() }} </h3>
-        @endif
-        @can('update', $journey)
-            <journey-step-update-component :step="{{$step}}"></journey-step-update-component>
-        @else
-            <h2>{{ $step->title }}</h2>
+        class="relative bg-white border-2 border-black border-r-none md:border-r-2 rounded-md px-4 py-8 journey-step-content rounded-r-none md:rounded-r">
+        <div class="prose prose-lg text-gray-500">
+            @if($step->time)
+                <h3>{{ $step->formattedTime() }} </h3>
+            @endif
+            @can('update', $journey)
+                <journey-step-update-component :step="{{$step}}"></journey-step-update-component>
+            @else
+                <h2>{{ $step->title }}</h2>
 
-            <p class="whitespace-pre-wrap">{{ $step->description }}</p>
-        @endcan
-        <h4>{{ $step->formatted_date }}</h4>
+                <p class="whitespace-pre-wrap">{{ $step->description }}</p>
+            @endcan
+            <h4>{{ $step->formatted_date }}</h4>
+        </div>
+
 
 
     </div>

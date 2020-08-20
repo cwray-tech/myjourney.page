@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2 contenteditable="true" @blur="updateTitle" v-text="title"></h2>
+        <h2 style="margin-top: 0px;" contenteditable="true" @blur="updateTitle" v-text="title"></h2>
         <p contenteditable="true" @blur="updateDescription" v-text="description" class="whitespace-pre-wrap"></p>
         <div v-if="saved" class="bg-blue-200 rounded-md p-2 mt-4">Great work! Successfully saved this step on your journey.</div>
         <div v-if="errored" class="rounded-md bg-red-200 p-2 mt-4">Bummer, we weren't able to save that change. <span
