@@ -3,11 +3,19 @@
     Write your Journey
 @endsection
 @section('content')
-    <section class="">
+    <section class="mt-10 mx-auto max-w-screen-xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 xl:mt-28">
+        <div class="text-center">
+            <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-900 sm:text-5xl sm:leading-none md:text-6xl">
+                Write
+                <br class="xl:hidden">
+                <span class="text-yellow-600">Your Journey</span>
+            </h1>
+        </div>
+    </section>
+    <section class="pb-10">
         <div class="max-w-7xl py-16  mt-1 min-h-screen mx-auto pb-12 px-4 sm:px-6 lg:px-8">
             <div class="lg:max-w-screen-lg  mx-auto">
-                <h1 class="text-4xl font-bold leading-9 mb-2">Start writing your Journey</h1>
-                <form class="mt-6 px-4 py-6 pb-8 bg-white rounded-md border border-yellow-500" method="post" action="/journeys" enctype="multipart/form-data">
+                <form class="mt-6 px-4 py-6 pb-8 bg-white rounded-md border" method="post" action="/journeys" enctype="multipart/form-data">
                     @csrf
                     @include('.partials.forms.form_errors')
                     <label for="title">Journey Title</label>
