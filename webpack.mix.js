@@ -12,7 +12,7 @@ const mix = require('laravel-mix');
  */
 const tailwindcss = require('tailwindcss');
 
-mix.extract(['vue', 'jquery']);
+mix.extract(['vue']);
 
 mix.scripts('resources/js/subscribe.js', 'public/js/subscribe.js')
     .js('resources/js/app.js', 'public/js')

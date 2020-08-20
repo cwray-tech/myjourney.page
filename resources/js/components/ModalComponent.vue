@@ -6,22 +6,25 @@
                      class="fixed z-50 inset-0 bg-black bg-opacity-25 w-full h-full"></div>
                 <div v-if="modalOpen" class="fixed mx-auto z-50 right-0 bg-white left-0 top-0">
                     <div class="mx-auto container relative">
-                        <svg @click="toggleModal" class="block absolute z-50 mr-4 cursor-pointer top-0 right-0 h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M6 18L18 6M6 6l12 12"/>
-                        </svg>
-                        <div class="container max-w-screen-md max-h-screen relative z-50 p-12 pb-6 mx-auto my-20">
-
-                            <div class="text-4xl mb-6">
+                        <div class="container text-left max-w-screen-md max-h-screen relative z-50 p-12 pb-6 mx-auto my-20">
+                            <div class="mt-3 sm:text-left">
+                            <h3 class="text-2xl leading-6 font-medium text-gray-900 mb-3" id="modal-headline">
                                 <slot name="header"></slot>
+                            </h3>
+                            <p class="text-sm leading-5 text-gray-500">
+                                <slot name="content"></slot>
+                            </p>
                             </div>
-                            <slot></slot>
+                            <div class="mt-5 items-center flex flex-col sm:flex-row">
+                                <slot name="action"></slot>
+                                <button type="button" @click="toggleModal" class="sm:ml-3 w-full mt-3 sm:mt-0 sm:w-auto inline-flex justify-center rounded-md border border-gray-300 px-4 py-2 bg-white text-base leading-6 font-medium text-gray-700 shadow-sm hover:text-gray-500 focus:outline-none focus:border-yellow-300 focus:shadow-outline-yellow transition ease-in-out duration-150 sm:text-sm sm:leading-5">Cancel</button>
+                            </div>
+
                         </div>
                     </div>
 
                 </div>
             </div>
-
         </transition>
 
         <div @click="toggleModal" class="cursor-pointer">
@@ -48,7 +51,7 @@
 </script>
 <style>
     .fade-enter-active, .fade-leave-active {
-        transition: opacity .2s;
+        transition: opacity .3s;
     }
 
     .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */
