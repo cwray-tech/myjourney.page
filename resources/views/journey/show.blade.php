@@ -28,7 +28,7 @@
         </section>
 
     @endif
-    <section class="py-10 relative">
+    <section class="py-10 relative overflow-hidden">
         <div class="hidden lg:block lg:absolute lg:inset-y-0 lg:h-full lg:w-full">
             <div class="relative h-full text-lg max-w-prose mx-auto">
                 <svg class="absolute top-0 left-full transform translate-x-32" width="404" height="384" fill="none" viewBox="0 0 404 384">

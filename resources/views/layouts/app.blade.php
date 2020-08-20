@@ -34,12 +34,12 @@
 
 </head>
 <body>
-<div id="app" class="bg-white">
+<div id="app" class="bg-white relative">
     @include('.partials._navbar')
 
-    <main>
+    <div class="relative">
         @yield('content')
-    </main>
+    </div>
 
     @if (session('status'))
         <alert-component message="{{ session('status') }}"></alert-component>

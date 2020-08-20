@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <main class="lg:relative">
+    <section class="lg:relative">
         <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
             <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
                 <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-800 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
@@ -33,12 +33,12 @@
                 </div>
             </div>
         </div>
-        <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
-            <img class="absolute inset-0 w-full h-full object-cover"
+        <div class="relative w-full h-64  sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+            <img class="absolute inset-0  w-full h-full object-cover"
                  src="/images/journey.JPG"
                  alt="On a Journey">
         </div>
-    </main>
+    </section>
 
     <div class="py-16 bg-white overflow-hidden lg:py-24">
         <div class="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 lg:max-w-screen-xl">
