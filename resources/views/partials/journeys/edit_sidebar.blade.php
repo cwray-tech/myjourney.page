@@ -31,20 +31,29 @@
                             <div>Edit</div>
                         </a>
                         <modal-component>
-                            <template v-slot:header>Are you sure you want to delete this step on your journey?
-                            </template>
+
                             <template v-slot:opener>
                                 <div class="flex underline items-center">
                                     <img class="w-4 mr-2" src="/images/bin.svg">Delete
                                 </div>
-
                             </template>
-                            <form class="mt-2" method="post"
-                                  action="{{ route('steps.destroy', $step->id) }}">
-                                @method('delete')
-                                @csrf
-                                <button type="submit" class="btn btn-danger">Yes, Delete Step</button>
-                            </form>
+
+                            <template v-slot:header>Are you sure you want to delete this step on your journey?
+                            </template>
+
+                            <template v-slot:content>
+                                Once a step is deleted, it is completely removed and there is no way of getting it back.
+                            </template>
+
+                            <template v-slot:action>
+                                <form class="flex w-full rounded-md shadow-sm sm:w-auto" method="post"
+                                      action="{{ route('steps.destroy', $step->id) }}">
+                                    @method('delete')
+                                    @csrf
+                                    <button type="submit" class="inline-flex justify-center w-full rounded-md border border-transparent px-4 py-2 bg-red-600 text-base leading-6 font-medium text-white shadow-sm hover:bg-red-500 focus:outline-none focus:border-red-700 focus:shadow-outline-red transition ease-in-out duration-150 sm:text-sm sm:leading-5">Yes, Delete Step</button>
+                                </form>
+                            </template>
+
                         </modal-component>
                     </div>
 
