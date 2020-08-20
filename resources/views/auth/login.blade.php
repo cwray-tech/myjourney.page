@@ -42,6 +42,7 @@
                 @include('.partials.forms.form_errors')
                 <form method="POST" action="{{ route('login') }}">
                     @csrf
+                    @honeypot
                     <div>
                         <label for="email" class="block text-sm font-medium leading-5 text-gray-700">
                             {{ __('E-Mail Address') }}
@@ -77,7 +78,7 @@
 
                     <div class="mt-6">
           <span class="block w-full rounded-md shadow-sm">
-            <button type="submit" class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:border-yellow-700 focus:shadow-outline-orange active:bg-yellow-700 transition duration-150 ease-in-out">
+            <button type="submit" class="btn btn-primary w-full">
               {{ __('Login') }}
             </button>
           </span>

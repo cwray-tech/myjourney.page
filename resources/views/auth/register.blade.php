@@ -43,6 +43,7 @@
                 @include('.partials.forms.form_errors')
                 <form method="POST" action="{{ route('register') }}">
                     @csrf
+                    @honeypot
                         <label for="name"
                                class="block text-sm font-medium leading-5 text-gray-700">{{ __('Name') }}</label>
                         <div class="mt-1 rounded-md shadow-sm">
@@ -64,20 +65,31 @@
                         </label>
                         <div class="mt-1 rounded-md shadow-sm">
                             <input placeholder="***********" id="password" type="password" name="password" required
-                                   class="input">
+                                   class="input" autocomplete="new-password">
                         </div>
 
                         <label for="password-confirm">{{ __('Confirm Password') }}</label>
                         <input id="password-confirm" placeholder="***********" type="password" class="input"
                                name="password_confirmation"
                                required autocomplete="new-password">
+                    <label>{{ __('Join our newsletter?') }}</label>
+                    <div class="flex items-center mb-3 mt-1">
+                        <input name="news" id="news_me" type="radio" value="1" checked class="form-checkbox h-4 w-4 rounded-full text-yellow-600 transition duration-150 ease-in-out">
+                        <label for="news_me" {{ old('news') ? 'checked' : '' }} class="mx-2 block text-sm leading-5 text-gray-900">
+                            {{ __('Yes') }}
+                        </label>
+                        <input name="news" id="news_no" type="radio" value="0" class="form-checkbox h-4 w-4 rounded-full text-yellow-600 transition duration-150 ease-in-out">
+                        <label for="news_no" {{ old('news') ? 'checked' : '' }} class="ml-2 block text-sm leading-5 text-gray-900">
+                            {{ __('No') }}
+                        </label>
+                    </div>
                     <p class="text-sm leading-5 text-gray-600 mb-3">By signing up, you agree to our <a href="/terms" class="underline">terms and
                             conditions</a> and <a href="/privacy-policy" class="underline">privacy policy</a>.</p>
 
 
                     <span class="block w-full rounded-md shadow-sm">
             <button type="submit"
-                    class="w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-yellow-600 hover:bg-yellow-500 focus:outline-none focus:border-yellow-700 focus:shadow-outline-orange active:bg-yellow-700 transition duration-150 ease-in-out">
+                    class="btn btn-primary w-full">
               {{ __('Register') }}
             </button>
           </span>
