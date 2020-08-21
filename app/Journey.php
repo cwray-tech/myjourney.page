@@ -60,8 +60,7 @@ class Journey extends Model
     {
         return SlugOptions::create()
             ->generateSlugsFrom('title')
-            ->saveSlugsTo('slug')
-            ->doNotGenerateSlugsOnUpdate();
+            ->saveSlugsTo('slug');
     }
 
     public function steps()
