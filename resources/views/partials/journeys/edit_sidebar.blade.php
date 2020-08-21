@@ -1,10 +1,10 @@
 <div class="sticky top-0 border sidebar lg:pr-6 md:w-1/3 px-4 bg-white rounded-md md:mt-0 mt-8 max-h-screen overflow-auto transition-all ease-in-out duration-300">
-    <h2 class="text-2xl font-bold pb-2 pt-8 border-b border-yellow-500 mb-4 sticky top-0 bg-white">Your Journey
-        <a target="_blank" href="{{route('journeys.show', $journey->slug)}}" class="icon-button text-sm mb-1 ml-4">
-            <img class="w-4 mr-2" src="/images/external.svg">View</a>
+    <h2 class="text-2xl font-bold pb-2 pt-8 border-b border-yellow-500 mb-4 sticky top-0 bg-white">Your Journey</h2>
+    <div class="flex items-center flex-wrap justify-between mb-4">
+        <a target="_blank" href="{{route('journeys.show', $journey->slug)}}" class="icon-button text-sm mb-1">
+            <img class="w-4 mr-2" src="/images/external.svg">View and live edit</a>
         <a href="{{route('journeys.edit', $journey->slug)}}" class="icon-button text-sm mb-1">
-            <img class="w-4 mr-2" src="/images/edit.svg">Edit</a>
-    </h2>
+            <img class="w-4 mr-2" src="/images/edit.svg">Edit Introduction</a></div>
     <div class="px-1">
         <h3 class="font-bold mb-2">Journey Title</h3>
         <h4 class="text-2xl">{{ $journey->title }}</h4>
@@ -15,6 +15,10 @@
 
     <div class="mt-6">
         <h2 class="text-2xl font-bold pb-2 border-b border-yellow-500 mb-4">Journey Steps</h2>
+        <div class="flex items-center mb-4"><a href="{{ route('journeys.steps.create', $journey->slug) }}" class="icon-button text-sm">
+                <img src="/images/add.svg" class="w-4 mr-2">
+                <div>Add Step to Journey</div>
+            </a></div>
         <div class="mb-6">
             @forelse($journey->steps as $step)
                 <div
@@ -22,7 +26,7 @@
                     <div class="lg:w-3/4">
                         <h3 class="text-lg">{{$step->title}}</h3>
                         @if($step->date)
-                            <h4 class="text-sm">{{ date('F, Y', strtotime($step->date)) }}</h4>
+                            <h4 class="text-sm">{{ $step->formatted_date }}</h4>
                         @endif
                     </div>
                     <div class="flex lg:flex-col lg:items-end items-center justify-between mt-2 lg:mt-0">
@@ -63,10 +67,6 @@
                     the first step you dream of taking.</p>
             @endforelse
         </div>
-        <a href="{{ route('journeys.steps.create', $journey->slug) }}" class="icon-button sticky bg-white bottom-0">
-            <img src="/images/add.svg" class="w-4 mr-2">
-            <div>Add Step to Journey</div>
-        </a>
 
     </div>
 </div>
