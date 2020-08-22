@@ -12,10 +12,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 Auth::routes();
+Route::domain('{page}.ajourney.page')->group(function () {
+    Route::get('/', 'PageController@show');
+    Route::get('/{journey}', 'JourneyController@show');
+});
 
 Route::get('lang/{locale}', 'LocalizationController@index');
-
-
 
 Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
 Route::get('/dashboard/info', 'DashboardController@edit')->name('info');
@@ -29,6 +31,8 @@ Route::get('/terms', 'StaticPageController@terms')->name('terms');
 
 Route::resource('journeys', 'JourneyController');
 Route::patch('/api/journeys/{journey}', 'Api\JourneyController@update');
+
+Route::resource('pages', 'PageController');
 
 Route::resource('journeys.steps', 'JourneyStepController')->shallow();
 Route::patch('/api/steps/{step}/', 'Api\JourneyStepController@update');

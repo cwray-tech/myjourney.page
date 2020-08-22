@@ -12,19 +12,19 @@ class StaticPageController extends Controller
      */
     public function index()
     {
-        return view('page.index');
+        return view('static_pages.index');
     }
 
     public function about()
     {
-        return view('page.about');
+        return view('static_pages.about');
     }
     public function privacy()
     {
-        return view('page.privacy');
+        return view('static_pages.privacy');
     }
     public function terms()
     {
-        return view('page.terms');
+        return view('static_pages.terms');
     }
 }
