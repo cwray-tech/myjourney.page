@@ -34,7 +34,7 @@
 
 </head>
 <body>
-<div id="app" class="bg-white relative">
+<div id="app" class="bg-gray-50 relative">
     @include('.partials._navbar')
 
     <div class="relative">

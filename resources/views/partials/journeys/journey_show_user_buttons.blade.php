@@ -2,9 +2,9 @@
     <div class="ml-auto px-3 py-2 flex  flex-wrap justify-end items-center bg-white">
         <publish-journey-component :journey="{{ $journey }}" class="mx-2"></publish-journey-component>
         <make-public-component :journey="{{ $journey }}" class="mx-2"></make-public-component>
-        <a href="{{route('journeys.edit', $journey->slug)}}" class="border-2 border-yellow-500 rounded-md inline-flex items-center bg-white shadow-sm px-2 py-1">
-            <img class="w-4 mr-1 h-4" src="/images/edit.svg">
-            <span>Edit <span class="hidden md:inline-block">Journey</span></span>
+        <a href="{{ route('journeys.steps.create', $journey->slug) }}" class="icon-button text-sm">
+            <img src="/images/add.svg" class="w-4 mr-2">
+            <div>Add Steps</div>
         </a>
     </div>
     <div class="absolute left-0 lg:left-auto lg:right-0 top-0 mb-10 lg:mb-0 lg:top-auto">
