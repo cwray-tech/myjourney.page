@@ -17,7 +17,7 @@
         <div class="md:p-6 p-4 col-span-1 lg:col-start-5 lg:col-span-2 flex lg:flex-col lg:items-end justify-start flex-wrap lg:text-right">
             <div class="w-full flex items-center lg:justify-end flex-wrap mb-2">
 
-                <a target="_blank" href="{{route('journeys.show', $journey->slug)}}"
+                <a  href="{{route('journeys.show', $journey->slug)}}"
                    class="icon-button my-1 mr-1">
                     <img class="w-4 mr-2" src="/images/external.svg"> View</a>
 
