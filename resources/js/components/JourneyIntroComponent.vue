@@ -1,7 +1,7 @@
 <template>
         <div>
-            <h1 class="hover:border-yellow-500 focus:border-transparent border border-transparent rounded px-2 -mx-2" contenteditable="true" @blur="updateTitle" v-text="title"></h1>
-            <p class="whitespace-pre-wrap hover:border-yellow-500 focus:border-transparent border border-transparent rounded px-2 -mx-2" contenteditable="true" v-text="introduction" @blur="updateIntroduction"></p>
+            <h1 class="hover:border-yellow-500 focus:border-transparent border border-transparent rounded p-1 -m-1" contenteditable="true" @blur="updateTitle" v-text="title"></h1>
+            <p class="whitespace-pre-wrap hover:border-yellow-500 focus:border-transparent border border-transparent rounded p-1 -m-1" contenteditable="true" v-text="introduction" @blur="updateIntroduction"></p>
             <div v-if="saved" class="bg-blue-200 rounded-md p-2 mt-4">Great work! Successfully saved journey intro.</div>
             <div v-if="errored" class="rounded-md bg-red-200 p-2 mt-4">Bummer, we weren't able to save that change. <span @click="updateJourney" class="underline cursor-pointer">Try again?</span></div>
 
