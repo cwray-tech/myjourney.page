@@ -56,5 +56,19 @@
     var stripe = Stripe("{{ config('services.stripe.key') }}");
 </script>
 @yield('body_code')
+<script>
+    window.productHuntUpcoming = {
+        appId: 94725,
+        position: 'bottomRight',
+    };
+
+    (function(doc, scr, src, a, b) {
+        a = doc.createElement(scr);
+        b = doc.getElementsByTagName(scr)[0];
+        a.async = true;
+        a.src = src;
+        b.parentNode.insertBefore(a, b);
+    })(document, 'script', 'https://assets.producthunt.com/assets/upwigloader.js');
+</script>
 </body>
 </html>
