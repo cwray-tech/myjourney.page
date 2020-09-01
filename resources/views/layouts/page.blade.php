@@ -49,19 +49,6 @@
 <script src="/js/app.js"></script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2edc3be623c08a"></script>
-<script>
-    window.productHuntUpcoming = {
-        appId: 94725,
-        position: 'bottomLeft',
-    };
 
-    (function(doc, scr, src, a, b) {
-        a = doc.createElement(scr);
-        b = doc.getElementsByTagName(scr)[0];
-        a.async = true;
-        a.src = src;
-        b.parentNode.insertBefore(a, b);
-    })(document, 'script', 'https://assets.producthunt.com/assets/upwigloader.js');
-</script>
 </body>
 </html>
