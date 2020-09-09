@@ -45,6 +45,9 @@
                 <h2 class="text-center text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10">
                     Share your Journey
                 </h2>
+                <p class="mt-3 text-center max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+                    It needs to be told.
+                </p>
             </div>
 
             <div class="relative mt-12 lg:mt-24 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center">
