@@ -14,7 +14,7 @@
                     <span class="text-yellow-500">Matters.</span>
                 </h1>
                 <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
-                    The place where you can write and share your journeys.
+                    This is the place where you can write and share it.
                 </p>
                 <div class="mt-10 flex flex-col sm:flex-row justify-center lg:justify-start">
                     <div class="rounded-md shadow">
