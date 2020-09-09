@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/symfony2.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/static_pages/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/static_pages/index.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -260,7 +257,7 @@
       <workItem from="1598994690285" duration="1132000" />
       <workItem from="1599250107310" duration="1210000" />
       <workItem from="1599609152485" duration="198000" />
-      <workItem from="1599662115733" duration="3252000" />
+      <workItem from="1599662115733" duration="3600000" />
     </task>
     <servers />
   </component>
@@ -377,17 +374,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/static_pages/index.blade.php</url>
-          <line>63</line>
+          <line>58</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/static_pages/index.blade.php</url>
-          <line>97</line>
+          <line>92</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/static_pages/index.blade.php</url>
-          <line>55</line>
+          <line>50</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

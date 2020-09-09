@@ -9,9 +9,9 @@
         <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center lg:py-48 lg:text-left">
             <div class="px-4 lg:w-1/2 sm:px-8 xl:pr-16">
                 <h1 class="text-4xl tracking-tight leading-10 font-extrabold text-gray-800 sm:text-5xl sm:leading-none md:text-6xl lg:text-5xl xl:text-6xl">
-                    Share your
+                    Your Journey
                     <br class="xl:hidden">
-                    <span class="text-yellow-500">Journeys</span>
+                    <span class="text-yellow-500">Matters.</span>
                 </h1>
                 <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
                     MyJourney is the place where you can write and share your journeys, and make a difference in a life.
