@@ -6,21 +6,26 @@
     <link rel="icon"
           type="image/svg"
           href="https://myjourney.page/images/devjourney.svg">
-    <link rel="apple-touch-icon" type="image/jpg" href="https://myjourney.page/images/map.jpg" />
+    <link rel="apple-touch-icon" type="image/jpg" href="https://myjourney.page/images/map.jpg"/>
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>@yield('page_title') | MyJourney</title>
-    <meta property="og:title" content="@yield('page_title') | MyJourney" />
-    <meta property="og:description" content="@yield('page_description') Share your Journeys with the world." />
-    <meta property="og:image" content="@yield('page_image')" />
-    <meta property="og:site_name" content="MyJourney.page" />
-    <meta property="og:type" content="website" />
+    <meta property="og:title" content="@yield('page_title') | MyJourney"/>
+    <meta property="og:description" content="@yield('page_description') Share your Journeys with the world."/>
+    <meta property="og:image" content="@yield('page_image')"/>
+    <meta property="og:site_name" content="MyJourney.page"/>
+    <meta property="og:type" content="website"/>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google.tracking_id') }}"></script>
+    <script async
+            src="https://www.googletagmanager.com/gtag/js?id={{ config('services.google.tracking_id') }}"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
 
         gtag('config', '{{ config('services.google.tracking_id') }}');
@@ -49,14 +54,8 @@
 <script src="/js/app.js"></script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2edc3be623c08a"></script>
-<script>
-    Userback = window.Userback || {};
-    Userback.access_token = '5029|19244|0g5YJwMMgE0HAGNEyfcd9asiyo5jza448wJvLzxEaxIcn0qwgV';
-    (function(id) {
-        var s = document.createElement('script');
-        s.async = 1;s.src = 'https://static.userback.io/widget/v1.js';
-        var parent_node = document.head || document.body;parent_node.appendChild(s);
-    })('userback-sdk');
-</script>
+@include('.partials._userback')
+
+@include('.partials._product_hunt')
 </body>
 </html>

@@ -1,4 +1,4 @@
-<div class="lg:max-w-screen-lg prose prose-lg px-6 overflow-auto text-gray-500 mx-auto">
+<div class="lg:max-w-screen-lg prose prose-lg px-6 overflow-auto w-full text-gray-500 mx-auto">
     @can('update', $journey)
         <journey-intro-component :journey="{{$journey}}"></journey-intro-component>
     @else
