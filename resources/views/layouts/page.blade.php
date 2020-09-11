@@ -49,6 +49,14 @@
 <script src="/js/app.js"></script>
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f2edc3be623c08a"></script>
-
+<script>
+    Userback = window.Userback || {};
+    Userback.access_token = '5029|19244|0g5YJwMMgE0HAGNEyfcd9asiyo5jza448wJvLzxEaxIcn0qwgV';
+    (function(id) {
+        var s = document.createElement('script');
+        s.async = 1;s.src = 'https://static.userback.io/widget/v1.js';
+        var parent_node = document.head || document.body;parent_node.appendChild(s);
+    })('userback-sdk');
+</script>
 </body>
 </html>
