@@ -59,6 +59,5 @@
 
 @include('.partials._userback')
 
-@include('.partials._product_hunt')
 </body>
 </html>

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67a03ee0-08fb-439b-bb8a-0d68dbf371d6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/_product_hunt.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/partials/_userback.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/page.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/page.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/journeys/_journey_intro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/journeys/_journey_intro.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/_product_hunt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/_product_hunt.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +259,8 @@
       <workItem from="1599250107310" duration="1210000" />
       <workItem from="1599609152485" duration="198000" />
       <workItem from="1599662115733" duration="5357000" />
-      <workItem from="1599854408196" duration="2506000" />
+      <workItem from="1599854408196" duration="3199000" />
+      <workItem from="1600054535126" duration="43000" />
     </task>
     <servers />
   </component>
