@@ -22,6 +22,6 @@ Feel free to critique and review my code and git commits.
 ## Technologies Used
 
 - Laravel
-- TailwindCss
+- Tailwind CSS
 - VueJs
 - Stripe for payment processing (finished not linked or routed to due to limited usage.)
