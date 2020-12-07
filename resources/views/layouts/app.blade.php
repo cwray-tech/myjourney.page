@@ -57,7 +57,5 @@
 </script>
 @yield('body_code')
 
-@include('.partials._userback')
-
 </body>
 </html>
