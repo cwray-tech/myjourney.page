@@ -27,6 +27,7 @@ Vue.component('publish-journey-component', require('./components/PublishJourneyC
 Vue.component('make-public-component', require('./components/MakePublicJourneyComponent').default);
 Vue.component('journey-intro-component', require('./components/JourneyIntroComponent').default);
 Vue.component('journey-step-update-component', require('./components/JourneyStepUpdateComponent').default);
+Vue.component('Timeline', require('./components/Timeline').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
