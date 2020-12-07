@@ -1,8 +1,7 @@
 <template>
     <div class="timeline-container">
         <div class="timeline"></div>
-        <div class="timeline-dot" :style="{
-        top: `${positionTop}%`}"></div>
+        <div class="timeline-dot" :style="{top: `${positionTop}%`}"></div>
     </div>
 </template>
 
@@ -36,7 +35,7 @@ export default {
     methods: {
         handleScroll () {
             const height = document.documentElement.scrollHeight - document.documentElement.clientHeight
-            this.positionTop = (window.scrollY / height) * 100
+            this.positionTop = (window.scrollY / height) * 50
         }
     }
 }
