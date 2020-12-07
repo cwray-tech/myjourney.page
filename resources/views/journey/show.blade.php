@@ -32,7 +32,7 @@
         @if($steps->count() > 0 )
             <div class="journey-section max-w-screen-xl px-4 md:pr-4 pr-0 mb-40 mx-auto relative">
                 {{ $steps->links('.partials.journeys._page_number_pagination') }}
-                <Timeline/>
+                <Timeline></Timeline>
 
                 @foreach($steps as $step)
                     @include('.partials.steps._step')
