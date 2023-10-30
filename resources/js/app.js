@@ -6,7 +6,7 @@
 
 require("./bootstrap");
 
-window.Vue = require("vue");
+window.Vue = require("vue").default;
 
 /**
  * The following block of code may be used to automatically register your
@@ -25,36 +25,36 @@ Vue.component(
 );
 Vue.component(
     "dropdown-component",
-    require("./components/DropdownComponent").default
+    require("./components/DropdownComponent.vue").default
 );
 Vue.component(
     "alert-component",
-    require("./components/AlertComponent").default
+    require("./components/AlertComponent.vue").default
 );
 Vue.component(
     "modal-component",
-    require("./components/ModalComponent").default
+    require("./components/ModalComponent.vue").default
 );
 Vue.component(
     "publish-journey-component",
-    require("./components/PublishJourneyComponent").default
+    require("./components/PublishJourneyComponent.vue").default
 );
 Vue.component(
     "make-public-component",
-    require("./components/MakePublicJourneyComponent").default
+    require("./components/MakePublicJourneyComponent.vue").default
 );
 Vue.component(
     "journey-intro-component",
-    require("./components/JourneyIntroComponent").default
+    require("./components/JourneyIntroComponent.vue").default
 );
 Vue.component(
     "journey-step-update-component",
-    require("./components/JourneyStepUpdateComponent").default
+    require("./components/JourneyStepUpdateComponent.vue").default
 );
-Vue.component("Timeline", require("./components/Timeline").default);
+Vue.component("Timeline", require("./components/Timeline.vue").default);
 Vue.component(
     "banner-component",
-    require("./components/BannerComponent").default
+    require("./components/BannerComponent.vue").default
 );
 /**
  * Next, we will create a fresh Vue application instance and attach it to
