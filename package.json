@@ -25,7 +25,6 @@
         "@babel/preset-env": "^7.10.4",
         "@tailwindcss/ui": "^0.5.0",
         "lodash.throttle": "^4.1.1",
-        "node-sass": "^4.14.1",
         "nprogress": "^0.2.0",
         "tailwindcss": "^1.5.1",
         "vue-contenteditable": "^1.0.2"
