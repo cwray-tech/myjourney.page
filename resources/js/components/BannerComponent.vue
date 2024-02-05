@@ -4,12 +4,11 @@
     <div
       class="pointer-events-auto flex items-center justify-between gap-x-6 bg-gray-900 px-6 py-2.5 sm:rounded-xl sm:py-3 sm:pl-4 sm:pr-3.5">
       <p class="text-sm leading-6 text-white">
-        <a target="_blank"
-          href="https://flippa.com/11658810-a-unique-platform-that-facilitates-personal-growth-and-self-reflection-through-interactive-storytelling-fostering-individual-transformation">
+        <a target="_blank" href="mailto:chris@sol.company">
           <strong class="font-semibold">MyJourney.page is for sale</strong><svg viewBox="0 0 2 2"
             class="mx-2 inline h-0.5 w-0.5 fill-current" aria-hidden="true">
             <circle cx="1" cy="1" r="1" />
-          </svg>Check out our page on Flippa to learn more and make a bid.<span aria-hidden="true">&rarr;</span>
+          </svg>Send Chris an email to express your interest and learn more.<span aria-hidden="true">&rarr;</span>
         </a>
       </p>
       <button @click="closeBanner" type="button" class="-m-1.5 flex-none p-1.5">
