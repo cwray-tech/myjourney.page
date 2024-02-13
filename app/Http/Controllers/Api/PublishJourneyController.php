@@ -17,14 +17,14 @@ class PublishJourneyController extends Controller
     public function store(Journey $journey)
     {
         $this->authorize('update', $journey);
-        if (!$journey->published_at){
+        if (!$journey->published_at) {
             $journey->update([
-                'published_at' => Carbon::now()->timestamp
+                'published_at' => now()
             ]);
         }
-            $journey->update([
-                'is_published' => '1'
-            ]);
+        $journey->update([
+            'is_published' => '1'
+        ]);
 
         return response('Success', '204');
     }
