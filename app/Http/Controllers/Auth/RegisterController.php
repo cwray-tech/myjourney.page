@@ -8,8 +8,8 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
-use Newsletter;
 use Spatie\Honeypot\ProtectAgainstSpam;
+use Spatie\Newsletter\Facades\Newsletter;
 
 class RegisterController extends Controller
 {
@@ -73,7 +73,7 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
-        if($data['news'] == true){
+        if ($data['news'] == true) {
             Newsletter::subscribeOrUpdate($user->email);
 
             $user->update(['is_subscribed' => true]);

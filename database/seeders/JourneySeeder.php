@@ -1,8 +1,10 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
 
-class StepSeeder extends Seeder
+class JourneySeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,6 +13,6 @@ class StepSeeder extends Seeder
      */
     public function run()
     {
-        factory(\App\Step::class, 5)->create();
+        factory(\App\Journey::class, 5)->create();
     }
 }
