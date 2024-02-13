@@ -49,7 +49,6 @@
             <alert-component message="{{ session('status') }}"></alert-component>
         @endif
         @include('.partials._footer')
-        <banner-component></banner-component>
     </div>
 
     <!-- Scripts -->

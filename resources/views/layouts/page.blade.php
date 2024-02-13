@@ -42,7 +42,6 @@
             @yield('content')
         </main>
 
-        <banner-component></banner-component>
 
         @if (session('status'))
             <alert-component message="{{ session('status') }}"></alert-component>
