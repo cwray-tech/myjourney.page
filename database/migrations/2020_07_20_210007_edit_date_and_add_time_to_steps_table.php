@@ -14,7 +14,7 @@ class EditDateAndAddTimeToStepsTable extends Migration
     public function up()
     {
         Schema::table('steps', function (Blueprint $table) {
-            $table->date('date')->nullable();
+            $table->date('date')->nullable()->change();
             $table->time('time')->nullable();
         });
     }
